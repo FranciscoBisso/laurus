@@ -1,0 +1,144 @@
+@import "open-props/style";
+
+@font-face {
+	font-family: "Mark Pro Regular";
+	src: url("./assets/fonts/MarkPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Mark Pro Medium";
+	src: url("./assets/fonts/MarkPro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Mark Pro Bold";
+	src: url("./assets/fonts/MarkPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Mark Pro Heavy";
+	src: url("./assets/fonts/MarkPro-Heavy.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-sans);
+	font-family: var(--mark-pro-regular);
+}
+
+body {
+	background-color: var(--bg-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	text-wrap: pretty;
+}
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* FONT SIZES */
+	--sz-xs: clamp(0.6944rem, 0.6577rem + 0.1836vi, 0.8rem);
+	--sz-s: clamp(0.8333rem, 0.7754rem + 0.2899vi, 1rem);
+	--sz-0: clamp(1rem, 0.913rem + 0.4348vi, 1.25rem);
+	--sz-1: clamp(1.2rem, 1.0739rem + 0.6304vi, 1.5625rem);
+	--sz-2: clamp(1.44rem, 1.2615rem + 0.8924vi, 1.9531rem);
+	--sz-3: clamp(1.728rem, 1.4799rem + 1.2407vi, 2.4414rem);
+	--sz-4: clamp(2.0736rem, 1.7334rem + 1.7011vi, 3.0518rem);
+	--sz-5: clamp(2.4883rem, 2.027rem + 2.3067vi, 3.8147rem);
+	--sz-6: clamp(2.986rem, 2.366rem + 3.0998vi, 4.7684rem);
+	--sz-7: clamp(3.5832rem, 2.7563rem + 4.1344vi, 5.9605rem);
+	--sz-8: clamp(4.2998rem, 3.2039rem + 5.4796vi, 7.4506rem);
+
+	--spacing: 0.1rem;
+
+	/* FONT FAMILIES */
+	--font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+		Noto Sans, sans-serif;
+	--mark-pro-regular: "Mark Pro Regular", sans-serif;
+	--mark-pro-medium: "Mark Pro Medium", sans-serif;
+	--mark-pro-bold: "Mark Pro Bold", sans-serif;
+	--mark-pro-heavy: "Mark Pro Heavy", sans-serif;
+
+	/* COLOR's PALETTE */
+	--white: rgb(255, 255, 255);
+	--seasalt: rgb(248, 248, 248);
+	--platinium: rgb(228, 228, 228);
+	--timberwolf: rgb(208, 208, 208);
+	--nyanza: rgb(224, 240, 208);
+	--tea-green: rgb(192, 225, 161);
+	--yellow-green: rgb(128, 196, 66);
+	--forest-green: rgb(80, 150, 66);
+	--dartmouth-green: rgb(12, 104, 54);
+	--battleship-gray: rgb(132, 132, 132);
+	--onyx: rgb(66, 66, 66);
+	--jet-black: rgb(44, 44, 44);
+	--eerie-black: rgb(22, 22, 22);
+	--black: rgb(0, 0, 0);
+
+	/* GRADIENTS */
+	--white-gradient: linear-gradient(
+		90deg,
+		var(--seasalt),
+		var(--platinium),
+		var(--timberwolf)
+	);
+
+	--black-gradient: linear-gradient(
+		90deg,
+		var(--battleship-gray),
+		var(--onyx),
+		var(--jet-black),
+		var(--eerie-black)
+	);
+
+	--green-gradient: linear-gradient(
+		90deg,
+		var(--tea-green),
+		var(--yellow-green),
+		var(--forest-green)
+	);
+
+	/* RADIUS */
+	--radius: var(--sz-4);
+
+	/* SHADOWS */
+	--light-shadow: 0 0 10px rgba(22, 22, 22, 0.2); /* <-- eerieBlack */
+	--dark-shadow: 0 0 10px rgba(228, 228, 228, 0.4); /* <-- platinium */
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg-primary: var(--white);
+		--bg-secondary: var(--seasalt);
+		--bg-tertiary: var(--white);
+		--font-color: var(--black);
+		--primary-gradient: var(--black-gradient);
+		--shadow: var(--light-shadow);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-primary: var(--black);
+		--bg-secondary: var(--black);
+		--bg-tertiary: var(--eerie-black);
+		--font-color: var(--white);
+		--primary-gradient: var(--white-gradient);
+		--shadow: var(--dark-shadow);
+	}
+}
