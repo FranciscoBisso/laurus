@@ -4,6 +4,7 @@ import styles from "./rootLayout.module.css";
 
 import Helmet from "../components/helmet/Helmet";
 import NavBar from "../components/navBar/NavBar";
+import SocialMedia from "../components/socialMedia/SocialMedia";
 
 const Fallback = lazy(() => import("../components/fallback/Fallback"));
 export default function RootLayout() {
@@ -27,7 +28,8 @@ export default function RootLayout() {
 				</Suspense>
 			</main>
 			<footer className={styles.footer}>
-				<div className={styles.txt_wrapper}>
+				<div className={styles.wrapper}>
+					<SocialMedia props={{ styles }} />
 					<span className={styles.address}>
 						San Martín, 750, Buenos Aires, CABA 1004
 					</span>

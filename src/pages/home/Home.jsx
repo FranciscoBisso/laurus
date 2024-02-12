@@ -3,7 +3,6 @@ import video from "../../assets/videos/bkg.webm";
 import heroImg from "../../assets/imgs/farms/towers.webp";
 
 import CardsStack from "../../components/cardsStack/CardsStack";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
 
 export default function Home() {
 	return (
@@ -66,7 +65,6 @@ export default function Home() {
 						they live or how much they make.
 					</p>
 				</article>
-				<SocialMedia props={{ styles }} />
 			</section>
 		</div>
 	);

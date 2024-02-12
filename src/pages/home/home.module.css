@@ -17,10 +17,12 @@ section {
 }
 
 .hero_img {
-	width: 100dvw;
+	width: calc(
+		100dvw - var(--sz-0)
+	); /* var(--sz-0) --> to give them a little padding yet less than main wrapper's one */
 	height: calc(
 		100dvh - calc(10dvh + 14.44dvw)
-	); /** 10dvh -> header's height | 14.44dvw -> first_header's font-sz */
+	); /* 10dvh -> header's height | 14.44dvw -> first_header's font-sz */
 	object-fit: cover;
 	border-bottom-right-radius: var(--radius);
 	border-bottom-left-radius: var(--radius);
@@ -36,7 +38,6 @@ section {
 .img_headers {
 	line-height: 1;
 	font-weight: 800;
-	font-size: var(--sz-4);
 	letter-spacing: var(--spacing);
 	font-family: var(--mark-pro-heavy);
 	background: var(--green-gradient);
@@ -66,7 +67,7 @@ section {
 	font-weight: 800;
 	font-size: var(--sz-4);
 	letter-spacing: var(--spacing);
-	font-family: var(--mark-pro-bold);
+	font-family: var(--mark-pro-heavy);
 	background: var(--primary-gradient);
 	background-clip: text;
 	color: transparent;
@@ -93,7 +94,7 @@ section {
 	margin-bottom: var(--sz-xs);
 	font-size: var(--sz-2);
 	letter-spacing: var(--spacing);
-	font-family: var(--mark-pro-medium);
+	font-family: var(--mark-pro-bold);
 	background: var(--green-gradient);
 	background-clip: text;
 	color: transparent;
@@ -103,6 +104,7 @@ section {
 	line-height: 1.5;
 	font-weight: 400;
 	font-size: var(--sz-0);
+	font-family: var(--mark-pro-medium);
 }
 
 .video_section {
@@ -112,7 +114,7 @@ section {
 }
 
 .video {
-	width: 100dvw;
+	width: calc(100dvw - var(--sz-0));
 	height: calc(
 		100dvh - calc(10dvh + var(--sz-2))
 	); /* 10dvh -> header's height | var(--sz-0) -> video_section's gap + extra 2pts (so u can align it perfectly in the screen) */
@@ -127,40 +129,10 @@ section {
 	padding: var(--sz-2);
 }
 
-.link_wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-inline: auto;
-	margin-top: var(--sz-s);
-	width: 62.5%;
-}
-
-.link {
-	text-decoration: none;
-	color: var(--font-color);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.link_icon {
-	font-size: var(--sz-2);
-	opacity: 0.8;
-}
-
-.link_icon:hover {
-	animation: var(--animation-scale-up) forwards;
-	opacity: 1;
-}
-
 @media screen and (width >= 520px) {
 	.hero_img {
 		height: calc(100dvh - 8dvw);
-		width: calc(
-			100dvw - var(--sz-0) - min(15dvw, 120px)
-		); /* var(--sz-0) --> to give them a little padding yet less than main wrapper's one */
+		width: calc(100dvw - var(--sz-2) - min(15dvw, 120px));
 	}
 
 	#first_header {
@@ -176,7 +148,7 @@ section {
 	}
 	.video {
 		height: calc(100dvh - var(--sz-2));
-		width: calc(100dvw - var(--sz-0) - min(15dvw, 120px));
+		width: calc(100dvw - var(--sz-2) - min(15dvw, 120px));
 	}
 }
 
@@ -185,17 +157,32 @@ section {
 		grid-template-rows: auto;
 		grid-template-columns: repeat(2, auto);
 	}
-
-	.hero_img {
-		width: 100%;
-	}
-
-	.video {
-		width: 100%;
-	}
 }
 
 @media screen and (width >= 1368px) {
+	.hero_img {
+		height: calc(100dvh - var(--sz-5));
+	}
+
+	.img_headers_wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#first_header {
+		font-size: var(--sz-5);
+	}
+
+	#second_header {
+		font-size: var(--sz-5);
+	}
+
+	#third_header {
+		font-size: var(--sz-5);
+	}
+
 	.cards_wrapper {
 		grid-template-columns: repeat(3, auto);
 	}
