@@ -153,6 +153,9 @@ section {
 }
 
 @media screen and (width >= 875px) {
+	.card_text {
+		font-family: var(--mark-pro-regular);
+	}
 	.cards_wrapper {
 		grid-template-rows: auto;
 		grid-template-columns: repeat(2, auto);
