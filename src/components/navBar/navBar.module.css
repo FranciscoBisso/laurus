@@ -19,6 +19,10 @@
 }
 
 @media screen and (width >= 520px) {
+	.nav_bar {
+		height: unset;
+	}
+
 	.logo {
 		height: unset;
 		width: 100%;
