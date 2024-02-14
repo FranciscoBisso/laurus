@@ -18,12 +18,12 @@ section {
 
 .hero_video {
 	width: 100dvw;
-	height: calc(100dvh - var(--sz-2));
+	height: calc(100dvh - 14.44dvw - 11.3dvw - 10.92dvw);
 	object-fit: cover;
 	border-bottom-left-radius: var(--radius);
 	border-bottom-right-radius: var(--radius);
 	box-shadow: var(--shadow);
-	background-color: var(--nyanza);
+	background-size: contain;
 }
 
 .headers_wrapper {
@@ -111,6 +111,10 @@ section {
 }
 
 @media screen and (width >= 520px) {
+	.hero_video {
+		height: calc(100dvh - 8dvw);
+	}
+
 	#first_header {
 		font-size: 8dvw;
 	}
@@ -136,7 +140,11 @@ section {
 }
 
 @media screen and (width >= 1368px) {
-	/* .headers_wrapper {
+	.hero_video {
+		height: calc(100dvh - var(--sz-6));
+	}
+
+	.headers_wrapper {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -153,7 +161,7 @@ section {
 
 	#third_header {
 		font-size: var(--sz-6);
-	} */
+	}
 
 	.cards_wrapper {
 		grid-template-columns: repeat(3, auto);

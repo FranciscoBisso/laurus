@@ -1,6 +1,7 @@
 import styles from "./home.module.css";
-import video from "../../assets/videos/bkg.webm";
-import poster from "../../assets/videos/first_frame.webp";
+import video_desktop from "../../assets/videos/bkg.webm";
+import video_tablet from "../../assets/videos/bkg_720.webm";
+import poster from "../../assets/videos/videoframe.webp";
 import CardsStack from "../../components/cardsStack/CardsStack";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
 		<div className={styles.wrapper}>
 			{/* HERO SECTION */}
 			<section className={styles.hero_section}>
-				<video
+				{/* <video
 					loading="lazy"
 					className={styles.hero_video}
 					poster={poster}
@@ -17,11 +18,21 @@ export default function Home() {
 					loop
 					autoPlay
 					muted
-				/>
-			</section>
-
-			{/* HEADERS SECTION */}
-			<section className={styles.headers_section}>
+				/> */}
+				<video
+					loading="lazy"
+					className={styles.hero_video}
+					poster={poster}
+					playsInline
+					loop
+					autoPlay
+					muted>
+					<source src={video_desktop} />
+					<source
+						src={video_tablet}
+						media="(max-width: 1368px)"
+					/>
+				</video>
 				<div className={styles.headers_wrapper}>
 					<h2
 						className={styles.headers}
