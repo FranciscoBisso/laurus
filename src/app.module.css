@@ -1,17 +1,3 @@
-.header {
-	width: 100%;
-	min-height: 10dvh;
-	height: 10dvh;
-	z-index: 10;
-	bottom: 0;
-	position: fixed;
-	background-color: var(--bg-secondary);
-	border: 1px solid var(--bg-secondary);
-	border-top-right-radius: var(--radius);
-	border-top-left-radius: var(--radius);
-	box-shadow: var(--shadow);
-}
-
 .main {
 	min-height: 100dvh;
 	background-color: var(--bg-primary);
@@ -21,7 +7,6 @@
 .footer {
 	opacity: 0.65;
 	min-height: 10dvh;
-	margin-bottom: 10dvh;
 	padding: var(--radius);
 	color: var(--font-color);
 	border-top: 1px solid var(--bg-secondary);
@@ -66,27 +51,4 @@
 	font-weight: 400;
 	text-align: center;
 	font-size: var(--sz-s);
-}
-
-@media screen and (width >= 520px) {
-	.header {
-		width: min(15dvw, 120px);
-		min-height: 100dvh;
-		height: 100dvh;
-		z-index: 10;
-		bottom: unset;
-		left: 0;
-		border-radius: unset;
-	}
-
-	.main {
-		min-height: 100dvh;
-		margin-left: min(15dvw, 120px);
-	}
-
-	.footer {
-		min-height: 10dvh;
-		margin-left: min(15dvw, 120px);
-		margin-bottom: 0dvh;
-	}
 }

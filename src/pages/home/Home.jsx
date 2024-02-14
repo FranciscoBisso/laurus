@@ -1,7 +1,6 @@
 import styles from "./home.module.css";
 import video from "../../assets/videos/bkg.webm";
-import heroImg from "../../assets/imgs/farms/towers.webp";
-
+import poster from "../../assets/videos/first_frame.webp";
 import CardsStack from "../../components/cardsStack/CardsStack";
 
 export default function Home() {
@@ -9,25 +8,33 @@ export default function Home() {
 		<div className={styles.wrapper}>
 			{/* HERO SECTION */}
 			<section className={styles.hero_section}>
-				<img
-					className={styles.hero_img}
-					src={heroImg}
-					alt="hero image"
+				<video
 					loading="lazy"
+					className={styles.hero_video}
+					poster={poster}
+					src={video}
+					playsInline
+					loop
+					autoPlay
+					muted
 				/>
-				<div className={styles.img_headers_wrapper}>
+			</section>
+
+			{/* HEADERS SECTION */}
+			<section className={styles.headers_section}>
+				<div className={styles.headers_wrapper}>
 					<h2
-						className={styles.img_headers}
+						className={styles.headers}
 						id={styles.first_header}>
 						LANDLESS
 					</h2>
 					<h2
-						className={styles.img_headers}
+						className={styles.headers}
 						id={styles.second_header}>
 						SEASONLESS
 					</h2>
 					<h2
-						className={styles.img_headers}
+						className={styles.headers}
 						id={styles.third_header}>
 						AGRICULTURE
 					</h2>
@@ -38,20 +45,6 @@ export default function Home() {
 			<section className={styles.purpose_section}>
 				<h1 className={styles.subtitle}>WE DELIVER FUTURE</h1>
 				<CardsStack props={{ styles }} />
-			</section>
-
-			{/* VIDEO SECTION */}
-			<section className={styles.video_section}>
-				<h3 className={styles.subtitle}>OUR FARMS</h3>
-				<video
-					loading="lazy"
-					className={styles.video}
-					src={video}
-					playsInline
-					loop
-					autoPlay
-					muted
-				/>
 			</section>
 
 			{/* CONTACT US SECTION */}

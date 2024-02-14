@@ -16,26 +16,23 @@ section {
 	align-items: center;
 }
 
-.hero_img {
-	width: calc(
-		100dvw - var(--sz-0)
-	); /* var(--sz-0) --> to give them a little padding yet less than main wrapper's one */
-	height: calc(
-		100dvh - calc(10dvh + 14.44dvw)
-	); /* 10dvh -> header's height | 14.44dvw -> first_header's font-sz */
+.hero_video {
+	width: 100dvw;
+	height: calc(100dvh - var(--sz-2));
 	object-fit: cover;
-	border-bottom-right-radius: var(--radius);
 	border-bottom-left-radius: var(--radius);
+	border-bottom-right-radius: var(--radius);
 	box-shadow: var(--shadow);
+	background-color: var(--nyanza);
 }
 
-.img_headers_wrapper {
+.headers_wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.img_headers {
+.headers {
 	line-height: 1;
 	font-weight: 800;
 	letter-spacing: var(--spacing);
@@ -107,22 +104,6 @@ section {
 	font-family: var(--mark-pro-medium);
 }
 
-.video_section {
-	position: relative;
-	justify-content: flex-start;
-	gap: var(--sz-0);
-}
-
-.video {
-	width: calc(100dvw - var(--sz-0));
-	height: calc(
-		100dvh - calc(10dvh + var(--sz-2))
-	); /* 10dvh -> header's height | var(--sz-0) -> video_section's gap + extra 2pts (so u can align it perfectly in the screen) */
-	object-fit: cover;
-	border-radius: var(--radius);
-	box-shadow: var(--shadow);
-}
-
 .contact_card {
 	width: min(100%, 800px);
 	border-radius: var(--radius);
@@ -130,11 +111,6 @@ section {
 }
 
 @media screen and (width >= 520px) {
-	.hero_img {
-		height: calc(100dvh - 8dvw);
-		width: calc(100dvw - var(--sz-2) - min(15dvw, 120px));
-	}
-
 	#first_header {
 		font-size: 8dvw;
 	}
@@ -146,9 +122,10 @@ section {
 	#third_header {
 		font-size: 6dvw;
 	}
-	.video {
-		height: calc(100dvh - var(--sz-2));
-		width: calc(100dvw - var(--sz-2) - min(15dvw, 120px));
+
+	.cards_wrapper {
+		grid-template-rows: auto;
+		grid-template-columns: repeat(2, auto);
 	}
 }
 
@@ -156,18 +133,10 @@ section {
 	.card_text {
 		font-family: var(--mark-pro-regular);
 	}
-	.cards_wrapper {
-		grid-template-rows: auto;
-		grid-template-columns: repeat(2, auto);
-	}
 }
 
 @media screen and (width >= 1368px) {
-	.hero_img {
-		height: calc(100dvh - var(--sz-5));
-	}
-
-	.img_headers_wrapper {
+	/* .headers_wrapper {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -175,16 +144,16 @@ section {
 	}
 
 	#first_header {
-		font-size: var(--sz-5);
+		font-size: var(--sz-6);
 	}
 
 	#second_header {
-		font-size: var(--sz-5);
+		font-size: var(--sz-6);
 	}
 
 	#third_header {
-		font-size: var(--sz-5);
-	}
+		font-size: var(--sz-6);
+	} */
 
 	.cards_wrapper {
 		grid-template-columns: repeat(3, auto);

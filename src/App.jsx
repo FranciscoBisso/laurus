@@ -1,31 +1,31 @@
-import { lazy } from "react";
-import {
-	createBrowserRouter,
-	createRoutesFromElements,
-	RouterProvider,
-	Route,
-} from "react-router-dom";
+import styles from "./app.module.css";
+import Helmet from "./components/helmet/Helmet";
+import SocialMedia from "./components/socialMedia/SocialMedia";
 
-import RootLayout from "./layouts/RootLayout";
-const Home = lazy(() => import("./pages/home/Home"));
-
-const router = createBrowserRouter(
-	createRoutesFromElements(
-		<Route
-			path="/"
-			element={<RootLayout />}>
-			<Route
-				index
-				element={<Home />}
-			/>
-		</Route>
-	)
-);
+import Home from "./pages/home/Home";
 
 function App() {
 	return (
 		<>
-			<RouterProvider router={router} />
+			<Helmet
+				props={{
+					title: "Laurus",
+					description:
+						"At Laurus, our mission is to reinvent urban farming and provide a sustainable way of offering hyper-local, fresh and affordable food to people in cities.",
+				}}
+			/>
+
+			<main className={styles.main}>
+				<Home />
+			</main>
+			<footer className={styles.footer}>
+				<div className={styles.wrapper}>
+					<SocialMedia props={{ styles }} />
+					<span className={styles.address}>
+						San Martín, 750, Buenos Aires, CABA 1004
+					</span>
+				</div>
+			</footer>
 		</>
 	);
 }
