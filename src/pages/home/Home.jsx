@@ -84,7 +84,7 @@ export default function Home() {
 						className={styles.calendly_btn}
 						url="https://calendly.com/nicobisso/intro-call"
 						rootElement={document.getElementById("root")}
-						text="Click here to schedule!"
+						text="Schedule a call!"
 					/>
 					{/* <InlineWidget
 						// className={styles.calendly_btn}
