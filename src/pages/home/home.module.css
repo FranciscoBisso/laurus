@@ -141,7 +141,7 @@ section {
 
 @media screen and (width >= 1368px) {
 	.hero_video {
-		height: calc(100dvh - var(--sz-6));
+		height: calc(100dvh - var(--sz-5));
 	}
 
 	.headers_wrapper {
@@ -152,15 +152,15 @@ section {
 	}
 
 	#first_header {
-		font-size: var(--sz-6);
+		font-size: var(--sz-5);
 	}
 
 	#second_header {
-		font-size: var(--sz-6);
+		font-size: var(--sz-5);
 	}
 
 	#third_header {
-		font-size: var(--sz-6);
+		font-size: var(--sz-5);
 	}
 
 	.cards_wrapper {

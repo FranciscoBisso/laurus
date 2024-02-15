@@ -1,4 +1,6 @@
-@import "open-props/style";
+/* @import "open-props/style"; */
+@import "open-props/easings.min.css";
+@import "open-props/animations.min.css";
 
 @font-face {
 	font-family: "Mark Pro Regular";

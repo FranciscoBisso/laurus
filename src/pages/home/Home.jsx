@@ -1,8 +1,8 @@
 import styles from "./home.module.css";
-import video_desktop from "../../assets/videos/bkg.webm";
-import video_tablet from "../../assets/videos/bkg_720.webm";
-import video_mobile from "../../assets/videos/bkg_480.webm";
 import poster from "../../assets/videos/videoframe.webp";
+import video_mobile from "../../assets/videos/bkg_480.webm";
+import video_tablet from "../../assets/videos/bkg_720.webm";
+import video_desktop from "../../assets/videos/bkg_1080.webm";
 import CardsStack from "../../components/cardsStack/CardsStack";
 
 export default function Home() {
