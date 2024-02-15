@@ -4,6 +4,7 @@ import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
 import CardsStack from "../../components/cardsStack/CardsStack";
+import { InlineWidget, PopupButton } from "react-calendly";
 
 export default function Home() {
 	return (
@@ -78,16 +79,18 @@ export default function Home() {
 						fresh food is accessible to all, regardless of where
 						they live or how much they make.
 					</p>
+
+					<PopupButton
+						className={styles.calendly_btn}
+						url="https://calendly.com/nicobisso/intro-call"
+						rootElement={document.getElementById("root")}
+						text="Click here to schedule!"
+					/>
+					{/* <InlineWidget
+						// className={styles.calendly_btn}
+						url="https://calendly.com/nicobisso/intro-call"
+					/> */}
 				</article>
-				<div
-					className="calendly-inline-widget"
-					data-url="https://calendly.com/nicobisso/intro-call"
-					style={{
-						width: "100%",
-						minHeight: "100dvh",
-						backgroundColor: "var(--bg-secondary)",
-						color: "var(--font-color)",
-					}}></div>
 			</section>
 		</div>
 	);

@@ -110,6 +110,23 @@ section {
 	padding: var(--sz-2);
 }
 
+.calendly_btn {
+	line-height: 1;
+	font-weight: 400;
+	font-size: var(--sz-0);
+	font-family: var(--mark-pro-medium);
+	background: var(--green-gradient);
+	margin-top: var(--sz-xs);
+	background-clip: text;
+	color: transparent;
+	border: none;
+	width: 100%;
+}
+
+.calendly_btn:hover {
+	animation: var(--animation-scale-up) forwards;
+}
+
 @media screen and (width >= 520px) {
 	.hero_video {
 		height: calc(100dvh - 8dvw);
