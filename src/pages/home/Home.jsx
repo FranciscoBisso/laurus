@@ -4,23 +4,13 @@ import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
 import CardsStack from "../../components/cardsStack/CardsStack";
-import { InlineWidget, PopupButton } from "react-calendly";
+import { PopupButton } from "react-calendly";
 
 export default function Home() {
 	return (
 		<div className={styles.wrapper}>
 			{/* HERO SECTION */}
 			<section className={styles.hero_section}>
-				{/* <video
-					loading="lazy"
-					className={styles.hero_video}
-					poster={poster}
-					src={video}
-					playsInline
-					loop
-					autoPlay
-					muted
-				/> */}
 				<video
 					loading="lazy"
 					className={styles.hero_video}
@@ -86,10 +76,6 @@ export default function Home() {
 						rootElement={document.getElementById("root")}
 						text="Schedule a call!"
 					/>
-					{/* <InlineWidget
-						// className={styles.calendly_btn}
-						url="https://calendly.com/nicobisso/intro-call"
-					/> */}
 				</article>
 			</section>
 		</div>
