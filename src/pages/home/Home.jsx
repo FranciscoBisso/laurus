@@ -79,6 +79,15 @@ export default function Home() {
 						they live or how much they make.
 					</p>
 				</article>
+				<div
+					className="calendly-inline-widget"
+					data-url="https://calendly.com/nicobisso/intro-call"
+					style={{
+						width: "100%",
+						minHeight: "100dvh",
+						backgroundColor: "var(--bg-secondary)",
+						color: "var(--font-color)",
+					}}></div>
 			</section>
 		</div>
 	);
