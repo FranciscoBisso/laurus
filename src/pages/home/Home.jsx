@@ -1,6 +1,7 @@
 import styles from "./home.module.css";
 import video_desktop from "../../assets/videos/bkg.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
+import video_mobile from "../../assets/videos/bkg_480.webm";
 import poster from "../../assets/videos/videoframe.webp";
 import CardsStack from "../../components/cardsStack/CardsStack";
 
@@ -27,10 +28,19 @@ export default function Home() {
 					loop
 					autoPlay
 					muted>
-					<source src={video_desktop} />
+					<source
+						src={video_mobile}
+						media="(max-width: 520px)"
+						type="video/webm"
+					/>
 					<source
 						src={video_tablet}
 						media="(max-width: 1368px)"
+						type="video/webm"
+					/>
+					<source
+						src={video_desktop}
+						type="video/webm"
 					/>
 				</video>
 				<div className={styles.headers_wrapper}>
