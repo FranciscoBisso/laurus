@@ -6,14 +6,31 @@ import video_desktop from "../../assets/videos/bkg_1080.webm";
 import CardsStack from "../../components/cardsStack/CardsStack";
 import { PopupButton } from "react-calendly";
 
+import hero_logo_mobile from "../../assets/imgs/hero/hero_logo_mobile.webp";
+import hero_logo_tablets from "../../assets/imgs/hero/hero_logo_tablets.webp";
+import hero_logo_big_tablets from "../../assets/imgs/hero/hero_logo_big_tablets.webp";
+import hero_logo_desktop from "../../assets/imgs/hero/hero_logo_desktop.webp";
+
 export default function Home() {
 	return (
 		<div className={styles.wrapper}>
 			{/* HERO SECTION */}
 			<section className={styles.hero_section}>
+				<div className={styles.hero_img_wrapper}>
+					<img
+						loading="lazy"
+						className={styles.hero_img}
+						src={hero_logo_desktop}
+						srcSet={`${hero_logo_mobile} 450w, ${hero_logo_tablets} 768w, ${hero_logo_big_tablets} 1366w, ${hero_logo_desktop} 1920w`}
+					/>
+				</div>
+			</section>
+
+			{/* VIDEO SECTION */}
+			<section className={styles.video_section}>
 				<video
 					loading="lazy"
-					className={styles.hero_video}
+					className={styles.video}
 					poster={poster}
 					playsInline
 					loop
