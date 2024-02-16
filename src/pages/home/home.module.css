@@ -1,13 +1,3 @@
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-inline: var(--radius);
-	padding-bottom: var(--sz-8);
-	gap: var(--sz-8);
-}
-
 section {
 	width: 100%;
 	display: flex;
@@ -16,8 +6,7 @@ section {
 	align-items: center;
 }
 
-.hero_img_wrapper {
-	width: 100dvw;
+.hero_section {
 	height: 100dvh;
 	display: flex;
 	flex-direction: column;
@@ -32,57 +21,21 @@ section {
 	object-fit: cover;
 }
 
+.video_section {
+	height: 100dvh;
+}
+
 .video {
-	width: 100dvw;
-	height: calc(100dvh - 14.44dvw - 11.3dvw - 10.92dvw);
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	box-shadow: var(--shadow);
 	background-size: contain;
 }
 
-.headers_wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.headers {
-	line-height: 1;
-	font-weight: 800;
-	letter-spacing: var(--spacing);
-	font-family: var(--mark-pro-heavy);
-	background: var(--green-gradient);
-	background-clip: text;
-	color: transparent;
-	text-align: center;
-}
-
-#first_header {
-	font-size: 14.44dvw;
-}
-
-#second_header {
-	font-size: 11.3dvw;
-}
-
-#third_header {
-	font-size: 10.92dvw;
-}
-
 .purpose_section {
+	padding: var(--radius);
 	gap: var(--sz-2);
-}
-
-.subtitle {
-	line-height: 1;
-	font-weight: 800;
-	font-size: var(--sz-4);
-	letter-spacing: var(--spacing);
-	font-family: var(--mark-pro-heavy);
-	background: var(--primary-gradient);
-	background-clip: text;
-	color: transparent;
-	text-align: center;
 }
 
 .cards_wrapper {
@@ -92,7 +45,7 @@ section {
 }
 
 .card {
-	background-color: var(--bg-tertiary);
+	background-color: var(--bg-secondary);
 	border-radius: var(--radius);
 	box-shadow: var(--shadow);
 	padding: calc(var(--sz-0) * 1.5);
@@ -116,6 +69,10 @@ section {
 	font-weight: 400;
 	font-size: var(--sz-0);
 	font-family: var(--mark-pro-medium);
+}
+
+.contact_section {
+	padding: var(--radius);
 }
 
 .contact_card {
@@ -143,19 +100,7 @@ section {
 
 @media screen and (width >= 520px) {
 	.video {
-		height: calc(100dvh - 8dvw);
-	}
-
-	#first_header {
-		font-size: 8dvw;
-	}
-
-	#second_header {
-		font-size: 6.2dvw;
-	}
-
-	#third_header {
-		font-size: 6dvw;
+		height: 100%;
 	}
 
 	.cards_wrapper {
@@ -173,29 +118,6 @@ section {
 @media screen and (width >= 1368px) {
 	.video {
 		height: calc(100dvh - var(--sz-5));
-	}
-
-	.headers_wrapper {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	#first_header {
-		font-size: var(--sz-5);
-	}
-
-	#second_header {
-		font-size: var(--sz-5);
-	}
-
-	#third_header {
-		font-size: var(--sz-5);
-	}
-
-	.cards_wrapper {
-		grid-template-columns: repeat(3, auto);
 	}
 
 	.contact_card {

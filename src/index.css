@@ -120,14 +120,14 @@ span {
 
 	/* SHADOWS */
 	--light-shadow: 0 0 10px rgba(22, 22, 22, 0.2); /* <-- eerieBlack */
-	--dark-shadow: 0 0 10px rgba(228, 228, 228, 0.4); /* <-- platinium */
+	--dark-shadow: 0 0 10px rgba(208, 208, 208, 0.4); /* <-- timberwolf */
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		--bg-primary: var(--white);
-		--bg-secondary: var(--seasalt);
-		--bg-tertiary: var(--white);
+		--bg-secondary: var(--white);
+		--bg-tertiary: var(--seasalt);
 		--font-color: var(--black);
 		--primary-gradient: var(--black-gradient);
 		--shadow: var(--light-shadow);
@@ -137,8 +137,8 @@ span {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg-primary: var(--black);
-		--bg-secondary: var(--black);
-		--bg-tertiary: var(--eerie-black);
+		--bg-secondary: var(--eerie-black);
+		--bg-tertiary: var(--jet-black);
 		--font-color: var(--white);
 		--primary-gradient: var(--white-gradient);
 		--shadow: var(--dark-shadow);

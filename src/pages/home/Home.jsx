@@ -13,7 +13,7 @@ import hero_logo_desktop from "../../assets/imgs/hero/hero_logo_desktop.webp";
 
 export default function Home() {
 	return (
-		<div className={styles.wrapper}>
+		<>
 			{/* HERO SECTION */}
 			<section className={styles.hero_section}>
 				<div className={styles.hero_img_wrapper}>
@@ -51,28 +51,10 @@ export default function Home() {
 						type="video/webm"
 					/>
 				</video>
-				<div className={styles.headers_wrapper}>
-					<h2
-						className={styles.headers}
-						id={styles.first_header}>
-						LANDLESS
-					</h2>
-					<h2
-						className={styles.headers}
-						id={styles.second_header}>
-						SEASONLESS
-					</h2>
-					<h2
-						className={styles.headers}
-						id={styles.third_header}>
-						AGRICULTURE
-					</h2>
-				</div>
 			</section>
 
 			{/* COMPANY'S PURPOSE SECTION */}
 			<section className={styles.purpose_section}>
-				<h1 className={styles.subtitle}>WE DELIVER FUTURE</h1>
 				<CardsStack props={{ styles }} />
 			</section>
 
@@ -95,6 +77,6 @@ export default function Home() {
 					/>
 				</article>
 			</section>
-		</div>
+		</>
 	);
 }
