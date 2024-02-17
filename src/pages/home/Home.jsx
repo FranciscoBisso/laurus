@@ -1,11 +1,11 @@
+import { PopupButton } from "react-calendly";
 import styles from "./home.module.css";
 import poster from "../../assets/videos/videoframe.webp";
+// Videos
 import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
-import CardsStack from "../../components/cardsStack/CardsStack";
-import { PopupButton } from "react-calendly";
-
+// Images
 import hero_logo_mobile from "../../assets/imgs/hero/hero_logo_mobile.webp";
 import hero_logo_tablets from "../../assets/imgs/hero/hero_logo_tablets.webp";
 import hero_logo_big_tablets from "../../assets/imgs/hero/hero_logo_big_tablets.webp";
@@ -15,6 +15,7 @@ export default function Home() {
 	return (
 		<>
 			{/* HERO SECTION */}
+
 			<section className={styles.hero_section}>
 				<div className={styles.hero_img_wrapper}>
 					<img
@@ -55,13 +56,44 @@ export default function Home() {
 
 			{/* COMPANY'S PURPOSE SECTION */}
 			<section className={styles.purpose_section}>
-				<CardsStack props={{ styles }} />
+				<div className={styles.cards_wrapper}>
+					<article className={styles.card}>
+						<h2 className={styles.card_header}>What we do</h2>
+						<p className={styles.card_text}>
+							Laurus reimagines urban agriculture and provides an
+							efficient and sustainable way to deliver
+							hyper-local, fresh and affordable food to people in
+							cities.
+						</p>
+					</article>
+
+					<article className={styles.card}>
+						<h2 className={styles.card_header}>How we do it</h2>
+						<p className={styles.card_text}>
+							With our automated inflatable farms, designed to
+							utilize idle spaces in cities, such as rooftops and
+							parking lots, we enable cultivation regardless of
+							the season and weather.
+						</p>
+					</article>
+
+					<article className={styles.card}>
+						<h2 className={styles.card_header}>What we achieve</h2>
+						<p className={styles.card_text}>
+							Fresh food for everyone. Thanks to our technology,
+							we can provide high-quality food at affordable
+							prices, strengthening food systems and delivering
+							nutritious food to everyone, regardless of where
+							they live or how much they earn.
+						</p>
+					</article>
+				</div>
 			</section>
 
 			{/* CONTACT US SECTION */}
 			<section className={styles.contact_section}>
 				<article className={styles.contact_card}>
-					<h4 className={styles.card_header}>{"Let's chat"}</h4>
+					<h1 className={styles.card_header}>{"Let's chat"}</h1>
 					<p className={styles.card_text}>
 						Join us today and help us change the way we think about
 						agriculture. Together, we can create a future where

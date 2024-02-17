@@ -34,14 +34,10 @@ section {
 }
 
 .purpose_section {
-	padding: var(--radius);
-	gap: var(--sz-2);
 }
 
 .cards_wrapper {
-	display: grid;
-	grid-template-rows: repeat(3, auto);
-	gap: var(--radius);
+	padding: var(--radius);
 }
 
 .card {
