@@ -1,6 +1,7 @@
 /* @import "open-props/style"; */
 @import "open-props/easings.min.css";
 @import "open-props/animations.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @font-face {
 	font-family: "Mark Pro Regular";
@@ -28,7 +29,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: var(--font-sans);
+	font-family: var(--roboto);
 	font-family: var(--mark-pro-regular);
 }
 
@@ -66,81 +67,42 @@ span {
 	--sz-7: clamp(3.5832rem, 2.7563rem + 4.1344vi, 5.9605rem);
 	--sz-8: clamp(4.2998rem, 3.2039rem + 5.4796vi, 7.4506rem);
 
-	--spacing: 0.1rem;
-
 	/* FONT FAMILIES */
-	--font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-		Noto Sans, sans-serif;
+
 	--mark-pro-regular: "Mark Pro Regular", sans-serif;
 	--mark-pro-medium: "Mark Pro Medium", sans-serif;
 	--mark-pro-bold: "Mark Pro Bold", sans-serif;
 	--mark-pro-heavy: "Mark Pro Heavy", sans-serif;
+	--roboto: "Roboto", sans-serif;
 
 	/* COLOR's PALETTE */
 	--white: rgb(255, 255, 255);
-	--seasalt: rgb(248, 248, 248);
-	--platinium: rgb(228, 228, 228);
-	--timberwolf: rgb(208, 208, 208);
-	--nyanza: rgb(224, 240, 208);
-	--tea-green: rgb(192, 225, 161);
-	--yellow-green: rgb(128, 196, 66);
-	--forest-green: rgb(80, 150, 66);
-	--dartmouth-green: rgb(12, 104, 54);
-	--battleship-gray: rgb(132, 132, 132);
-	--onyx: rgb(66, 66, 66);
-	--jet-black: rgb(44, 44, 44);
-	--eerie-black: rgb(22, 22, 22);
+	--warm-gray: rgb(228, 225, 220);
+	--cool-gray-1: rgb(136, 138, 141);
+	--cool-gray-2: rgba(136, 138, 141, 0.25);
+	--cool-gray-3: rgba(136, 138, 141, 0.1);
 	--black: rgb(0, 0, 0);
-
-	/* GRADIENTS */
-	--white-gradient: linear-gradient(
-		90deg,
-		var(--seasalt),
-		var(--platinium),
-		var(--timberwolf)
-	);
-
-	--black-gradient: linear-gradient(
-		90deg,
-		var(--battleship-gray),
-		var(--onyx),
-		var(--jet-black),
-		var(--eerie-black)
-	);
-
-	--green-gradient: linear-gradient(
-		90deg,
-		var(--tea-green),
-		var(--yellow-green),
-		var(--forest-green)
-	);
+	--pantone-368: rgb(128, 195, 66);
+	--pantone-362: rgb(80, 150, 66);
+	--pantone-356: rgb(10, 104, 54);
 
 	/* RADIUS */
 	--radius: var(--sz-4);
-
-	/* SHADOWS */
-	--light-shadow: 0 0 10px rgba(22, 22, 22, 0.2); /* <-- eerieBlack */
-	--dark-shadow: 0 0 10px rgba(208, 208, 208, 0.4); /* <-- timberwolf */
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		--bg-primary: var(--white);
-		--bg-secondary: var(--white);
+		--bg-secondary: var(--warm-gray);
 		--bg-tertiary: var(--seasalt);
 		--font-color: var(--black);
-		--primary-gradient: var(--black-gradient);
-		--shadow: var(--light-shadow);
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg-primary: var(--black);
-		--bg-secondary: var(--eerie-black);
-		--bg-tertiary: var(--jet-black);
+		--bg-secondary: var(--cool-gray-1);
 		--font-color: var(--white);
-		--primary-gradient: var(--white-gradient);
-		--shadow: var(--dark-shadow);
 	}
 }
