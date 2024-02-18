@@ -77,7 +77,7 @@ section {
 
 .video_section {
 	height: 100dvh;
-	padding: var(--sz-xs);
+	padding: var(--sz-xs) 0;
 }
 
 .video {
@@ -85,6 +85,7 @@ section {
 	height: 100%;
 	object-fit: cover;
 	background-size: contain;
+	border-radius: var(--radius);
 }
 
 .contact_section {
