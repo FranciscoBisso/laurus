@@ -8,12 +8,13 @@ section {
 
 .hero_section {
 	height: 100dvh;
-	display: flex;
-	flex-direction: column;
 	justify-content: flex-end;
-	padding-bottom: var(--radius);
-	padding-right: var(--radius);
 	background-color: var(--black);
+}
+
+.hero_img_wrapper {
+	padding-right: var(--radius);
+	padding-bottom: var(--radius);
 }
 
 .hero_img {
@@ -21,50 +22,56 @@ section {
 	object-fit: cover;
 }
 
+.presentation_section {
+}
+
+.slide {
+	width: 100%;
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: var(--radius);
+	gap: var(--sz-0);
+}
+
+.one_arch_img {
+	width: 20%;
+}
+
+.two_archs_img {
+	width: 40%;
+}
+
+.three_archs_img {
+	width: 60%;
+}
+
+.full_archs_img {
+	width: 100%;
+}
+
+.paragraph {
+	color: var(--font-color);
+	font-size: var(--sz-3);
+	text-align: center;
+}
+
 .video_section {
 	height: 100dvh;
+	padding: var(--sz-xs);
 }
 
 .video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	box-shadow: var(--shadow);
 	background-size: contain;
+	border-radius: var(--radius);
 }
 
 .purpose_section {
-}
-
-.cards_wrapper {
-	padding: var(--radius);
-}
-
-.card {
-	background-color: var(--bg-secondary);
-	border-radius: var(--radius);
-	box-shadow: var(--shadow);
-	padding: calc(var(--sz-0) * 1.5);
-	height: 100%;
-}
-
-.card_header {
-	line-height: 1;
-	font-weight: 700;
-	margin-bottom: var(--sz-xs);
-	font-size: var(--sz-2);
-	letter-spacing: var(--spacing);
-	font-family: var(--mark-pro-bold);
-	background: var(--green-gradient);
-	background-clip: text;
-	color: transparent;
-}
-
-.card_text {
-	line-height: 1.5;
-	font-weight: 400;
-	font-size: var(--sz-0);
-	font-family: var(--mark-pro-medium);
 }
 
 .contact_section {
@@ -92,31 +99,4 @@ section {
 .calendly_btn:hover {
 	background-color: var(--bg-tertiary);
 	opacity: 1;
-}
-
-@media screen and (width >= 520px) {
-	.video {
-		height: 100%;
-	}
-
-	.cards_wrapper {
-		grid-template-rows: auto;
-		grid-template-columns: repeat(2, auto);
-	}
-}
-
-@media screen and (width >= 875px) {
-	.card_text {
-		font-family: var(--mark-pro-regular);
-	}
-}
-
-@media screen and (width >= 1368px) {
-	.video {
-		height: calc(100dvh - var(--sz-5));
-	}
-
-	.contact_card {
-		width: min(100%, 1100px);
-	}
 }

@@ -1,6 +1,6 @@
 import { PopupButton } from "react-calendly";
-import styles from "./home.module.css";
 import poster from "../../assets/videos/videoframe.webp";
+import styles from "./home.module.css";
 // Videos
 import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
@@ -10,6 +10,10 @@ import hero_logo_mobile from "../../assets/imgs/hero/hero_logo_mobile.webp";
 import hero_logo_tablets from "../../assets/imgs/hero/hero_logo_tablets.webp";
 import hero_logo_big_tablets from "../../assets/imgs/hero/hero_logo_big_tablets.webp";
 import hero_logo_desktop from "../../assets/imgs/hero/hero_logo_desktop.webp";
+import one_arch from "../../assets/imgs/brand/bgless_one_arch.webp";
+import two_archs from "../../assets/imgs/brand/bgless_two_archs.webp";
+import three_archs from "../../assets/imgs/brand/bgless_three_archs.webp";
+import full_archs from "../../assets/imgs/brand/bgless_full_archs.webp";
 
 export default function Home() {
 	return (
@@ -25,6 +29,55 @@ export default function Home() {
 						srcSet={`${hero_logo_mobile} 450w, ${hero_logo_tablets} 768w, ${hero_logo_big_tablets} 1366w, ${hero_logo_desktop} 1920w`}
 					/>
 				</div>
+			</section>
+			<section className={styles.presentation_section}>
+				<article className={styles.slide}>
+					<img
+						loading="lazy"
+						className={styles.one_arch_img}
+						src={one_arch}
+					/>
+
+					<p className={styles.paragraph}>
+						We give rise to a new paradigm in the production and
+						distribution of food
+					</p>
+				</article>
+				<article className={styles.slide}>
+					<img
+						loading="lazy"
+						className={styles.two_archs_img}
+						src={two_archs}
+					/>
+
+					<p className={styles.paragraph}>
+						We have the innovation necessary to address
+						environmental issues
+					</p>
+				</article>
+				<article className={styles.slide}>
+					<img
+						loading="lazy"
+						className={styles.three_archs_img}
+						src={three_archs}
+					/>
+
+					<p className={styles.paragraph}>
+						We are close to people, providing accessible, fresh and
+						ready to consume food
+					</p>
+				</article>
+				<article className={styles.slide}>
+					<img
+						loading="lazy"
+						className={styles.full_archs_img}
+						src={full_archs}
+					/>
+
+					<p className={styles.paragraph}>
+						We are born to set a new standard in the food system
+					</p>
+				</article>
 			</section>
 
 			{/* VIDEO SECTION */}
@@ -52,42 +105,6 @@ export default function Home() {
 						type="video/webm"
 					/>
 				</video>
-			</section>
-
-			{/* COMPANY'S PURPOSE SECTION */}
-			<section className={styles.purpose_section}>
-				<div className={styles.cards_wrapper}>
-					<article className={styles.card}>
-						<h2 className={styles.card_header}>What we do</h2>
-						<p className={styles.card_text}>
-							Laurus reimagines urban agriculture and provides an
-							efficient and sustainable way to deliver
-							hyper-local, fresh and affordable food to people in
-							cities.
-						</p>
-					</article>
-
-					<article className={styles.card}>
-						<h2 className={styles.card_header}>How we do it</h2>
-						<p className={styles.card_text}>
-							With our automated inflatable farms, designed to
-							utilize idle spaces in cities, such as rooftops and
-							parking lots, we enable cultivation regardless of
-							the season and weather.
-						</p>
-					</article>
-
-					<article className={styles.card}>
-						<h2 className={styles.card_header}>What we achieve</h2>
-						<p className={styles.card_text}>
-							Fresh food for everyone. Thanks to our technology,
-							we can provide high-quality food at affordable
-							prices, strengthening food systems and delivering
-							nutritious food to everyone, regardless of where
-							they live or how much they earn.
-						</p>
-					</article>
-				</div>
 			</section>
 
 			{/* CONTACT US SECTION */}
