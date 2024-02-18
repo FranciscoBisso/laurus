@@ -95,7 +95,17 @@ section {
 .contact_card {
 	width: min(100%, 800px);
 	border-radius: var(--radius);
-	padding: var(--sz-2);
+}
+
+.card_header {
+	font-family: var(--mark-pro-bold);
+	font-size: var(--sz-3);
+	color: var(--pantone-368);
+}
+
+.card_text {
+	font-size: var(--sz-0);
+	color: var(--font-color);
 }
 
 .calendly_btn {
