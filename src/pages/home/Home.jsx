@@ -31,52 +31,55 @@ export default function Home() {
 				</div>
 			</section>
 			<section className={styles.presentation_section}>
-				<article className={styles.slide}>
-					<img
-						loading="lazy"
-						className={styles.one_arch_img}
-						src={one_arch}
-					/>
+				<div className={styles.slider}>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.one_arch_img}
+							src={one_arch}
+						/>
 
-					<p className={styles.paragraph}>
-						A new paradigm in the production and distribution of
-						food
-					</p>
-				</article>
-				<article className={styles.slide}>
-					<img
-						loading="lazy"
-						className={styles.two_archs_img}
-						src={two_archs}
-					/>
+						<p className={styles.paragraph}>
+							A new paradigm in the production and distribution of
+							food
+						</p>
+					</article>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.two_archs_img}
+							src={two_archs}
+						/>
 
-					<p className={styles.paragraph}>
-						The necessary innovation to address environmental issues
-					</p>
-				</article>
-				<article className={styles.slide}>
-					<img
-						loading="lazy"
-						className={styles.three_archs_img}
-						src={three_archs}
-					/>
+						<p className={styles.paragraph}>
+							The necessary innovation to address environmental
+							issues
+						</p>
+					</article>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.three_archs_img}
+							src={three_archs}
+						/>
 
-					<p className={styles.paragraph}>
-						Close to people, providing accessible, fresh and ready
-						to consume food
-					</p>
-				</article>
-				<article className={styles.slide}>
-					<img
-						loading="lazy"
-						className={styles.full_archs_img}
-						src={full_archs}
-					/>
+						<p className={styles.paragraph}>
+							Close to people, providing accessible, fresh and
+							ready to consume food
+						</p>
+					</article>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.full_archs_img}
+							src={full_archs}
+						/>
 
-					<p className={styles.paragraph}>
-						Born to set a new standard in the food system
-					</p>
-				</article>
+						<p className={styles.paragraph}>
+							Born to set a new standard in the food system
+						</p>
+					</article>
+				</div>
 			</section>
 
 			{/* VIDEO SECTION */}
