@@ -39,8 +39,8 @@ export default function Home() {
 					/>
 
 					<p className={styles.paragraph}>
-						We give rise to a new paradigm in the production and
-						distribution of food
+						A new paradigm in the production and distribution of
+						food
 					</p>
 				</article>
 				<article className={styles.slide}>
@@ -51,8 +51,7 @@ export default function Home() {
 					/>
 
 					<p className={styles.paragraph}>
-						We have the innovation necessary to address
-						environmental issues
+						The necessary innovation to address environmental issues
 					</p>
 				</article>
 				<article className={styles.slide}>
@@ -63,8 +62,8 @@ export default function Home() {
 					/>
 
 					<p className={styles.paragraph}>
-						We are close to people, providing accessible, fresh and
-						ready to consume food
+						Close to people, providing accessible, fresh and ready
+						to consume food
 					</p>
 				</article>
 				<article className={styles.slide}>
@@ -75,7 +74,7 @@ export default function Home() {
 					/>
 
 					<p className={styles.paragraph}>
-						We are born to set a new standard in the food system
+						Born to set a new standard in the food system
 					</p>
 				</article>
 			</section>
