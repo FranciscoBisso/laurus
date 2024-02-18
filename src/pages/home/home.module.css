@@ -28,13 +28,14 @@ section {
 }
 
 .slider {
+	display: grid;
 	width: 100%;
 	height: calc(100dvh - var(--sz-xs) * 2);
-	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 	scrollbar-width: none;
-	display: grid;
+	overflow-y: scroll;
 	row-gap: var(--sz-xs);
+	border-radius: var(--radius);
 }
 
 .slide {
