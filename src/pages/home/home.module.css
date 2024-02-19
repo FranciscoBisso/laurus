@@ -78,12 +78,11 @@ section {
 
 .video_section {
 	height: 100dvh;
-	padding: var(--sz-xs) 0;
 }
 
 .video {
 	width: 98%;
-	height: 98%;
+	height: 85%;
 	object-fit: cover;
 	background-size: contain;
 	border-radius: var(--radius);
@@ -97,6 +96,11 @@ section {
 .contact_card {
 	width: min(100%, 800px);
 	border-radius: var(--radius);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--sz-0);
 }
 
 .card_header {
@@ -110,15 +114,38 @@ section {
 	color: var(--font-color);
 }
 
+.link_wrapper {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: var(--cool-gray-1);
+}
+
+.link_icon {
+	font-size: var(--sz-1);
+}
+
+.link_icon:hover {
+	animation: var(--animation-scale-up) forwards;
+	color: var(--font-color);
+}
+
 .calendly_btn {
 	cursor: pointer;
 	font-size: var(--sz-0);
-	margin-top: var(--sz-0);
 	font-family: var(--mark-pro-medium);
 	background-color: transparent;
 	color: var(--cool-gray-1);
 	border: none;
-	border-bottom: 2px solid var(--cool-gray-1);
+	border-bottom: solid var(--cool-gray-1);
 }
 
 .calendly_btn:hover {

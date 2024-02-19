@@ -1,5 +1,7 @@
 import { PopupButton } from "react-calendly";
 import poster from "../../assets/videos/videoframe.webp";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
+
 import styles from "./home.module.css";
 // Videos
 import video_mobile from "../../assets/videos/bkg_480.webm";
@@ -112,14 +114,16 @@ export default function Home() {
 			{/* CONTACT US SECTION */}
 			<section className={styles.contact_section}>
 				<article className={styles.contact_card}>
-					<h1 className={styles.card_header}>{"Let's chat"}</h1>
-					<p className={styles.card_text}>
-						Join us today and help us change the way we think about
-						agriculture. Together, we can create a future where
-						fresh food is accessible to all, regardless of where
-						they live or how much they make.
-					</p>
-
+					<div className={styles.contact_card_body}>
+						<h1 className={styles.card_header}>{"Let's chat"}</h1>
+						<p className={styles.card_text}>
+							Join us today and help us change the way we think
+							about agriculture. Together, we can create a future
+							where fresh food is accessible to all, regardless of
+							where they live or how much they make.
+						</p>
+					</div>
+					<SocialMedia props={{ styles }} />
 					<PopupButton
 						className={styles.calendly_btn}
 						url="https://calendly.com/nicobisso/intro-call"

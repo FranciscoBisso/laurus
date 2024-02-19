@@ -1,7 +1,6 @@
 import styles from "./app.module.css";
-
 import Home from "./pages/home/Home";
-import SocialMedia from "./components/socialMedia/SocialMedia";
+import FooterContent from "./components/footer/FooterContent";
 
 function App() {
 	return (
@@ -10,12 +9,7 @@ function App() {
 				<Home />
 			</main>
 			<footer className={styles.footer}>
-				<div className={styles.wrapper}>
-					<SocialMedia props={{ styles }} />
-					<span className={styles.address}>
-						San Martín, 750, Buenos Aires, CABA 1004
-					</span>
-				</div>
+				<FooterContent props={{ styles }} />
 			</footer>
 		</>
 	);
