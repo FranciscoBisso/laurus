@@ -5,10 +5,9 @@
 }
 
 .footer {
-	opacity: 0.65;
 	min-height: 10dvh;
 	padding: var(--radius);
-	color: var(--font-color);
+	color: var(--cool-gray-1);
 	border-top: 1px solid var(--bg-secondary);
 }
 
@@ -34,7 +33,7 @@
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	color: var(--font-color);
+	color: var(--cool-gray-1);
 }
 
 .link_icon {
@@ -43,7 +42,7 @@
 
 .link_icon:hover {
 	animation: var(--animation-scale-up) forwards;
-	opacity: 1;
+	color: var(--font-color);
 }
 
 .address {

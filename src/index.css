@@ -102,7 +102,7 @@ span {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg-primary: var(--black);
-		--bg-secondary: var(--cool-gray-1);
+		--bg-secondary: var(--cool-gray-2);
 		--font-color: var(--white);
 	}
 }
