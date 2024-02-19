@@ -42,8 +42,11 @@ export default function Home() {
 						/>
 
 						<p className={styles.paragraph}>
-							A new paradigm in the production and distribution of
-							food
+							A{" "}
+							<span className={styles.dark_green}>
+								new paradigm
+							</span>{" "}
+							in the production and distribution of food
 						</p>
 					</article>
 					<article className={styles.slide}>
@@ -54,8 +57,11 @@ export default function Home() {
 						/>
 
 						<p className={styles.paragraph}>
-							The necessary innovation to address environmental
-							issues
+							The{" "}
+							<span className={styles.green}>
+								necessary innovation
+							</span>{" "}
+							to address environmental issues
 						</p>
 					</article>
 					<article className={styles.slide}>
@@ -66,8 +72,14 @@ export default function Home() {
 						/>
 
 						<p className={styles.paragraph}>
-							Close to people, providing accessible, fresh and
-							ready to consume food
+							Close to people, providing{" "}
+							<span className={styles.light_green}>
+								accessible
+							</span>
+							, <span className={styles.light_green}>fresh</span>{" "}
+							and{" "}
+							<span className={styles.light_green}>ready</span> to
+							consume food
 						</p>
 					</article>
 					<article className={styles.slide}>
@@ -78,7 +90,9 @@ export default function Home() {
 						/>
 
 						<p className={styles.paragraph}>
-							Born to set a new standard in the food system
+							Born to set a{" "}
+							<span className={styles.strong}>new standard</span>{" "}
+							in the food system
 						</p>
 					</article>
 				</div>

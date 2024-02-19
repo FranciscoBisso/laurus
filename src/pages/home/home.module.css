@@ -76,13 +76,29 @@ section {
 	text-align: center;
 }
 
+.dark_green {
+	color: var(--pantone-356);
+}
+
+.green {
+	color: var(--pantone-362);
+}
+
+.light_green {
+	color: var(--pantone-368);
+}
+
+.strong {
+	font-family: var(--mark-pro-bold);
+}
+
 .video_section {
-	height: 100dvh;
+	height: calc(100dvh - var(--radius) * 2);
 }
 
 .video {
 	width: 98%;
-	height: 85%;
+	height: 100%;
 	object-fit: cover;
 	background-size: contain;
 	border-radius: var(--radius);
@@ -99,7 +115,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	gap: var(--sz-0);
 }
 
