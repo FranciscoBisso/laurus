@@ -19,84 +19,22 @@ import full_archs from "../../assets/imgs/brand/bgless_full_archs.webp";
 
 export default function Home() {
 	return (
-		<>
+		<div className={styles.home_wrapper}>
 			{/* HERO SECTION */}
 
 			<section className={styles.hero_section}>
-				<div className={styles.hero_img_wrapper}>
+				<div className={styles.hero_logo_wrapper}>
 					<img
 						loading="lazy"
-						className={styles.hero_img}
+						className={styles.hero_logo}
 						src={hero_logo_desktop}
 						srcSet={`${hero_logo_mobile} 450w, ${hero_logo_tablets} 768w, ${hero_logo_big_tablets} 1366w, ${hero_logo_desktop} 1920w`}
 					/>
 				</div>
 			</section>
-			<section className={styles.presentation_section}>
-				<div className={styles.slider}>
-					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.one_arch_img}
-							src={one_arch}
-						/>
 
-						<p className={styles.paragraph}>
-							A{" "}
-							<span className={styles.dark_green}>
-								new paradigm
-							</span>{" "}
-							in the production and distribution of food
-						</p>
-					</article>
-					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.two_archs_img}
-							src={two_archs}
-						/>
-
-						<p className={styles.paragraph}>
-							The{" "}
-							<span className={styles.green}>
-								necessary innovation
-							</span>{" "}
-							to address environmental issues
-						</p>
-					</article>
-					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.three_archs_img}
-							src={three_archs}
-						/>
-
-						<p className={styles.paragraph}>
-							Close to people, providing{" "}
-							<span className={styles.light_green}>
-								accessible
-							</span>
-							, <span className={styles.light_green}>fresh</span>{" "}
-							and{" "}
-							<span className={styles.light_green}>ready</span> to
-							consume food
-						</p>
-					</article>
-					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.full_archs_img}
-							src={full_archs}
-						/>
-
-						<p className={styles.paragraph}>
-							Born to set a{" "}
-							<span className={styles.strong}>new standard</span>{" "}
-							in the food system
-						</p>
-					</article>
-				</div>
-			</section>
+			{/* PURPOSE SECTION */}
+			<section className={styles.purpose_section}></section>
 
 			{/* VIDEO SECTION */}
 			<section className={styles.video_section}>
@@ -125,16 +63,84 @@ export default function Home() {
 				</video>
 			</section>
 
+			{/* CONCLUSION SECTION */}
+			<section className={styles.conclusion_section}>
+				<div className={styles.slider}>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.one_arch_img}
+							src={one_arch}
+						/>
+
+						<p className={styles.title}>
+							A{" "}
+							<span className={styles.dark_green}>
+								new paradigm
+							</span>{" "}
+							in the production and distribution of food
+						</p>
+					</article>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.two_archs_img}
+							src={two_archs}
+						/>
+
+						<p className={styles.title}>
+							The{" "}
+							<span className={styles.green}>
+								necessary innovation
+							</span>{" "}
+							to address environmental issues
+						</p>
+					</article>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.three_archs_img}
+							src={three_archs}
+						/>
+
+						<p className={styles.title}>
+							Close to people, providing{" "}
+							<span className={styles.light_green}>
+								accessible
+							</span>
+							, <span className={styles.light_green}>fresh</span>{" "}
+							and{" "}
+							<span className={styles.light_green}>ready</span> to
+							consume food
+						</p>
+					</article>
+					<article className={styles.slide}>
+						<img
+							loading="lazy"
+							className={styles.full_archs_img}
+							src={full_archs}
+						/>
+
+						<p className={styles.title}>
+							Born to set a{" "}
+							<strong className={styles.strong}>
+								new standard
+							</strong>{" "}
+							in the food system
+						</p>
+					</article>
+				</div>
+			</section>
+
 			{/* CONTACT US SECTION */}
 			<section className={styles.contact_section}>
 				<article className={styles.contact_card}>
 					<div className={styles.contact_card_body}>
 						<h1 className={styles.card_header}>{"Let's chat"}</h1>
 						<p className={styles.card_text}>
-							Join us today and help us change the way we think
-							about agriculture. Together, we can create a future
-							where fresh food is accessible to all, regardless of
-							where they live or how much they make.
+							Join us today and create a future where fresh food
+							is accessible to all, regardless of where they live
+							or how much they make.
 						</p>
 					</div>
 					<SocialMedia props={{ styles }} />
@@ -146,6 +152,6 @@ export default function Home() {
 					/>
 				</article>
 			</section>
-		</>
+		</div>
 	);
 }
