@@ -8,10 +8,11 @@ import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
 // Images
-import hero_logo_mobile from "../../assets/imgs/hero/hero_logo_mobile.webp";
-import hero_logo_tablets from "../../assets/imgs/hero/hero_logo_tablets.webp";
-import hero_logo_big_tablets from "../../assets/imgs/hero/hero_logo_big_tablets.webp";
-import hero_logo_desktop from "../../assets/imgs/hero/hero_logo_desktop.webp";
+import bgless_logo_strip_mobile from "../../assets/imgs/brand/bgless_logo_strip_mobile.webp";
+import bgless_logo_strip from "../../assets/imgs/brand/bgless_logo_strip.webp";
+
+import hero_img from "../../assets/imgs/insta/farm_aisle.webp";
+
 import one_arch from "../../assets/imgs/brand/bgless_one_arch.webp";
 import two_archs from "../../assets/imgs/brand/bgless_two_archs.webp";
 import three_archs from "../../assets/imgs/brand/bgless_three_archs.webp";
@@ -23,12 +24,20 @@ export default function Home() {
 			{/* HERO SECTION */}
 
 			<section className={styles.hero_section}>
+				<div className={styles.hero_img_wrapper}>
+					<img
+						loading="lazy"
+						className={styles.hero_img}
+						src={hero_img}
+						// srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip} `}
+					/>
+				</div>
 				<div className={styles.hero_logo_wrapper}>
 					<img
 						loading="lazy"
 						className={styles.hero_logo}
-						src={hero_logo_desktop}
-						srcSet={`${hero_logo_mobile} 450w, ${hero_logo_tablets} 768w, ${hero_logo_big_tablets} 1366w, ${hero_logo_desktop} 1920w`}
+						src={bgless_logo_strip_mobile}
+						srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip} `}
 					/>
 				</div>
 			</section>
