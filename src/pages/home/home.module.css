@@ -43,9 +43,21 @@ section {
 }
 
 .purpose_section {
-	padding-inline: var(--radius);
 	display: grid;
 	row-gap: var(--sz-0);
+	padding-inline: calc(var(--radius) + var(--sz-xs));
+}
+
+.card {
+	border-radius: var(--radius);
+}
+
+.card_title {
+	font-family: var(--mark-pro-bold);
+}
+
+.card_txt {
+	font-family: var(--mark-pro-regular);
 }
 
 .video_section {
@@ -87,7 +99,6 @@ section {
 	min-height: calc(100% - var(--radius) - var(--sz-xs));
 	padding: var(--radius);
 	scroll-snap-align: center;
-	scroll-snap-stop: always;
 	border: solid var(--bg-secondary);
 	border-radius: var(--radius);
 }

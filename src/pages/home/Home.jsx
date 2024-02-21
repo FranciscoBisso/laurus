@@ -41,7 +41,42 @@ export default function Home() {
 			</section>
 
 			{/* PURPOSE SECTION */}
-			<section className={styles.purpose_section}></section>
+			<section className={styles.purpose_section}>
+				<article className={styles.card}>
+					<h2
+						className={`${styles.card_title} ${styles.light_green}`}>
+						What we do
+					</h2>
+					<p className={styles.card_txt}>
+						Laurus reimagines urban agriculture and provides an
+						efficient and sustainable way to deliver hyper-local,
+						fresh and affordable food to people in cities.
+					</p>
+				</article>
+				<article className={styles.card}>
+					<h2 className={`${styles.card_title} ${styles.green}`}>
+						How we do it
+					</h2>
+					<p className={styles.card_txt}>
+						With our automated inflatable farms, designed to utilize
+						idle spaces in cities, such as rooftops and parking
+						lots, we enable cultivation regardless of the season and
+						weather.
+					</p>
+				</article>
+				<article className={styles.card}>
+					<h2 className={`${styles.card_title} ${styles.dark_green}`}>
+						What we achieve
+					</h2>
+					<p className={styles.card_txt}>
+						Fresh food for everyone. Thanks to our technology, we
+						can provide high-quality food at affordable prices,
+						strengthening food systems and delivering nutritious
+						food to everyone, regardless of where they live or how
+						much they earn.
+					</p>
+				</article>
+			</section>
 
 			{/* VIDEO SECTION */}
 			<section className={styles.video_section}>
@@ -80,13 +115,14 @@ export default function Home() {
 							src={one_arch}
 						/>
 
-						<p className={styles.title}>
+						<h2 className={styles.title}>
 							A{" "}
-							<span className={styles.dark_green}>
+							<span
+								className={`${styles.dark_green} ${styles.strong}`}>
 								new paradigm
 							</span>{" "}
 							in the production and distribution of food
-						</p>
+						</h2>
 					</article>
 					<article className={styles.slide}>
 						<img
@@ -95,13 +131,14 @@ export default function Home() {
 							src={two_archs}
 						/>
 
-						<p className={styles.title}>
+						<h2 className={styles.title}>
 							The{" "}
-							<span className={styles.green}>
+							<span
+								className={`${styles.green} ${styles.strong}`}>
 								necessary innovation
 							</span>{" "}
 							to address environmental issues
-						</p>
+						</h2>
 					</article>
 					<article className={styles.slide}>
 						<img
@@ -110,16 +147,24 @@ export default function Home() {
 							src={three_archs}
 						/>
 
-						<p className={styles.title}>
+						<h2 className={styles.title}>
 							Close to people, providing{" "}
-							<span className={styles.light_green}>
+							<span
+								className={`${styles.light_green} ${styles.strong}`}>
 								accessible
 							</span>
-							, <span className={styles.light_green}>fresh</span>{" "}
+							,{" "}
+							<span
+								className={`${styles.light_green} ${styles.strong}`}>
+								fresh
+							</span>{" "}
 							and{" "}
-							<span className={styles.light_green}>ready</span> to
-							consume food
-						</p>
+							<span
+								className={`${styles.light_green} ${styles.strong}`}>
+								ready
+							</span>{" "}
+							to consume food
+						</h2>
 					</article>
 					<article className={styles.slide}>
 						<img
@@ -128,13 +173,11 @@ export default function Home() {
 							src={full_archs}
 						/>
 
-						<p className={styles.title}>
+						<h2 className={styles.title}>
 							Born to set a{" "}
-							<strong className={styles.strong}>
-								new standard
-							</strong>{" "}
+							<span className={styles.strong}>new standard</span>{" "}
 							in the food system
-						</p>
+						</h2>
 					</article>
 				</div>
 			</section>
