@@ -15,12 +15,13 @@ section {
 .hero_section {
 	height: 100dvh;
 	justify-content: space-between;
-	padding: var(--sz-xs);
+	padding: var(--sz-xs) 0;
 	background-color: var(--black);
 }
 
 .hero_logo_wrapper {
 	width: 100%;
+	padding-right: calc(var(--sz-xs) + var(--radius));
 }
 
 .hero_logo {
@@ -30,6 +31,7 @@ section {
 .hero_img_wrapper {
 	width: 100%;
 	height: calc(100% - 12.396% - var(--sz-xs) * 2);
+	padding-inline: var(--sz-xs);
 }
 
 .hero_img {
@@ -37,6 +39,7 @@ section {
 	height: 100%;
 	object-fit: cover;
 	border-radius: var(--radius);
+	box-shadow: 0 0 10px var(--cool-gray-1);
 }
 
 .purpose_section {

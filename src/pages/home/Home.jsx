@@ -8,7 +8,6 @@ import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
 // Images
-import bgless_logo_strip_mobile from "../../assets/imgs/brand/bgless_logo_strip_mobile.webp";
 import bgless_logo_strip from "../../assets/imgs/brand/bgless_logo_strip.webp";
 
 import hero_img from "../../assets/imgs/insta/farm_aisle.webp";
@@ -36,8 +35,7 @@ export default function Home() {
 					<img
 						loading="lazy"
 						className={styles.hero_logo}
-						src={bgless_logo_strip_mobile}
-						srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip} `}
+						src={bgless_logo_strip}
 					/>
 				</div>
 			</section>
