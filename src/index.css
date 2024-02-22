@@ -94,7 +94,6 @@ span {
 	:root {
 		--bg-primary: var(--white);
 		--bg-secondary: var(--warm-gray);
-		--bg-tertiary: var(--seasalt);
 		--font-color: var(--black);
 	}
 }

@@ -12,6 +12,10 @@ import bgless_logo_strip from "../../assets/imgs/brand/bgless_logo_strip.webp";
 
 import hero_img from "../../assets/imgs/insta/farm_aisle.webp";
 
+import card_img_one from "../../assets/imgs/insta/rooftop_farm_1.webp";
+import card_img_two from "../../assets/imgs/farms/opRob_3.webp";
+import card_img_three from "../../assets/imgs/products/products.webp";
+
 import one_arch from "../../assets/imgs/brand/bgless_one_arch.webp";
 import two_archs from "../../assets/imgs/brand/bgless_two_archs.webp";
 import three_archs from "../../assets/imgs/brand/bgless_three_archs.webp";
@@ -43,38 +47,63 @@ export default function Home() {
 			{/* PURPOSE SECTION */}
 			<section className={styles.purpose_section}>
 				<article className={styles.card}>
-					<h2
-						className={`${styles.card_title} ${styles.light_green}`}>
-						What we do
-					</h2>
-					<p className={styles.card_txt}>
-						Laurus reimagines urban agriculture and provides an
-						efficient and sustainable way to deliver hyper-local,
-						fresh and affordable food to people in cities.
-					</p>
+					<img
+						loading="lazy"
+						className={styles.card_img}
+						src={card_img_one}
+					/>
+					<div className={styles.body_wrapper}>
+						<h2
+							className={`${styles.card_title} ${styles.light_green}`}>
+							What we do
+						</h2>
+						<p className={styles.card_txt}>
+							Laurus reimagines urban agriculture and provides an
+							efficient and sustainable way to deliver
+							hyper-local, fresh and affordable food to people in
+							cities.
+						</p>
+					</div>
 				</article>
+
 				<article className={styles.card}>
-					<h2 className={`${styles.card_title} ${styles.green}`}>
-						How we do it
-					</h2>
-					<p className={styles.card_txt}>
-						With our automated inflatable farms, designed to utilize
-						idle spaces in cities, such as rooftops and parking
-						lots, we enable cultivation regardless of the season and
-						weather.
-					</p>
+					<img
+						loading="lazy"
+						className={styles.card_img}
+						src={card_img_two}
+					/>
+					<div className={styles.body_wrapper}>
+						<h2 className={`${styles.card_title} ${styles.green}`}>
+							How we do it
+						</h2>
+						<p className={styles.card_txt}>
+							With our automated inflatable farms, designed to
+							utilize idle spaces in cities, such as rooftops and
+							parking lots, we enable cultivation regardless of
+							the season and weather.
+						</p>
+					</div>
 				</article>
+
 				<article className={styles.card}>
-					<h2 className={`${styles.card_title} ${styles.dark_green}`}>
-						What we achieve
-					</h2>
-					<p className={styles.card_txt}>
-						Fresh food for everyone. Thanks to our technology, we
-						can provide high-quality food at affordable prices,
-						strengthening food systems and delivering nutritious
-						food to everyone, regardless of where they live or how
-						much they earn.
-					</p>
+					<img
+						loading="lazy"
+						className={styles.card_img}
+						src={card_img_three}
+					/>
+					<div className={styles.body_wrapper}>
+						<h2
+							className={`${styles.card_title} ${styles.dark_green}`}>
+							What we achieve
+						</h2>
+						<p className={styles.card_txt}>
+							Fresh food for everyone. Thanks to our technology,
+							we can provide high-quality food at affordable
+							prices, strengthening food systems and delivering
+							nutritious food to everyone, regardless of where
+							they live or how much they earn.
+						</p>
+					</div>
 				</article>
 			</section>
 

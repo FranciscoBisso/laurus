@@ -1,6 +1,6 @@
 .home_wrapper {
 	display: grid;
-	row-gap: var(--sz-8);
+	row-gap: calc(var(--radius) * 2);
 }
 
 section {
@@ -39,17 +39,29 @@ section {
 	height: 100%;
 	object-fit: cover;
 	border-radius: var(--radius);
-	box-shadow: 0 0 10px var(--cool-gray-1);
 }
 
 .purpose_section {
 	display: grid;
 	row-gap: var(--sz-0);
-	padding-inline: calc(var(--radius) + var(--sz-xs));
+	padding-inline: var(--radius);
 }
 
 .card {
 	border-radius: var(--radius);
+	border: solid var(--bg-secondary);
+}
+
+.card_img {
+	width: 100%;
+	border-top-left-radius: var(--radius);
+	border-top-right-radius: var(--radius);
+}
+
+.body_wrapper {
+	border-bottom-left-radius: var(--radius);
+	border-bottom-right-radius: var(--radius);
+	padding: 0 var(--sz-0) var(--sz-0) var(--sz-0);
 }
 
 .card_title {
@@ -58,6 +70,7 @@ section {
 
 .card_txt {
 	font-family: var(--mark-pro-regular);
+	font-size: var(--sz-0);
 }
 
 .video_section {
@@ -76,6 +89,7 @@ section {
 
 .conclusion_section {
 	padding-inline: calc(var(--radius) + var(--sz-xs));
+	height: 66dvh;
 }
 
 .slider {
@@ -83,7 +97,7 @@ section {
 	flex-direction: column;
 	row-gap: var(--sz-xs);
 	width: 100%;
-	height: calc(100dvh - var(--sz-8) * 2);
+	height: 100%;
 	scroll-snap-type: y mandatory;
 	scrollbar-width: none;
 	overflow-y: scroll;
@@ -142,7 +156,7 @@ section {
 }
 
 .contact_section {
-	padding-inline: calc(var(--radius) + var(--sz-xs));
+	padding-inline: var(--sz-xs);
 	padding-bottom: var(--sz-8);
 }
 
