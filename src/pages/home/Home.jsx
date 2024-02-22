@@ -47,19 +47,21 @@ export default function Home() {
 			{/* PURPOSE SECTION */}
 			<section className={styles.purpose_section}>
 				<article className={styles.card}>
-					<img
-						loading="lazy"
-						className={styles.card_img}
-						src={card_img_one}
-					/>
-					<div className={styles.body_wrapper}>
+					<div className={styles.card_img_wrapper}>
+						<img
+							loading="lazy"
+							className={styles.card_img}
+							src={card_img_one}
+						/>
+					</div>
+					<div className={styles.card_txt_wrapper}>
 						<h2
 							className={`${styles.card_title} ${styles.light_green}`}>
 							What we do
 						</h2>
 						<p className={styles.card_txt}>
-							Laurus reimagines urban agriculture and provides an
-							efficient and sustainable way to deliver
+							Laurus reimagines urban agriculture and provides a
+							sustainable and efficient way to deliver
 							hyper-local, fresh and affordable food to people in
 							cities.
 						</p>
@@ -67,41 +69,45 @@ export default function Home() {
 				</article>
 
 				<article className={styles.card}>
-					<img
-						loading="lazy"
-						className={styles.card_img}
-						src={card_img_two}
-					/>
-					<div className={styles.body_wrapper}>
+					<div className={styles.card_img_wrapper}>
+						<img
+							loading="lazy"
+							className={styles.card_img}
+							src={card_img_two}
+						/>
+					</div>
+					<div className={styles.card_txt_wrapper}>
 						<h2 className={`${styles.card_title} ${styles.green}`}>
 							How we do it
 						</h2>
 						<p className={styles.card_txt}>
-							With our automated inflatable farms, designed to
-							utilize idle spaces in cities, such as rooftops and
-							parking lots, we enable cultivation regardless of
-							the season and weather.
+							Our automated inflatable farms, designed to utilize
+							idle spaces in cities, such as rooftops and parking
+							lots, enable cultivation regardless of the season
+							and weather.
 						</p>
 					</div>
 				</article>
 
 				<article className={styles.card}>
-					<img
-						loading="lazy"
-						className={styles.card_img}
-						src={card_img_three}
-					/>
-					<div className={styles.body_wrapper}>
+					<div className={styles.card_img_wrapper}>
+						<img
+							loading="lazy"
+							className={styles.card_img}
+							src={card_img_three}
+						/>
+					</div>
+					<div className={styles.card_txt_wrapper}>
 						<h2
 							className={`${styles.card_title} ${styles.dark_green}`}>
 							What we achieve
 						</h2>
 						<p className={styles.card_txt}>
-							Fresh food for everyone. Thanks to our technology,
-							we can provide high-quality food at affordable
-							prices, strengthening food systems and delivering
-							nutritious food to everyone, regardless of where
-							they live or how much they earn.
+							Fresh food for everyone. Our farms can provide
+							premium food at affordable prices, strengthening
+							food systems and delivering nutritious food to
+							anyone, regardless of where they live or how much
+							they earn.
 						</p>
 					</div>
 				</article>
@@ -215,20 +221,24 @@ export default function Home() {
 			<section className={styles.contact_section}>
 				<article className={styles.contact_card}>
 					<div className={styles.contact_card_body}>
-						<h1 className={styles.card_header}>{"Let's chat"}</h1>
+						<h1 className={styles.card_header}>
+							{
+								"Together, let's pioneer the future of agriculture"
+							}
+						</h1>
 						<p className={styles.card_text}>
 							Join us today and create a future where fresh food
 							is accessible to all, regardless of where they live
 							or how much they make.
 						</p>
 					</div>
-					<SocialMedia props={{ styles }} />
 					<PopupButton
 						className={styles.calendly_btn}
 						url="https://calendly.com/nicobisso/intro-call"
 						rootElement={document.getElementById("root")}
 						text="Schedule a call!"
 					/>
+					<SocialMedia props={{ styles }} />
 				</article>
 			</section>
 		</div>

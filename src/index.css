@@ -102,6 +102,6 @@ span {
 	:root {
 		--bg-primary: var(--black);
 		--bg-secondary: var(--cool-gray-2);
-		--font-color: var(--white);
+		--font-color: var(--warm-gray);
 	}
 }
