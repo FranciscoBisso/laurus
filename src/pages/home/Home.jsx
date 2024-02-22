@@ -9,10 +9,11 @@ import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
 // Images
 import bgless_logo_strip from "../../assets/imgs/brand/bgless_logo_strip.webp";
+import bgless_logo_strip_mobile from "../../assets/imgs/brand/bgless_logo_strip_mobile.webp";
 
-import hero_img from "../../assets/imgs/insta/farm_aisle.webp";
+import hero_img from "../../assets/imgs/farms/farm_aisle.webp";
 
-import card_img_one from "../../assets/imgs/insta/rooftop_farm_1.webp";
+import card_img_one from "../../assets/imgs/farms/rooftop_farm_1.webp";
 import card_img_two from "../../assets/imgs/farms/opRob_3.webp";
 import card_img_three from "../../assets/imgs/products/products.webp";
 
@@ -32,7 +33,6 @@ export default function Home() {
 						loading="lazy"
 						className={styles.hero_img}
 						src={hero_img}
-						// srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip} `}
 					/>
 				</div>
 				<div className={styles.hero_logo_wrapper}>
@@ -40,6 +40,7 @@ export default function Home() {
 						loading="lazy"
 						className={styles.hero_logo}
 						src={bgless_logo_strip}
+						srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip} `}
 					/>
 				</div>
 			</section>
