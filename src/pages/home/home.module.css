@@ -85,7 +85,7 @@ section {
 }
 
 .video_section {
-	height: 65dvh;
+	height: calc(100dvh - var(--radius) * 2);
 	padding: var(--sz-xs);
 }
 
