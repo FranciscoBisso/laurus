@@ -34,6 +34,7 @@ export default function Home() {
 						className={styles.hero_img}
 						src={hero_img}
 						//*TODO: srcSet={`${} 768w, ${} `}
+						alt="employee working inside the farm"
 					/>
 				</div>
 				<div className={styles.hero_logo_wrapper}>
@@ -42,6 +43,7 @@ export default function Home() {
 						className={styles.hero_logo}
 						src={bgless_logo_strip}
 						srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip}`}
+						alt="logo"
 					/>
 				</div>
 			</section>
@@ -55,6 +57,7 @@ export default function Home() {
 							className={styles.card_img}
 							src={card_img_one}
 							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="rooftop farm"
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
@@ -78,6 +81,7 @@ export default function Home() {
 							className={styles.card_img}
 							src={card_img_two}
 							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="operating robot"
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
@@ -100,6 +104,7 @@ export default function Home() {
 							className={styles.card_img}
 							src={card_img_three}
 							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="products"
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
@@ -154,6 +159,7 @@ export default function Home() {
 							className={styles.one_arch_img}
 							src={one_arch}
 							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="logo's small arch"
 						/>
 
 						<h2 className={styles.title}>
@@ -171,6 +177,7 @@ export default function Home() {
 							className={styles.two_archs_img}
 							src={two_archs}
 							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="logo's medium arch"
 						/>
 
 						<h2 className={styles.title}>
@@ -188,6 +195,7 @@ export default function Home() {
 							className={styles.three_archs_img}
 							src={three_archs}
 							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="logo's big arch arch"
 						/>
 
 						<h2 className={styles.title}>
@@ -215,6 +223,7 @@ export default function Home() {
 							className={styles.full_archs_img}
 							src={full_archs}
 							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="full logo with all it's archs"
 						/>
 
 						<h2 className={styles.title}>
