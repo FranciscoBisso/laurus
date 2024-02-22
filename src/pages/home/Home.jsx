@@ -8,8 +8,8 @@ import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
 // Images
-import bgless_logo_strip from "../../assets/imgs/brand/bgless_logo_strip.webp";
-import bgless_logo_strip_mobile from "../../assets/imgs/brand/bgless_logo_strip_mobile.webp";
+import bgless_logo_strip from "../../assets/imgs/brand/logoStripes/bgless_strip.webp";
+import bgless_logo_strip_mobile from "../../assets/imgs/brand/logoStripes/bgless_logo_strip_mobile.webp";
 
 import hero_img from "../../assets/imgs/farms/farm_aisle.webp";
 
@@ -17,10 +17,10 @@ import card_img_one from "../../assets/imgs/farms/rooftop_farm_1.webp";
 import card_img_two from "../../assets/imgs/farms/opRob_3.webp";
 import card_img_three from "../../assets/imgs/products/products.webp";
 
-import one_arch from "../../assets/imgs/brand/bgless_one_arch.webp";
-import two_archs from "../../assets/imgs/brand/bgless_two_archs.webp";
-import three_archs from "../../assets/imgs/brand/bgless_three_archs.webp";
-import full_archs from "../../assets/imgs/brand/bgless_full_archs.webp";
+import one_arch from "../../assets/imgs/brand/logoArchs/bgless_one_arch.webp";
+import two_archs from "../../assets/imgs/brand/logoArchs/bgless_two_archs.webp";
+import three_archs from "../../assets/imgs/brand/logoArchs/bgless_three_archs.webp";
+import full_archs from "../../assets/imgs/brand/logoArchs/bgless_full_archs.webp";
 
 export default function Home() {
 	return (
