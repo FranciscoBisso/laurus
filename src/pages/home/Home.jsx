@@ -33,6 +33,7 @@ export default function Home() {
 						loading="lazy"
 						className={styles.hero_img}
 						src={hero_img}
+						//*TODO: srcSet={`${} 768w, ${} `}
 					/>
 				</div>
 				<div className={styles.hero_logo_wrapper}>
@@ -40,7 +41,7 @@ export default function Home() {
 						loading="lazy"
 						className={styles.hero_logo}
 						src={bgless_logo_strip}
-						srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip} `}
+						srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip}`}
 					/>
 				</div>
 			</section>
@@ -53,6 +54,7 @@ export default function Home() {
 							loading="lazy"
 							className={styles.card_img}
 							src={card_img_one}
+							//*TODO: srcSet={`${} 768w, ${} `}
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
@@ -75,6 +77,7 @@ export default function Home() {
 							loading="lazy"
 							className={styles.card_img}
 							src={card_img_two}
+							//*TODO: srcSet={`${} 768w, ${} `}
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
@@ -96,6 +99,7 @@ export default function Home() {
 							loading="lazy"
 							className={styles.card_img}
 							src={card_img_three}
+							//*TODO: srcSet={`${} 768w, ${} `}
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
@@ -149,6 +153,7 @@ export default function Home() {
 							loading="lazy"
 							className={styles.one_arch_img}
 							src={one_arch}
+							//*TODO: srcSet={`${} 768w, ${} `}
 						/>
 
 						<h2 className={styles.title}>
@@ -165,6 +170,7 @@ export default function Home() {
 							loading="lazy"
 							className={styles.two_archs_img}
 							src={two_archs}
+							//*TODO: srcSet={`${} 768w, ${} `}
 						/>
 
 						<h2 className={styles.title}>
@@ -181,6 +187,7 @@ export default function Home() {
 							loading="lazy"
 							className={styles.three_archs_img}
 							src={three_archs}
+							//*TODO: srcSet={`${} 768w, ${} `}
 						/>
 
 						<h2 className={styles.title}>
@@ -207,6 +214,7 @@ export default function Home() {
 							loading="lazy"
 							className={styles.full_archs_img}
 							src={full_archs}
+							//*TODO: srcSet={`${} 768w, ${} `}
 						/>
 
 						<h2 className={styles.title}>
