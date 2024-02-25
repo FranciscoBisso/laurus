@@ -1,6 +1,6 @@
 .home_wrapper {
 	display: grid;
-	row-gap: calc(var(--radius) * 2);
+	gap: calc(var(--radius) * 2);
 }
 
 section {
@@ -9,32 +9,33 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--bg-primary);
+	background-color: var(--clr-pair-1);
 }
 
 .hero_section {
+	position: relative;
+	justify-content: flex-end;
 	height: 100dvh;
-	padding: var(--sz-xs) 0;
-	row-gap: var(--radius);
-	background-color: var(--black);
 }
 
 .hero_img_wrapper {
 	width: 100%;
-	height: calc(100% - 12.396% - var(--sz-xs) * 2 - var(--radius));
-	padding-inline: var(--sz-xs);
+	height: 100%;
 }
 
 .hero_img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: var(--radius);
 }
 
 .hero_logo_wrapper {
-	width: 100%;
-	padding-right: calc(var(--sz-xs) + var(--radius));
+	width: 50%;
+	position: absolute;
+	margin: var(--radius);
+	border-radius: var(--radius);
+	border: solid var(--warm-gray);
+	background-color: var(--white);
 }
 
 .hero_logo {
@@ -42,46 +43,46 @@ section {
 }
 
 .purpose_section {
-	display: grid;
-	row-gap: var(--radius);
+	gap: var(--radius);
 	padding-inline: var(--radius);
 }
 
 .card {
+	display: grid;
+	gap: var(--sz-0);
 	border-radius: var(--radius);
 }
 
 .card_img_wrapper {
+	width: 100%;
 	overflow: hidden;
+	aspect-ratio: 22/15;
 	border-radius: var(--radius);
-	outline: solid var(--bg-secondary);
-	box-shadow: 0 5px 10px var(--bg-secondary);
+	border: solid var(--clr-pair-2);
+	box-shadow: 0 0px 10px var(--clr-pair-2);
 }
 
 .card_img {
 	width: 100%;
-	scale: 1.2;
+	height: 100%;
+	object-fit: cover;
 }
 
 .card_txt_wrapper {
 	border-bottom-left-radius: var(--radius);
 	border-bottom-right-radius: var(--radius);
-	padding: var(--sz-0);
 }
 
 .card_title {
 	font-family: var(--mark-pro-bold);
-	line-height: 2;
+	font-size: var(--sz-2);
+	line-height: 1.4;
 }
 
 .card_txt {
 	font-family: var(--mark-pro-regular);
 	font-size: var(--sz-0);
 	line-height: 1.4;
-}
-
-.card_txt::first-line {
-	line-height: 1.6;
 }
 
 .video_section {
@@ -95,6 +96,7 @@ section {
 	object-fit: cover;
 	background-size: contain;
 	border-radius: var(--radius);
+	border: solid var(--clr-pair-2);
 	box-shadow: 0 0 10px var(--cool-gray-1);
 }
 
@@ -104,9 +106,9 @@ section {
 }
 
 .slider {
-	display: flex;
-	flex-direction: column;
-	row-gap: var(--sz-xs);
+	display: grid;
+	grid-template-rows: repeat(4, calc(100% - var(--radius) - var(--sz-xs)));
+	gap: var(--sz-xs);
 	width: 100%;
 	height: 100%;
 	scroll-snap-type: y mandatory;
@@ -119,28 +121,30 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: var(--sz-0);
-	width: 100%;
-	min-height: calc(100% - var(--radius) - var(--sz-xs));
+	gap: var(--sz-0);
 	padding: var(--radius);
 	scroll-snap-align: center;
-	border: solid var(--bg-secondary);
+	border: solid var(--clr-pair-2);
 	border-radius: var(--radius);
 }
 
-.one_arch_img {
+.one_arch_img_wrapper {
 	width: 20%;
 }
 
-.two_archs_img {
+.two_archs_img_wrapper {
 	width: 40%;
 }
 
-.three_archs_img {
+.three_archs_img_wrapper {
 	width: 60%;
 }
 
-.full_archs_img {
+.full_archs_img_wrapper {
+	width: 100%;
+}
+
+.slide_img {
 	width: 100%;
 }
 
@@ -233,6 +237,35 @@ section {
 }
 
 .calendly_btn:hover {
-	background-color: var(--bg-secondary);
+	background-color: var(--clr-pair-2);
 	color: var(--font-color);
+}
+
+@media screen and (width >= 500px) {
+	.hero_section {
+		justify-content: center;
+	}
+
+	.hero_logo_wrapper {
+		width: 40%;
+	}
+
+	.purpose_section {
+		display: grid;
+	}
+
+	.card {
+		grid-template-columns: 1.25fr 1fr;
+		align-items: center;
+	}
+
+	.video_section {
+		height: 100dvh;
+		padding: var(--sz-xs);
+	}
+
+	.conclusion_section {
+		height: 100dvh;
+		padding-inline: calc(var(--radius) + var(--sz-xs));
+	}
 }

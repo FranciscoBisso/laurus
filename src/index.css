@@ -92,16 +92,16 @@ span {
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--bg-primary: var(--white);
-		--bg-secondary: var(--warm-gray);
+		--clr-pair-1: var(--white);
+		--clr-pair-2: var(--warm-gray);
 		--font-color: var(--black);
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg-primary: var(--black);
-		--bg-secondary: var(--cool-gray-2);
+		--clr-pair-1: var(--black);
+		--clr-pair-2: var(--cool-gray-1);
 		--font-color: var(--warm-gray);
 	}
 }

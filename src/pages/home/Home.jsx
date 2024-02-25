@@ -8,8 +8,7 @@ import video_mobile from "../../assets/videos/bkg_480.webm";
 import video_tablet from "../../assets/videos/bkg_720.webm";
 import video_desktop from "../../assets/videos/bkg_1080.webm";
 // Images
-import bgless_logo_strip from "../../assets/imgs/brand/logoStripes/bgless_strip.webp";
-import bgless_logo_strip_mobile from "../../assets/imgs/brand/logoStripes/bgless_logo_strip_mobile.webp";
+import bgless_brand_negative from "../../assets/imgs/brand/logo/bgless_brand_negative.webp";
 
 import hero_img from "../../assets/imgs/farms/farm_aisle.webp";
 
@@ -41,8 +40,7 @@ export default function Home() {
 					<img
 						loading="lazy"
 						className={styles.hero_logo}
-						src={bgless_logo_strip}
-						srcSet={`${bgless_logo_strip_mobile} 768w, ${bgless_logo_strip}`}
+						src={bgless_brand_negative}
 						alt="logo"
 					/>
 				</div>
@@ -66,10 +64,10 @@ export default function Home() {
 							What we do
 						</h2>
 						<p className={styles.card_txt}>
-							Laurus reimagines urban agriculture and provides a
+							We reimagine urban agriculture and provide a
 							sustainable and efficient way to deliver
-							hyper-local, fresh and affordable food to people in
-							cities.
+							hyper-local, nutritious and affordable food to
+							people in cities.
 						</p>
 					</div>
 				</article>
@@ -90,9 +88,8 @@ export default function Home() {
 						</h2>
 						<p className={styles.card_txt}>
 							Our automated inflatable farms, designed to utilize
-							idle spaces in cities, such as rooftops and parking
-							lots, enable cultivation regardless of the season
-							and weather.
+							idle spaces in cities, enable cultivation regardless
+							of the season and weather.
 						</p>
 					</div>
 				</article>
@@ -114,10 +111,8 @@ export default function Home() {
 						</h2>
 						<p className={styles.card_txt}>
 							Fresh food for everyone. Our farms can provide
-							premium food at affordable prices, strengthening
-							food systems and delivering nutritious food to
-							anyone, regardless of where they live or how much
-							they earn.
+							premium food at affordable prices to anyone,
+							regardless of where they live or how much they earn.
 						</p>
 					</div>
 				</article>
@@ -154,14 +149,15 @@ export default function Home() {
 			<section className={styles.conclusion_section}>
 				<div className={styles.slider}>
 					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.one_arch_img}
-							src={one_arch}
-							//*TODO: srcSet={`${} 768w, ${} `}
-							alt="logo's small arch"
-						/>
-
+						<div className={styles.one_arch_img_wrapper}>
+							<img
+								loading="lazy"
+								className={styles.slide_img}
+								src={one_arch}
+								//*TODO: srcSet={`${} 768w, ${} `}
+								alt="logo's small arch"
+							/>
+						</div>
 						<h2 className={styles.title}>
 							A{" "}
 							<span
@@ -172,13 +168,15 @@ export default function Home() {
 						</h2>
 					</article>
 					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.two_archs_img}
-							src={two_archs}
-							//*TODO: srcSet={`${} 768w, ${} `}
-							alt="logo's medium arch"
-						/>
+						<div className={styles.two_archs_img_wrapper}>
+							<img
+								loading="lazy"
+								className={styles.slide_img}
+								src={two_archs}
+								//*TODO: srcSet={`${} 768w, ${} `}
+								alt="logo's medium arch"
+							/>
+						</div>
 
 						<h2 className={styles.title}>
 							The{" "}
@@ -190,13 +188,15 @@ export default function Home() {
 						</h2>
 					</article>
 					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.three_archs_img}
-							src={three_archs}
-							//*TODO: srcSet={`${} 768w, ${} `}
-							alt="logo's big arch arch"
-						/>
+						<div className={styles.three_archs_img_wrapper}>
+							<img
+								loading="lazy"
+								className={styles.slide_img}
+								src={three_archs}
+								//*TODO: srcSet={`${} 768w, ${} `}
+								alt="logo's big arch arch"
+							/>
+						</div>
 
 						<h2 className={styles.title}>
 							Close to people, providing{" "}
@@ -218,13 +218,15 @@ export default function Home() {
 						</h2>
 					</article>
 					<article className={styles.slide}>
-						<img
-							loading="lazy"
-							className={styles.full_archs_img}
-							src={full_archs}
-							//*TODO: srcSet={`${} 768w, ${} `}
-							alt="full logo with all it's archs"
-						/>
+						<div className={styles.full_archs_img_wrapper}>
+							<img
+								loading="lazy"
+								className={styles.slide_img}
+								src={full_archs}
+								//*TODO: srcSet={`${} 768w, ${} `}
+								alt="full logo with all it's archs"
+							/>
+						</div>
 
 						<h2 className={styles.title}>
 							Born to set a{" "}
