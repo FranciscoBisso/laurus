@@ -12,6 +12,7 @@ export default function SocialMedia({ props }) {
 			<nav className={props?.styles?.link_wrapper}>
 				<a
 					className={props?.styles?.link}
+					aria-label="x"
 					href="http://twitter.com/laurusag"
 					target="_blank"
 					rel="noopener noreferrer">
@@ -20,6 +21,7 @@ export default function SocialMedia({ props }) {
 
 				<a
 					className={props?.styles?.link}
+					aria-label="email"
 					href="mailto:nicolas@laurusag.tech"
 					target="_blank"
 					rel="noopener noreferrer">
@@ -28,6 +30,7 @@ export default function SocialMedia({ props }) {
 
 				<a
 					className={props?.styles?.link}
+					aria-label="instagram"
 					href="http://instagram.com/laurus.ag"
 					target="_blank"
 					rel="noopener noreferrer">
@@ -36,6 +39,7 @@ export default function SocialMedia({ props }) {
 
 				<a
 					className={props?.styles?.link}
+					aria-label="linkedin"
 					href="https://www.linkedin.com/company/laurus-ag/"
 					target="_blank"
 					rel="noopener noreferrer">
