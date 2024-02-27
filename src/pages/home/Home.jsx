@@ -28,7 +28,6 @@ export default function Home() {
 			<section className={styles.hero_section}>
 				<div className={styles.hero_img_wrapper}>
 					<img
-						loading="lazy"
 						className={styles.hero_img}
 						src={hero_img}
 						//*TODO: srcSet={`${} 768w, ${} `}
@@ -37,7 +36,6 @@ export default function Home() {
 				</div>
 				<div className={styles.hero_logo_wrapper}>
 					<img
-						loading="lazy"
 						className={styles.hero_logo}
 						src={bgless_brand_negative}
 						alt="logo"
