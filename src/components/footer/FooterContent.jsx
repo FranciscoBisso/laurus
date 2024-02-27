@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
+import SocialMedia from "../socialMedia/SocialMedia";
 
 export default function FooterContent({ props }) {
 	return (
 		<div className={props?.styles?.footer_wrapper}>
+			<SocialMedia props={props} />
 			<span className={props?.styles?.txt}>
 				San Martín, 750, Buenos Aires, CABA 1004
 			</span>

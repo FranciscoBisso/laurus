@@ -1,6 +1,5 @@
 import { PopupButton } from "react-calendly";
 import poster from "../../assets/videos/videoframe.webp";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
 
 import styles from "./home.module.css";
 // Videos
@@ -258,7 +257,6 @@ export default function Home() {
 						rootElement={document.getElementById("root")}
 						text="Schedule a call!"
 					/>
-					<SocialMedia props={{ styles }} />
 				</article>
 			</section>
 		</div>
