@@ -257,7 +257,10 @@ section {
 
 	.card {
 		grid-template-columns: repeat(2, 1fr);
-		align-items: center;
+	}
+
+	.card_txt_wrapper {
+		padding: 0 var(--sz-0);
 	}
 
 	.video_section {
