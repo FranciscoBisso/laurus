@@ -16,10 +16,10 @@ import card_img_one from "../../assets/imgs/farms/rooftop_farm_1.webp";
 import card_img_two from "../../assets/imgs/farms/opRob_3.webp";
 import card_img_three from "../../assets/imgs/products/products.webp";
 
-import one_arch from "../../assets/imgs/brand/logoArchs/bgless_one_arch.webp";
-import two_archs from "../../assets/imgs/brand/logoArchs/bgless_two_archs.webp";
-import three_archs from "../../assets/imgs/brand/logoArchs/bgless_three_archs.webp";
-import full_archs from "../../assets/imgs/brand/logoArchs/bgless_full_archs.webp";
+import one_arch from "../../assets/imgs/brand/logoArchs/bgless_arch_400.webp";
+import two_archs from "../../assets/imgs/brand/logoArchs/bgless_two_archs_400.webp";
+import three_archs from "../../assets/imgs/brand/logoArchs/bgless_three_archs_400.webp";
+import full_archs from "../../assets/imgs/brand/logoArchs/bgless_full_archs_400.webp";
 
 export default function Home() {
 	return (
