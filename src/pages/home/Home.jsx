@@ -1,12 +1,14 @@
 import { PopupButton } from "react-calendly";
-import poster from "../../assets/videos/videoframe.webp";
 
 import styles from "./home.module.css";
+
 // Videos
+import poster from "../../assets/videos/videoframe.webp";
 import demo_480 from "../../assets/videos/short_demo_480.webm";
 import demo_720 from "../../assets/videos/short_demo_720.webm";
 import demo_1080 from "../../assets/videos/short_demo_1080.webm";
 import demo from "../../assets/videos/short_demo_original.webm";
+
 // Images
 import bgless_brand_negative from "../../assets/imgs/brand/logo/bgless_brand_negative.webp";
 
@@ -57,10 +59,7 @@ export default function Home() {
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
-						<h2
-							className={`${styles.card_title} ${styles.light_green}`}>
-							What we do
-						</h2>
+						<h2 className={styles.card_title}>What we do</h2>
 						<p className={styles.card_txt}>
 							We reimagine urban agriculture and provide a
 							sustainable and efficient way to deliver
@@ -81,9 +80,7 @@ export default function Home() {
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
-						<h2 className={`${styles.card_title} ${styles.green}`}>
-							How we do it
-						</h2>
+						<h2 className={styles.card_title}>How we do it</h2>
 						<p className={styles.card_txt}>
 							Our automated inflatable farms, designed to utilize
 							idle spaces in cities, enable cultivation regardless
@@ -103,14 +100,11 @@ export default function Home() {
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
-						<h2
-							className={`${styles.card_title} ${styles.dark_green}`}>
-							What we achieve
-						</h2>
+						<h2 className={styles.card_title}>What we achieve</h2>
 						<p className={styles.card_txt}>
-							Fresh food for everyone. Our farms can provide
-							premium food at affordable prices to anyone,
-							regardless of where they live or how much they earn.
+							Our farms can provide premium food at affordable
+							prices to anyone, regardless of where they live or
+							how much they earn.
 						</p>
 					</div>
 				</article>

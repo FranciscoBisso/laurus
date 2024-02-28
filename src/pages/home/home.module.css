@@ -50,6 +50,7 @@ section {
 
 .card {
 	display: grid;
+	gap: var(--sz-xs);
 	border-radius: var(--radius);
 }
 
@@ -71,10 +72,10 @@ section {
 .card_txt_wrapper {
 	border-bottom-left-radius: var(--radius);
 	border-bottom-right-radius: var(--radius);
-	padding: var(--sz-0);
 }
 
 .card_title {
+	width: fit-content;
 	font-family: var(--mark-pro-bold);
 	font-size: var(--sz-2);
 	line-height: 1.4;
@@ -247,12 +248,19 @@ section {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.card_txt_wrapper {
-		padding: 0 var(--sz-0);
-	}
-
 	.video_section {
 		height: 100dvh;
 		padding: var(--sz-xs);
+	}
+}
+
+@media screen and (width >= 1024px) {
+	.purpose_section {
+		align-items: start;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card {
+		grid-template-columns: 1fr;
 	}
 }
