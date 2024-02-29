@@ -11,6 +11,7 @@ import demo from "../../assets/videos/short_demo_original.webm";
 
 // Images
 import bgless_brand_negative from "../../assets/imgs/brand/logo/bgless_brand_negative.webp";
+import bgless_logo_strip from "../../assets/imgs/brand/logoStripes/bgless_logo_strip.webp";
 
 import hero_img from "../../assets/imgs/farms/farm_aisle.webp";
 
@@ -29,20 +30,33 @@ export default function Home() {
 			{/* HERO SECTION */}
 
 			<section className={styles.hero_section}>
-				<div className={styles.hero_img_wrapper}>
-					<img
-						className={styles.hero_img}
-						src={hero_img}
-						//*TODO: srcSet={`${} 768w, ${} `}
-						alt="employee working inside the farm"
-					/>
+				<div className={styles.mobile_wrapper}>
+					<div className={styles.hero_img_wrapper}>
+						<img
+							className={styles.hero_img}
+							src={hero_img}
+							//*TODO: srcSet={`${} 768w, ${} `}
+							alt="employee working inside the farm"
+						/>
+					</div>
+					<div className={styles.hero_logo_wrapper}>
+						<img
+							className={styles.hero_logo}
+							src={bgless_brand_negative}
+							alt="logo"
+						/>
+					</div>
 				</div>
-				<div className={styles.hero_logo_wrapper}>
-					<img
-						className={styles.hero_logo}
-						src={bgless_brand_negative}
-						alt="logo"
-					/>
+
+				<div className={styles.desktop_wrapper}>
+					<div className={styles.hero_left_side}>
+						<img
+							className={styles.left_side_img}
+							src={bgless_logo_strip}
+							alt="logo"
+						/>
+					</div>
+					<div className={styles.hero_right_side}></div>
 				</div>
 			</section>
 
