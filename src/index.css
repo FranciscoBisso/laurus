@@ -81,7 +81,6 @@ span {
 	--cool-gray-1: rgb(136, 138, 141);
 	--cool-gray-2: rgba(136, 138, 141, 0.25);
 	--cool-gray-3: rgba(136, 138, 141, 0.1);
-	--eerie-black: rgb(10, 10, 10);
 	--black: rgb(0, 0, 0);
 	--pantone-368: rgb(128, 195, 66);
 	--pantone-362: rgb(80, 150, 66);
@@ -102,7 +101,7 @@ span {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--clr-pair-1: var(--black);
-		--clr-pair-2: var(--eerie-black);
+		--clr-pair-2: var(--cool-gray-1);
 		--font-color: var(--cool-gray-1);
 	}
 }

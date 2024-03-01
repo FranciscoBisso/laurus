@@ -14,41 +14,36 @@ section {
 
 .hero_section {
 	height: 100dvh;
-	background-color: var(--black);
-}
-
-.mobile_wrapper {
-	width: 100%;
-	height: 100%;
+	padding: var(--sz-xs);
 	position: relative;
-	display: flex;
-	flex-direction: column;
 	justify-content: flex-end;
-	align-items: center;
 }
 
 .hero_img_wrapper {
 	width: 100%;
 	height: 100%;
+	border-radius: var(--radius);
+	border: solid var(--clr-pair-2);
+	box-shadow: 0 0px 10px var(--clr-pair-2);
 }
 
-.hero_img {
+.hero_img_mobile {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: var(--radius);
+}
+.hero_img_desktop {
+	display: none;
 }
 
 .hero_logo_wrapper {
 	width: 50%;
 	position: absolute;
-	margin: var(--radius);
+	margin: calc(var(--sz-xs) + var(--radius));
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
 	background-color: var(--white);
-}
-
-.desktop_wrapper {
-	display: none;
 }
 
 .hero_logo {
@@ -57,13 +52,17 @@ section {
 }
 
 .purpose_section {
+	padding-inline: calc(var(--sz-xs) + var(--radius));
+}
+
+.cards_stack {
+	display: grid;
 	gap: var(--radius);
-	padding-inline: var(--radius);
 }
 
 .card {
 	display: grid;
-	gap: var(--sz-xs);
+	gap: var(--sz-0);
 	border-radius: var(--radius);
 }
 
@@ -116,29 +115,25 @@ section {
 }
 
 .conclusion_section {
-	height: 18rem;
-	justify-content: flex-start;
 	overflow: hidden;
 }
 
 .slider {
 	width: 100%;
-	height: 100%;
-	padding-inline: calc(var(--radius) + var(--sz-xs));
-	display: flex;
-	flex-wrap: nowrap;
+	padding-inline: calc(var(--sz-xs) + var(--radius));
+	display: grid;
 	gap: var(--sz-xs);
+	grid-template-columns: repeat(4, 100%);
 	scroll-snap-type: x mandatory;
 	scrollbar-width: none;
 	overflow-x: scroll;
 }
 
 .slide {
-	aspect-ratio: 1;
-	padding-inline: var(--radius);
+	padding: var(--sz-2);
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	border-radius: var(--radius);
 	border: solid var(--clr-pair-2);
@@ -147,26 +142,18 @@ section {
 
 .one_arch_img_wrapper {
 	width: 20%;
-	display: grid;
-	justify-content: flex-end;
 }
 
 .two_archs_img_wrapper {
 	width: 40%;
-	display: grid;
-	justify-content: flex-end;
 }
 
 .three_archs_img_wrapper {
 	width: 60%;
-	display: grid;
-	justify-content: flex-end;
 }
 
 .full_archs_img_wrapper {
 	width: 100%;
-	display: grid;
-	justify-content: flex-end;
 }
 
 .slide_img {
@@ -175,9 +162,8 @@ section {
 
 .title {
 	width: 100%;
-	height: 65%;
 	color: var(--font-color);
-	font-size: var(--sz-1);
+	font-size: var(--sz-2);
 	text-align: center;
 }
 
@@ -245,16 +231,12 @@ section {
 }
 
 @media screen and (width >= 500px) {
-	.mobile_wrapper {
+	.hero_section {
 		justify-content: center;
 	}
 
 	.hero_logo_wrapper {
-		width: 40%;
-	}
-
-	.purpose_section {
-		display: grid;
+		width: 35%;
 	}
 
 	.card {
@@ -268,44 +250,52 @@ section {
 }
 
 @media screen and (width >= 1024px) {
-	.mobile_wrapper {
+	.hero_img_mobile {
+		display: none;
+	}
+	.hero_img_desktop {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: var(--radius);
+	}
+
+	.hero_logo_wrapper {
 		display: none;
 	}
 
-	.desktop_wrapper {
+	.hero_logo_mobile {
+		display: none;
+	}
+
+	.hero_logo_desktop {
+		display: block;
 		width: 100%;
 		height: 100%;
-		display: flex;
-	}
-
-	.hero_left_side {
-		width: 50%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: flex-start;
-		background-color: var(--black);
-	}
-	.left_side_img {
-		width: 90%;
-		margin-bottom: 10%;
-		aspect-ratio: 1047/238;
-	}
-
-	.hero_right_side {
-		width: 50%;
-		height: 100%;
-		position: relative;
-		background-color: var(--eerie-black);
+		object-fit: cover;
 	}
 
 	.purpose_section {
-		align-items: start;
+		height: 100dvh;
+	}
+
+	.cards_stack {
+		align-items: flex-start;
 		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.card {
 		grid-template-columns: 1fr;
+	}
+
+	.conclusion_section {
+		height: 25rem;
+		justify-content: flex-start;
+		overflow: hidden;
+	}
+
+	.contact_section {
+		height: 100dvh;
 	}
 }
