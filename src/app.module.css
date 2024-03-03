@@ -9,7 +9,7 @@
 	padding: var(--radius);
 	color: var(--cool-gray-1);
 	background-color: var(--clr-pair-1);
-	border-top: 1px solid var(--clr-pair-2);
+	border-top: solid var(--clr-pair-2);
 }
 
 .footer_wrapper {

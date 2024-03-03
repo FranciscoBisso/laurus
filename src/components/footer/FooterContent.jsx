@@ -9,7 +9,7 @@ export default function FooterContent({ props }) {
 				San Martín, 750, Buenos Aires, CABA 1004
 			</span>
 			<span className={props?.styles?.txt}>
-				Copyright © 2024 LA Tech S.A.
+				Copyright © 2024 - LA Tech S.A.
 			</span>
 		</div>
 	);

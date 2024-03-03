@@ -29,12 +29,13 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: var(--font-sans);
 	font-family: var(--roboto);
 	font-family: var(--mark-pro-regular);
 }
 
 body {
-	background-color: var(--bg-primary);
+	background-color: var(--clr-pair-1);
 }
 
 h1,
@@ -69,11 +70,12 @@ span {
 
 	/* FONT FAMILIES */
 
+	--font-sans: system-ui, sans-serif;
+	--roboto: "Roboto", sans-serif;
 	--mark-pro-regular: "Mark Pro Regular", sans-serif;
 	--mark-pro-medium: "Mark Pro Medium", sans-serif;
 	--mark-pro-bold: "Mark Pro Bold", sans-serif;
 	--mark-pro-heavy: "Mark Pro Heavy", sans-serif;
-	--roboto: "Roboto", sans-serif;
 
 	/* COLOR's PALETTE */
 	--white: rgb(255, 255, 255);
