@@ -89,7 +89,7 @@ span {
 	--pantone-356: rgb(10, 104, 54);
 
 	/* RADIUS */
-	--radius: var(--sz-4);
+	--radius: var(--sz-0);
 }
 
 @media (prefers-color-scheme: light) {
