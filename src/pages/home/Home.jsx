@@ -1,6 +1,7 @@
 import { PopupButton } from "react-calendly";
 
 import styles from "./home.module.css";
+import FooterContent from "../../components/footer/FooterContent";
 
 // Videos
 import poster from "../../assets/videos/videoframe.webp";
@@ -268,6 +269,9 @@ export default function Home() {
 						text="Schedule a call!"
 					/>
 				</article>
+			</section>
+			<section className={styles.footer}>
+				<FooterContent props={{ styles }} />
 			</section>
 		</div>
 	);

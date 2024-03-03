@@ -1,6 +1,5 @@
 import styles from "./app.module.css";
 import Home from "./pages/home/Home";
-import FooterContent from "./components/footer/FooterContent";
 
 function App() {
 	return (
@@ -8,9 +7,6 @@ function App() {
 			<main className={styles.main}>
 				<Home />
 			</main>
-			<footer className={styles.footer}>
-				<FooterContent props={{ styles }} />
-			</footer>
 		</>
 	);
 }
