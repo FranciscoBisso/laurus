@@ -1,6 +1,4 @@
 .contact_section {
-	width: 100dvw;
-	min-height: 100dvh;
 	position: relative;
 	display: flex;
 	flex-direction: column;

@@ -27,6 +27,6 @@
 
 @media (orientation: landscape) {
 	.nav_bar {
-		width: 35%;
+		width: min(35%, 500px);
 	}
 }
