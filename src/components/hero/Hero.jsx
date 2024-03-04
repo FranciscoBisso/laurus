@@ -1,30 +1,37 @@
 import styles from "./hero.module.css";
 import bgless_brand_secondary from "../../assets/imgs/brand/logo/bgless_brand_secondary.webp";
-import hero_img_farm_aisle from "../../assets/imgs/farms/farm_aisle.webp";
-import hero_img_city_concept from "../../assets/imgs/laurus.webp";
+import reel_720 from "../../assets/videos/reels/farm_reel_720.webm";
+import reel_1080 from "../../assets/videos/reels/farm_reel_1080.webm";
+import poster from "../../assets/videos/reels/reel_frist_frame.webp";
 export default function Hero() {
 	return (
 		<section className={styles.hero_section}>
-			<div className={styles.hero_img_wrapper}>
+			<div className={styles.logo_wrapper}>
 				<img
-					className={styles.hero_img_mobile}
-					src={hero_img_farm_aisle}
-					//*TODO: srcSet={`${} 768w, ${} `}
-					alt="employee working inside the farm"
-				/>
-				<img
-					className={styles.hero_img_desktop}
-					src={hero_img_city_concept}
-					//*TODO: srcSet={`${} 768w, ${} `}
-					alt="closeup on farm's tower"
-				/>
-			</div>
-			<div className={styles.hero_logo_wrapper}>
-				<img
-					className={styles.hero_logo}
+					className={styles.logo}
 					src={bgless_brand_secondary}
 					alt="logo"
 				/>
+			</div>
+			<div className={styles.bg_wrapper}>
+				<video
+					loading="lazy"
+					className={styles.bg_video}
+					poster={poster}
+					playsInline
+					loop
+					autoPlay
+					muted>
+					<source
+						src={reel_720}
+						media="(max-width: 1024px)"
+						type="video/webm"
+					/>
+					<source
+						src={reel_1080}
+						type="video/webm"
+					/>
+				</video>
 			</div>
 		</section>
 	);
