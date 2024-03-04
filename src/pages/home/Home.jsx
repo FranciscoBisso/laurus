@@ -4,14 +4,14 @@ import styles from "./home.module.css";
 import FooterContent from "../../components/footer/FooterContent";
 
 // Videos
-import poster from "../../assets/videos/videoframe.webp";
-import demo_480 from "../../assets/videos/short_demo_480.webm";
-import demo_720 from "../../assets/videos/short_demo_720.webm";
-import demo_1080 from "../../assets/videos/short_demo_1080.webm";
-import demo from "../../assets/videos/short_demo_original.webm";
+import poster from "../../assets/videos/demos/videoframe.webp";
+import demo_480 from "../../assets/videos/demos/short_demo_480.webm";
+import demo_720 from "../../assets/videos/demos/short_demo_720.webm";
+import demo_1080 from "../../assets/videos/demos/short_demo_1080.webm";
+import demo from "../../assets/videos/demos/short_demo_original.webm";
 
 // Images
-import bgless_brand_negative from "../../assets/imgs/brand/logo/bgless_brand_negative.webp";
+import bgless_brand_secondary from "../../assets/imgs/brand/logo/bgless_brand_secondary.webp";
 
 import hero_img_farm_aisle from "../../assets/imgs/farms/farm_aisle.webp";
 import hero_img_city_concept from "../../assets/imgs/laurus.webp";
@@ -48,70 +48,13 @@ export default function Home() {
 				<div className={styles.hero_logo_wrapper}>
 					<img
 						className={styles.hero_logo}
-						src={bgless_brand_negative}
+						src={bgless_brand_secondary}
 						alt="logo"
 					/>
 				</div>
 			</section>
 
 			{/* PURPOSE SECTION */}
-			<section className={styles.do_section}>
-				<div className={styles.card_img_wrapper}>
-					<img
-						loading="lazy"
-						className={styles.card_img}
-						src={card_img_one}
-						//*TODO: srcSet={`${} 768w, ${} `}
-						alt="rooftop farm"
-					/>
-				</div>
-				<div className={styles.card_txt_wrapper}>
-					<h2 className={styles.card_title}>What we do</h2>
-					<p className={styles.card_txt}>
-						We reimagine urban agriculture and provide a sustainable
-						and efficient way to deliver hyper-local, nutritious and
-						affordable food to people in cities.
-					</p>
-				</div>
-			</section>
-			<section className={styles.how_section}>
-				<div className={styles.card_img_wrapper}>
-					<img
-						loading="lazy"
-						className={styles.card_img}
-						src={card_img_two}
-						//*TODO: srcSet={`${} 768w, ${} `}
-						alt="operating robot"
-					/>
-				</div>
-				<div className={styles.card_txt_wrapper}>
-					<h2 className={styles.card_title}>How we do it</h2>
-					<p className={styles.card_txt}>
-						Our automated inflatable farms, designed to utilize idle
-						spaces in cities, enable cultivation regardless of the
-						season and weather.
-					</p>
-				</div>
-			</section>
-			<section className={styles.achieve_section}>
-				<div className={styles.card_img_wrapper}>
-					<img
-						loading="lazy"
-						className={styles.card_img}
-						src={card_img_three}
-						//*TODO: srcSet={`${} 768w, ${} `}
-						alt="products"
-					/>
-				</div>
-				<div className={styles.card_txt_wrapper}>
-					<h2 className={styles.card_title}>What we achieve</h2>
-					<p className={styles.card_txt}>
-						Our farms can provide premium food at affordable prices
-						to anyone, regardless of where they live or how much
-						they earn.
-					</p>
-				</div>
-			</section>
 			<section className={styles.purpose_section}>
 				<div className={styles.cards_stack}>
 					<article className={styles.card}>

@@ -16,7 +16,6 @@ section {
 }
 
 .hero_section {
-	/* padding: var(--sz-xs); */
 	position: relative;
 	justify-content: flex-end;
 }
@@ -24,98 +23,36 @@ section {
 .hero_img_wrapper {
 	width: 100%;
 	height: 100%;
-	/* border-radius: var(--radius);
-	border: solid var(--clr-pair-2);
-	box-shadow: 0 0px 10px var(--clr-pair-2); */
 }
 
 .hero_img_mobile {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	/* border-radius: var(--radius); */
 }
 .hero_img_desktop {
 	display: none;
 }
 
 .hero_logo_wrapper {
-	width: 50%;
 	position: absolute;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	width: 50%;
+	padding: var(--sz-1);
 	margin: calc(var(--sz-xs) + var(--radius));
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
-	background-color: var(--white);
+	background-color: var(--cool-gray-3);
 }
 
 .hero_logo {
 	width: 100%;
-	height: 100%;
-}
-
-.do_section {
-	position: relative;
-	justify-content: flex-start;
-}
-
-.how_section {
-	position: relative;
-	justify-content: flex-start;
-}
-
-.achieve_section {
-	position: relative;
-	justify-content: flex-start;
-}
-
-.card {
-	height: 100%;
-	display: grid;
-	gap: var(--sz-xs);
-	grid-template-columns: 0.8fr 1fr;
-}
-
-.card_img_wrapper {
-	position: absolute;
-	width: calc(100% - var(--sz-0));
-	aspect-ratio: 1;
-	bottom: 0;
-	border-top-right-radius: var(--radius);
-	border-top-left-radius: var(--radius);
-	overflow: hidden;
-	box-shadow: 0 0px 10px var(--clr-pair-2);
-}
-
-.card_img {
-	width: 100%;
-	height: 100%;
 	object-fit: cover;
 }
 
-.card_txt_wrapper {
-	display: grid;
-	gap: var(--sz-0);
-	position: absolute;
-	top: 10%;
-	width: 80%;
-}
-
-.card_title {
-	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-6);
-	line-height: 1;
-	text-align: center;
-}
-
-.card_txt {
-	font-family: var(--mark-pro-regular);
-	font-size: var(--sz-2);
-	line-height: 1.4;
-	text-align: center;
-}
-
 .purpose_section {
-	display: none;
 	padding: var(--sz-0);
 }
 
@@ -127,7 +64,7 @@ section {
 	grid-template-rows: repeat(3, 1fr);
 }
 
-/* .card {
+.card {
 	height: 100%;
 	display: grid;
 	gap: var(--sz-xs);
@@ -163,7 +100,7 @@ section {
 	font-family: var(--mark-pro-regular);
 	font-size: var(--sz-0);
 	line-height: 1.4;
-} */
+}
 
 .video_section {
 }
