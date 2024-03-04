@@ -55,6 +55,63 @@ export default function Home() {
 			</section>
 
 			{/* PURPOSE SECTION */}
+			<section className={styles.do_section}>
+				<div className={styles.card_img_wrapper}>
+					<img
+						loading="lazy"
+						className={styles.card_img}
+						src={card_img_one}
+						//*TODO: srcSet={`${} 768w, ${} `}
+						alt="rooftop farm"
+					/>
+				</div>
+				<div className={styles.card_txt_wrapper}>
+					<h2 className={styles.card_title}>What we do</h2>
+					<p className={styles.card_txt}>
+						We reimagine urban agriculture and provide a sustainable
+						and efficient way to deliver hyper-local, nutritious and
+						affordable food to people in cities.
+					</p>
+				</div>
+			</section>
+			<section className={styles.how_section}>
+				<div className={styles.card_img_wrapper}>
+					<img
+						loading="lazy"
+						className={styles.card_img}
+						src={card_img_two}
+						//*TODO: srcSet={`${} 768w, ${} `}
+						alt="operating robot"
+					/>
+				</div>
+				<div className={styles.card_txt_wrapper}>
+					<h2 className={styles.card_title}>How we do it</h2>
+					<p className={styles.card_txt}>
+						Our automated inflatable farms, designed to utilize idle
+						spaces in cities, enable cultivation regardless of the
+						season and weather.
+					</p>
+				</div>
+			</section>
+			<section className={styles.achieve_section}>
+				<div className={styles.card_img_wrapper}>
+					<img
+						loading="lazy"
+						className={styles.card_img}
+						src={card_img_three}
+						//*TODO: srcSet={`${} 768w, ${} `}
+						alt="products"
+					/>
+				</div>
+				<div className={styles.card_txt_wrapper}>
+					<h2 className={styles.card_title}>What we achieve</h2>
+					<p className={styles.card_txt}>
+						Our farms can provide premium food at affordable prices
+						to anyone, regardless of where they live or how much
+						they earn.
+					</p>
+				</div>
+			</section>
 			<section className={styles.purpose_section}>
 				<div className={styles.cards_stack}>
 					<article className={styles.card}>
