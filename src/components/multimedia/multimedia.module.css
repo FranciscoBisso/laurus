@@ -26,11 +26,15 @@
 	box-shadow: 0 0 10px var(--cool-gray-1);
 }
 
-.video {
+.reel {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	background-size: contain;
+}
+
+.demo {
+	display: none;
 }
 
 @media screen and (orientation: landscape) {
@@ -49,8 +53,14 @@
 		align-items: center;
 	}
 
-	.video {
+	.reel {
+		display: none;
+	}
+
+	.demo {
+		display: block;
 		width: 55%;
 		height: 100%;
+		object-fit: cover;
 	}
 }
