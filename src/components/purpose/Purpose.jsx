@@ -4,7 +4,7 @@ import card_img_two from "../../assets/imgs/farms/opRob_3.webp";
 import card_img_three from "../../assets/imgs/products/products.webp";
 export default function Purpose() {
 	return (
-		<section className={styles.purpose_section_landscape}>
+		<section className={styles.purpose_section}>
 			<div className={styles.cards_stack}>
 				<article className={styles.card}>
 					<div className={styles.card_img_wrapper}>
@@ -19,7 +19,7 @@ export default function Purpose() {
 					<div className={styles.card_txt_wrapper}>
 						<h2 className={styles.card_title}>What we do</h2>
 						<p className={styles.card_txt}>
-							We reimagine urban agriculture and provide a
+							We reinvent urban agriculture and provide a
 							sustainable and efficient way to deliver
 							hyper-local, nutritious and affordable food to
 							people in cities.
