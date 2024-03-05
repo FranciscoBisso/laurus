@@ -14,13 +14,14 @@
 	position: absolute;
 	width: 94%;
 	padding: var(--sz-1);
-	color: var(--black);
+	color: var(--font-color);
 	font-family: var(--mark-pro-bold);
 	font-size: var(--sz-5);
 	text-align: center;
 	line-height: 1;
-	background-color: var(--white);
+	background-color: var(--clr-pair-1);
 	border: solid var(--cool-gray-2);
+	border-bottom: none;
 	border-top-right-radius: var(--radius);
 	border-top-left-radius: var(--radius);
 	box-shadow: 0 0 10px var(--cool-gray-1);
@@ -51,6 +52,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		border: none;
+		border-right: solid var(--cool-gray-2);
+		box-shadow: none;
 	}
 
 	.reel {

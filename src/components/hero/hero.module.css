@@ -16,7 +16,8 @@
 	padding: var(--sz-1);
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
-	background-color: var(--white);
+	box-shadow: 0 0 10px var(--white);
+	background-color: var(--clr-pair-1);
 }
 
 .logo {
@@ -45,11 +46,13 @@
 		width: 45%;
 		height: 100%;
 		padding: unset;
+		border: none;
 		border-radius: unset;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		box-shadow: none;
 	}
 
 	.logo {
