@@ -15,7 +15,6 @@ export default function Hero() {
 			</div>
 			<div className={styles.bg_wrapper}>
 				<video
-					loading="lazy"
 					className={styles.bg_video}
 					poster={poster}
 					playsInline
