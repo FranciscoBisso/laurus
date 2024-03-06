@@ -17,6 +17,7 @@
 	padding-bottom: 62.5%;
 	overflow-y: scroll;
 	scrollbar-width: none;
+	scroll-snap-type: y mandatory;
 }
 
 .card {
@@ -24,6 +25,7 @@
 	display: grid;
 	align-content: center;
 	justify-items: center;
+	scroll-snap-align: start;
 }
 
 .card_img_wrapper {
@@ -36,7 +38,7 @@
 	border-bottom: none;
 	border-top-right-radius: var(--radius);
 	border-top-left-radius: var(--radius);
-	/* box-shadow: 0 0px 10px var(--clr-pair-2); */
+	box-shadow: 0 0px 10px var(--clr-pair-2);
 	overflow: hidden;
 }
 

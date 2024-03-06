@@ -41,14 +41,14 @@
 	cursor: pointer;
 	font-size: var(--sz-2);
 	font-family: var(--mark-pro-medium);
-	background-color: var(--pantone-368);
-	color: var(--white);
+	background-color: rgb(128, 195, 66, 0.25);
+	color: var(--clr-pair-3);
 	padding: var(--sz-0);
-	border: solid var(--white);
+	border: solid var(--pantone-368);
 	border-radius: var(--radius);
 }
 
 .calendly_btn:hover {
-	background-color: var(--clr-pair-2);
-	color: var(--font-color);
+	background-color: var(--pantone-368);
+	color: var(--clr-pair-1);
 }

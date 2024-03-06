@@ -94,6 +94,7 @@ span {
 	:root {
 		--clr-pair-1: var(--white);
 		--clr-pair-2: var(--warm-gray);
+		--clr-pair-3: var(--black);
 		--font-color: var(--black);
 	}
 }
@@ -102,6 +103,7 @@ span {
 	:root {
 		--clr-pair-1: var(--black);
 		--clr-pair-2: var(--cool-gray-1);
+		--clr-pair-3: var(--white);
 		--font-color: var(--cool-gray-1);
 	}
 }
