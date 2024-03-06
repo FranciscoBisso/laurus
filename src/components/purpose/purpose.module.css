@@ -137,4 +137,40 @@
 		line-height: 1.1;
 		text-align: start;
 	}
+
+	@media screen and (width >= 1024px) {
+		.cards_stack {
+			width: 90%;
+			height: unset;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			align-items: start;
+			border: solid red;
+		}
+
+		.card {
+			scroll-snap-align: unset;
+			width: 100%;
+			height: unset;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+			scroll-snap-align: unset;
+			gap: 4%;
+		}
+
+		.card_txt_wrapper {
+			margin-top: 2%;
+		}
+
+		.card_title {
+			text-align: center;
+		}
+
+		.card_txt {
+			line-height: 1.4;
+			text-align: center;
+		}
+	}
 }
