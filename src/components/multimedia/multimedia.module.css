@@ -20,7 +20,7 @@
 	text-align: center;
 	line-height: 1;
 	background-color: var(--clr-pair-1);
-	border: solid var(--cool-gray-2);
+	border: solid var(--clr-pair-2);
 	border-bottom: none;
 	border-top-right-radius: var(--radius);
 	border-top-left-radius: var(--radius);

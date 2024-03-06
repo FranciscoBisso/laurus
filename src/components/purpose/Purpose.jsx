@@ -17,7 +17,9 @@ export default function Purpose() {
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
-						<h2 className={styles.card_title}>What we do</h2>
+						<h2 className={styles.card_title}>
+							<em>{"1) "}</em> What we do
+						</h2>
 						<p className={styles.card_txt}>
 							We reinvent urban agriculture and provide a
 							sustainable and efficient way to deliver
@@ -38,7 +40,9 @@ export default function Purpose() {
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
-						<h2 className={styles.card_title}>How we do it</h2>
+						<h2 className={styles.card_title}>
+							<em>{"2) "}</em>How we do it
+						</h2>
 						<p className={styles.card_txt}>
 							Our automated inflatable farms, designed to utilize
 							idle spaces in cities, enable cultivation regardless
@@ -58,7 +62,9 @@ export default function Purpose() {
 						/>
 					</div>
 					<div className={styles.card_txt_wrapper}>
-						<h2 className={styles.card_title}>What we achieve</h2>
+						<h2 className={styles.card_title}>
+							<em>{"3) "}</em>What we achieve
+						</h2>
 						<p className={styles.card_txt}>
 							Our farms can provide premium food at affordable
 							prices to anyone, regardless of where they live or
