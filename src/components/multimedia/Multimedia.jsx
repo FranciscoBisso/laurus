@@ -21,7 +21,7 @@ export default function Multimedia() {
 				muted>
 				<source
 					src={reel_720}
-					media="(max-width: 1024px)"
+					media="(max-width: 1023px)"
 					type="video/webm"
 				/>
 				<source
@@ -39,7 +39,7 @@ export default function Multimedia() {
 				muted>
 				<source
 					src={demo_720}
-					media="(max-width: 1024px)"
+					media="(max-width: 1023px)"
 					type="video/webm"
 				/>
 				<source
