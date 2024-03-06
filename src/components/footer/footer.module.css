@@ -10,6 +10,7 @@
 	background-color: var(--clr-pair-1);
 	border-top: 1px solid var(--clr-pair-2);
 	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 .footer_wrapper {
