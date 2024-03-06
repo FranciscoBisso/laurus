@@ -45,7 +45,7 @@
 
 	.txt {
 		position: static;
-		width: 45%;
+		width: 50%;
 		height: 100%;
 		border-radius: unset;
 		display: flex;
@@ -63,7 +63,7 @@
 
 	.demo {
 		display: block;
-		width: 55%;
+		width: 50%;
 		height: 100%;
 		object-fit: cover;
 	}
