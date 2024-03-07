@@ -17,8 +17,8 @@
 	padding: var(--sz-1);
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
-	box-shadow: 0 0 10px var(--white);
-	background-color: var(--clr-pair-1);
+	box-shadow: 0 0 10px var(--warm-gray);
+	background-color: var(--glassy);
 }
 
 .logo {
