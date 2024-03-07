@@ -141,32 +141,40 @@
 	}
 
 	@media screen and (width >= 1024px) {
+		.purpose_section {
+			padding: 10%;
+		}
+
 		.cards_stack {
-			width: 90%;
-			height: unset;
+			width: 100%;
+			height: 100%;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: 1fr;
 			align-items: start;
-			border: solid red;
 		}
 
 		.card {
 			scroll-snap-align: unset;
 			width: 100%;
-			height: unset;
+			height: 100%;
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr;
 			scroll-snap-align: unset;
+			align-items: start;
 			gap: 4%;
 		}
 
+		.card_img_wrapper {
+			border-radius: var(--radius);
+		}
+
 		.card_txt_wrapper {
-			margin-top: 2%;
 		}
 
 		.card_title {
+			line-height: 1.4;
 			text-align: center;
 		}
 
