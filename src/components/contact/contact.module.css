@@ -1,22 +1,23 @@
 .contact_section {
 	height: 100dvh;
 	width: 100%;
-	padding-inline: var(--sz-xs);
-	padding-bottom: var(--sz-8);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--clr-pair-1);
 	scroll-snap-align: start;
+	/*  */
+	border: solid;
 }
 
 .contact_card {
+	border: solid red;
+	/*  */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: var(--radius);
 	width: min(100%, 800px);
 	padding-inline: var(--radius);
 	border-radius: var(--radius);
@@ -31,7 +32,7 @@
 }
 
 .card_text {
-	padding: var(--sz-1) var(--sz-1) 0 0;
+	padding: var(--sz-2) 0 var(--sz-2);
 	color: var(--font-color);
 	font-size: var(--sz-2);
 	line-height: 1.4;
@@ -51,4 +52,19 @@
 .calendly_btn:hover {
 	background-color: var(--pantone-368);
 	color: var(--clr-pair-1);
+}
+
+@media screen and (orientation: landscape) {
+	.card_header {
+		font-size: var(--sz-5);
+	}
+
+	.card_text {
+		padding: var(--sz-1) 0 var(--sz-1);
+		font-size: var(--sz-1);
+	}
+
+	.calendly_btn {
+		font-size: var(--sz-1);
+	}
 }
