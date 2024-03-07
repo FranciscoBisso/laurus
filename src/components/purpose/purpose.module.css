@@ -72,68 +72,70 @@
 
 @media screen and (orientation: landscape) {
 	.purpose_section {
-		position: static;
-		justify-content: center;
-		padding: 4%;
+		position: relative;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
 	}
 
 	.cards_stack {
-		width: 100%;
+		width: 50%;
 		height: 100%;
-		padding-bottom: 0;
-		overflow-y: unset;
-		display: flex;
-		flex-direction: column;
-		gap: 5%;
+		overflow-y: scroll;
+		scrollbar-width: none;
 	}
 
 	.card {
-		width: 100%;
-		height: calc((100% - calc(5% * 2)) / 3);
+		height: 100%;
 		display: grid;
-		grid-template-columns: 1fr 3fr;
-		grid-template-rows: 1fr;
-		align-items: center;
-		gap: 2%;
+		align-content: center;
+		justify-items: center;
 	}
 
 	.card_img_wrapper {
-		position: static;
-		width: 100%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
 		height: 100%;
-		margin-inline: unset;
-		border-radius: var(--sz-0);
-		border-bottom: solid var(--clr-pair-2);
-	}
-
-	.card_img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		margin-inline: 0;
+		border: none;
+		border-bottom: none;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		box-shadow: none;
+		overflow: hidden;
 	}
 
 	.card_txt_wrapper {
-		width: unset;
+		width: 80%;
 	}
 
 	.card_title {
+		font-family: var(--mark-pro-bold);
 		font-size: var(--sz-2);
-		text-align: start;
+		line-height: 1.4;
+		text-align: center;
 	}
 
 	.card_title > em {
-		display: none;
+		font-family: var(--mark-pro-bold);
+		font-size: var(--sz-2);
+		line-height: 1.4;
+		text-align: center;
 	}
 
 	.card_txt {
+		font-family: var(--mark-pro-regular);
 		font-size: var(--sz-0);
-		line-height: 1.2;
-		text-align: start;
+		line-height: 1.4;
+		text-align: center;
 	}
 
 	@media screen and (width >= 1024px) {
 		.purpose_section {
 			padding: 0;
+			flex-direction: column;
 			justify-content: flex-end;
 			background-image: url("../../assets/imgs/farms/city_concept.webp");
 			background-repeat: no-repeat;
@@ -173,6 +175,10 @@
 		.card_title {
 			line-height: 1;
 			text-align: center;
+		}
+
+		.card_title > em {
+			display: none;
 		}
 
 		.card_txt {
