@@ -21,7 +21,7 @@ export default function Purpose() {
 							<em>{"1) "}</em> What we do
 						</h2>
 						<p className={styles.card_txt}>
-							We reinvent urban agriculture and provide a
+							We reinvent urban agriculture by providing a
 							sustainable and efficient way to deliver
 							hyper-local, nutritious and affordable food to
 							people in cities.
@@ -66,9 +66,9 @@ export default function Purpose() {
 							<em>{"3) "}</em>What we achieve
 						</h2>
 						<p className={styles.card_txt}>
-							Our farms can provide premium food at affordable
-							prices to anyone, regardless of where they live or
-							how much they earn.
+							Our farms can provide fresh and premium food at
+							affordable prices to anyone, regardless of where
+							they live or how much they earn.
 						</p>
 					</div>
 				</article>

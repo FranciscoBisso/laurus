@@ -77,7 +77,7 @@
 @media screen and (orientation: landscape) {
 	.purpose_section {
 		position: static;
-		padding: 2%;
+		padding: 4%;
 	}
 
 	.cards_stack {
@@ -98,8 +98,9 @@
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		grid-template-rows: 1fr;
+		align-items: center;
 		scroll-snap-align: unset;
-		gap: 1%;
+		gap: 2%;
 	}
 
 	.card_img_wrapper {
@@ -110,6 +111,7 @@
 		border-radius: var(--sz-0);
 		width: 100%;
 		height: 100%;
+		border-bottom: solid var(--clr-pair-2);
 	}
 
 	.card_img {
@@ -124,7 +126,7 @@
 
 	.card_title {
 		font-size: var(--sz-2);
-		line-height: 1.2;
+		line-height: 1;
 		text-align: start;
 	}
 
@@ -134,7 +136,7 @@
 
 	.card_txt {
 		font-size: var(--sz-0);
-		line-height: 1.1;
+		line-height: 1.2;
 		text-align: start;
 	}
 
