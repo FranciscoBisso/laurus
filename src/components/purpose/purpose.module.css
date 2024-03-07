@@ -17,7 +17,6 @@
 	padding-bottom: 62.5%;
 	overflow-y: scroll;
 	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
 }
 
 .card {
@@ -25,7 +24,6 @@
 	display: grid;
 	align-content: center;
 	justify-items: center;
-	scroll-snap-align: start;
 }
 
 .card_img_wrapper {
@@ -85,21 +83,18 @@
 		height: 100%;
 		padding-bottom: 0;
 		overflow-y: unset;
-		scroll-snap-type: unset;
 		display: flex;
 		flex-direction: column;
 		gap: 5%;
 	}
 
 	.card {
-		scroll-snap-align: unset;
 		width: 100%;
 		height: calc((100% - calc(5% * 2)) / 3);
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		grid-template-rows: 1fr;
 		align-items: center;
-		scroll-snap-align: unset;
 		gap: 2%;
 	}
 
@@ -155,13 +150,11 @@
 		}
 
 		.card {
-			scroll-snap-align: unset;
 			width: 100%;
 			height: 100%;
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr;
-			scroll-snap-align: unset;
 			align-items: start;
 			gap: 4%;
 		}
