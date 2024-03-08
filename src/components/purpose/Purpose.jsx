@@ -5,6 +5,7 @@ import card_img_three from "../../assets/imgs/products/products.webp";
 export default function Purpose() {
 	return (
 		<section className={styles.purpose_section}>
+			<div className={styles.bg_img_wrapper}></div>
 			<div className={styles.cards_stack}>
 				<article className={styles.card}>
 					<div className={styles.card_img_wrapper}>

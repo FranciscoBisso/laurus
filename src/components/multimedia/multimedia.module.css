@@ -46,15 +46,15 @@
 
 	.txt {
 		position: static;
-		width: 50%;
+		width: min(50%, 800px);
 		height: 100%;
+		margin: 0 auto;
 		border-radius: unset;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		border: none;
-		border-right: solid var(--cool-gray-2);
 		box-shadow: none;
 	}
 

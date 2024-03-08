@@ -11,6 +11,10 @@
 	scroll-snap-stop: always;
 }
 
+.bg_img_wrapper {
+	display: none;
+}
+
 .cards_stack {
 	width: 100%;
 	height: 65%;
@@ -135,26 +139,34 @@
 	@media screen and (width >= 1024px) {
 		.purpose_section {
 			padding: 0;
-			flex-direction: column;
-			justify-content: flex-end;
-			background-image: url("../../assets/imgs/farms/city_concept.webp");
+			flex-direction: row-reverse;
+			justify-content: flex-start;
+		}
+
+		.bg_img_wrapper {
+			display: block;
+			width: 50%;
+			height: 100%;
+			background-image: url("../../assets/imgs/farms/crops_2_1100.webp");
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: right;
 			background-size: cover;
 		}
 
 		.cards_stack {
-			width: 100%;
-			height: 35%;
+			width: 50%;
+			height: 100%;
 			display: flex;
-			align-items: flex-start;
-			flex-direction: row;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			gap: 5%;
 			padding: 0 5%;
+			background-color: var(--clr-pair-1);
 		}
 
 		.card {
-			width: 100%;
+			width: min(100%, 500px);
 			height: unset;
 			display: block;
 		}
@@ -167,7 +179,6 @@
 			width: 100%;
 			height: unset;
 			padding: var(--sz-0);
-			border: solid var(--clr-pair-2);
 			border-radius: var(--radius);
 			background-color: var(--clr-pair-1);
 		}
@@ -184,6 +195,17 @@
 		.card_txt {
 			line-height: 1.4;
 			text-align: center;
+		}
+
+		@media screen and (width >= 1366px) {
+			.card_title {
+				font-size: var(--sz-4);
+				line-height: 1.4;
+			}
+
+			.card_txt {
+				font-size: var(--sz-1);
+			}
 		}
 	}
 }

@@ -7,13 +7,9 @@
 	align-items: center;
 	background-color: var(--clr-pair-1);
 	scroll-snap-align: start;
-	/*  */
-	border: solid;
 }
 
 .contact_card {
-	border: solid red;
-	/*  */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
