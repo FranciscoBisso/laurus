@@ -77,13 +77,13 @@ span {
 
 	/* COLOR's PALETTE */
 	--white: rgb(255, 255, 255);
-	--glassy-white: rgba(255, 255, 255, 0.7);
+	--glassy-white: rgba(255, 255, 255, 0.8);
 	--warm-gray: rgb(228, 225, 220);
 	--cool-gray-1: rgb(136, 138, 141);
 	--cool-gray-2: rgba(136, 138, 141, 0.25);
 	--cool-gray-3: rgba(136, 138, 141, 0.1);
 	--black: rgb(0, 0, 0);
-	--glassy-black: rgba(0, 0, 0, 0.7);
+	--glassy-black: rgba(0, 0, 0, 0.8);
 	--pantone-368: rgb(128, 195, 66);
 	--pantone-362: rgb(80, 150, 66);
 	--pantone-356: rgb(10, 104, 54);

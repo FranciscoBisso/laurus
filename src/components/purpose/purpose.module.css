@@ -1,46 +1,50 @@
 .purpose_section {
-	position: relative;
 	height: 100dvh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: center;
 	background-color: var(--clr-pair-1);
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 }
 
-.bg_img_wrapper {
-	display: none;
-}
-
 .cards_stack {
 	width: 100%;
-	height: 65%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(3, 100%);
 	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
 	scrollbar-width: none;
 }
 
 .card {
+	width: 100%;
 	height: 100%;
-	display: grid;
-	align-content: center;
-	justify-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	scroll-snap-align: start;
 }
 
 .card_img_wrapper {
+	position: relative;
+	width: 100%;
+	height: 45%;
+}
+
+.img_gradient_filter {
 	position: absolute;
-	bottom: 0;
-	width: 94%;
-	height: 35%;
-	margin-inline: 3%;
-	border: solid var(--clr-pair-2);
-	border-bottom: none;
-	border-top-right-radius: var(--radius);
-	border-top-left-radius: var(--radius);
-	box-shadow: 0 0px 10px var(--clr-pair-2);
-	overflow: hidden;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		0deg,
+		var(--clr-pair-1) 0%,
+		transparent 50%,
+		transparent 100%
+	);
 }
 
 .card_img {
@@ -50,17 +54,15 @@
 }
 
 .card_txt_wrapper {
-	width: calc(94% - var(--radius));
+	width: 90%;
+	height: 55%;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	gap: 2%;
 }
 
 .card_title {
-	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-5);
-	line-height: 1;
-	text-align: center;
-}
-
-.card_title > em {
 	font-family: var(--mark-pro-bold);
 	font-size: var(--sz-5);
 	line-height: 1;
@@ -75,137 +77,42 @@
 }
 
 @media screen and (orientation: landscape) {
-	.purpose_section {
-		position: relative;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
-	}
-
-	.cards_stack {
-		width: 50%;
-		height: 100%;
-		overflow-y: scroll;
-		scrollbar-width: none;
-	}
-
 	.card {
-		height: 100%;
-		display: grid;
-		align-content: center;
-		justify-items: center;
+		flex-direction: row-reverse;
 	}
 
 	.card_img_wrapper {
-		position: absolute;
-		bottom: 0;
-		right: 0;
 		width: 50%;
 		height: 100%;
-		margin-inline: 0;
-		border: none;
-		border-bottom: none;
-		border-top-right-radius: 0;
-		border-top-left-radius: 0;
-		box-shadow: none;
-		overflow: hidden;
+	}
+
+	.img_gradient_filter {
+		display: none;
 	}
 
 	.card_txt_wrapper {
-		width: 80%;
+		width: 50%;
+		height: 100%;
+		padding: 5%;
 	}
 
 	.card_title {
-		font-family: var(--mark-pro-bold);
-		font-size: var(--sz-2);
-		line-height: 1.4;
-		text-align: center;
-	}
-
-	.card_title > em {
-		font-family: var(--mark-pro-bold);
-		font-size: var(--sz-2);
-		line-height: 1.4;
-		text-align: center;
+		width: min(100%, 800px);
+		font-size: var(--sz-4);
 	}
 
 	.card_txt {
-		font-family: var(--mark-pro-regular);
-		font-size: var(--sz-0);
-		line-height: 1.4;
-		text-align: center;
+		width: min(100%, 800px);
+		font-size: var(--sz-1);
 	}
 
 	@media screen and (width >= 1024px) {
-		.purpose_section {
-			padding: 0;
-			flex-direction: row-reverse;
-			justify-content: flex-start;
-		}
-
-		.bg_img_wrapper {
-			display: block;
-			width: 50%;
-			height: 100%;
-			background-image: url("../../assets/imgs/farms/crops_2_1100.webp");
-			background-repeat: no-repeat;
-			background-position: right;
-			background-size: cover;
-		}
-
-		.cards_stack {
-			width: 50%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 5%;
-			padding: 0 5%;
-			background-color: var(--clr-pair-1);
-		}
-
-		.card {
-			width: min(100%, 500px);
-			height: unset;
-			display: block;
-		}
-
-		.card_img_wrapper {
-			display: none;
-		}
-
-		.card_txt_wrapper {
-			width: 100%;
-			height: unset;
-			padding: var(--sz-0);
-			border-radius: var(--radius);
-			background-color: var(--clr-pair-1);
-		}
-
 		.card_title {
-			line-height: 1;
-			text-align: center;
-		}
-
-		.card_title > em {
-			display: none;
+			font-size: var(--sz-5);
 		}
 
 		.card_txt {
-			line-height: 1.4;
-			text-align: center;
-		}
-
-		@media screen and (width >= 1366px) {
-			.card_title {
-				font-size: var(--sz-4);
-				line-height: 1.4;
-			}
-
-			.card_txt {
-				font-size: var(--sz-1);
-			}
+			font-size: var(--sz-2);
 		}
 	}
 }
