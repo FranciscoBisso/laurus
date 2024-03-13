@@ -57,7 +57,7 @@
 	}
 
 	.logo {
-		width: 50%;
+		width: min(50%, 400px);
 	}
 
 	.bg_wrapper {
