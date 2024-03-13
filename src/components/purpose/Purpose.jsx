@@ -5,18 +5,32 @@ import card_img_three from "../../assets/imgs/products/products.webp";
 export default function Purpose() {
 	return (
 		<section className={styles.purpose_section}>
-			<div className={styles.cards_stack}>
+			<div className={styles.wrapper}>
+				<div className={styles.frame}>
+					<div className={styles.filter}></div>
+					<img
+						loading="lazy"
+						className={`${styles.img} ${styles.first_img}`}
+						src={card_img_one}
+						//*TODO: srcSet={`${} 768w, ${} `}
+						alt="rooftop farm"
+					/>
+					<img
+						loading="lazy"
+						className={`${styles.img} ${styles.second_img}`}
+						src={card_img_two}
+						//*TODO: srcSet={`${} 768w, ${} `}
+						alt="operating robot"
+					/>
+					<img
+						loading="lazy"
+						className={`${styles.img} ${styles.third_img}`}
+						src={card_img_three}
+						//*TODO: srcSet={`${} 768w, ${} `}
+						alt="products"
+					/>
+				</div>
 				<article className={styles.card}>
-					<div className={styles.card_img_wrapper}>
-						<div className={styles.img_gradient_filter}></div>
-						<img
-							loading="lazy"
-							className={styles.card_img}
-							src={card_img_one}
-							//*TODO: srcSet={`${} 768w, ${} `}
-							alt="rooftop farm"
-						/>
-					</div>
 					<div className={styles.card_txt_wrapper}>
 						<h2 className={styles.card_title}>What we do</h2>
 						<p className={styles.card_txt}>
@@ -29,16 +43,6 @@ export default function Purpose() {
 				</article>
 
 				<article className={styles.card}>
-					<div className={styles.card_img_wrapper}>
-						<div className={styles.img_gradient_filter}></div>
-						<img
-							loading="lazy"
-							className={styles.card_img}
-							src={card_img_two}
-							//*TODO: srcSet={`${} 768w, ${} `}
-							alt="operating robot"
-						/>
-					</div>
 					<div className={styles.card_txt_wrapper}>
 						<h2 className={styles.card_title}>How we do it</h2>
 						<p className={styles.card_txt}>
@@ -50,16 +54,6 @@ export default function Purpose() {
 				</article>
 
 				<article className={styles.card}>
-					<div className={styles.card_img_wrapper}>
-						<div className={styles.img_gradient_filter}></div>
-						<img
-							loading="lazy"
-							className={styles.card_img}
-							src={card_img_three}
-							//*TODO: srcSet={`${} 768w, ${} `}
-							alt="products"
-						/>
-					</div>
 					<div className={styles.card_txt_wrapper}>
 						<h2 className={styles.card_title}>What we achieve</h2>
 						<p className={styles.card_txt}>
