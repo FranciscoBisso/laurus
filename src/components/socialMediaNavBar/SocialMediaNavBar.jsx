@@ -6,7 +6,7 @@ import {
 	RiLinkedinLine,
 } from "react-icons/ri";
 
-export default function SocialMedia({ props }) {
+export default function SocialMediaNavBar({ props }) {
 	return (
 		<>
 			<nav className={props?.styles?.link_wrapper}>
@@ -50,7 +50,7 @@ export default function SocialMedia({ props }) {
 	);
 }
 
-SocialMedia.propTypes = {
+SocialMediaNavBar.propTypes = {
 	props: PropTypes.object,
 	styles: PropTypes.object,
 };

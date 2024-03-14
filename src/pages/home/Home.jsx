@@ -1,23 +1,23 @@
 import styles from "./home.module.css";
-import Hero from "../../components/hero/Hero";
-import Purpose from "../../components/purpose/Purpose";
-import Multimedia from "../../components/multimedia/Multimedia";
-import Slider from "../../components/slider/Slider";
-import Contact from "../../components/contact/Contact";
+import IntroSection from "../../components/introSection/IntroSection";
+import PurposeSection from "../../components/purposeSection/PurposeSection";
+import VideoSection from "../../components/videoSection/VideoSection";
+import ConclusionSection from "../../components/conclusionSection/ConclusionSection";
+import ContactSection from "../../components/contactSection/ContactSection";
 import Footer from "../../components/footer/Footer";
 
 export default function Home() {
 	return (
 		<div className={styles.home_wrapper}>
-			<Hero />
+			<IntroSection />
 
-			<Purpose />
+			<PurposeSection />
 
-			<Multimedia />
+			<VideoSection />
 
-			<Slider />
+			<ConclusionSection />
 
-			<Contact />
+			<ContactSection />
 
 			<Footer />
 		</div>

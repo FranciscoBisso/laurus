@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import styles from "./hero.module.css";
+import styles from "./introSection.module.css";
 import bgless_brand_primary from "../../assets/imgs/brand/logo/bgless_brand_primary.webp";
 import bgless_brand_secondary from "../../assets/imgs/brand/logo/bgless_brand_secondary.webp";
 import reel_720 from "../../assets/videos/reels/farm_reel_720.webm";
 import reel_1080 from "../../assets/videos/reels/farm_reel_1080.webm";
 import poster from "../../assets/videos/reels/reel_frist_frame.webp";
-export default function Hero() {
+export default function IntroSection() {
 	const [isDarkMode, setIsDarkMode] = useState(
 		window.matchMedia("(prefers-color-scheme: dark)").matches
 	);

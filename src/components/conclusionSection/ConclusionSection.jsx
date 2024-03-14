@@ -1,9 +1,9 @@
-import styles from "./slider.module.css";
+import styles from "./conclusionSection.module.css";
 import one_arch from "../../assets/imgs/brand/logoArchs/bgless_arch_400.webp";
 import two_archs from "../../assets/imgs/brand/logoArchs/bgless_two_archs_400.webp";
 import three_archs from "../../assets/imgs/brand/logoArchs/bgless_three_archs_400.webp";
 import full_archs from "../../assets/imgs/brand/logoArchs/bgless_full_archs_400.webp";
-export default function Slider() {
+export default function ConclusionSection() {
 	return (
 		<section className={styles.slider_section}>
 			<div className={styles.slider}>

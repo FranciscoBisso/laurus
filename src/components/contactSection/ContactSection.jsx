@@ -1,7 +1,7 @@
-import styles from "./contact.module.css";
+import styles from "./contactSection.module.css";
 import { PopupButton } from "react-calendly";
 
-export default function Contact() {
+export default function ContactSection() {
 	return (
 		<section className={styles.contact_section}>
 			<article className={styles.contact_card}>

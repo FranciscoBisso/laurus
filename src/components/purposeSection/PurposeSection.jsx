@@ -1,10 +1,10 @@
-import styles from "./purpose.module.css";
+import styles from "./purposeSection.module.css";
 import card_img_one from "../../assets/imgs/farms/rooftop_farm_1.webp";
 import card_img_two from "../../assets/imgs/farms/opRob_3.webp";
 import card_img_three from "../../assets/imgs/products/products.webp";
 
 import { useInView } from "react-intersection-observer";
-export default function Purpose() {
+export default function PurposeSection() {
 	const first_title = useInView();
 	const second_title = useInView();
 	const third_title = useInView();
