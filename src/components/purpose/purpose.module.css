@@ -43,16 +43,13 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.hide {
 	opacity: 0;
 }
 
-.first_img {
-	opacity: 1;
-}
-.second_img {
-	opacity: 1;
-}
-.third_img {
+.show {
 	opacity: 1;
 }
 
