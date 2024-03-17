@@ -6,6 +6,7 @@ import one_arch from "../../assets/imgs/brand/logoArchs/bgless_arch_400.webp";
 import two_archs from "../../assets/imgs/brand/logoArchs/bgless_two_archs_400.webp";
 import three_archs from "../../assets/imgs/brand/logoArchs/bgless_three_archs_400.webp";
 import full_archs from "../../assets/imgs/brand/logoArchs/bgless_full_archs_400.webp";
+import bg_img from "../../assets/imgs/farms/rooftop_farm_2.webp";
 export default function ConclusionSection() {
 	const first_card = useInView();
 	const second_card = useInView();
@@ -14,7 +15,7 @@ export default function ConclusionSection() {
 
 	return (
 		<section className={styles.section}>
-			<div className={styles.mobile_container}>
+			<div className={styles.container}>
 				<div className={styles.articles_wrapper}>
 					<article
 						id="first_card"
@@ -146,6 +147,13 @@ export default function ConclusionSection() {
 						4
 					</a>
 				</nav>
+			</div>
+			<div className={styles.img_wrapper}>
+				<img
+					className={styles.bg_img}
+					src={bg_img}
+					alt="farms in the rooftop of buildings"
+				/>
 			</div>
 		</section>
 	);
