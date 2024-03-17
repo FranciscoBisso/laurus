@@ -3,7 +3,6 @@
 	width: 100%;
 	background-color: var(--clr-pair-1);
 	scroll-snap-align: start;
-	scroll-snap-stop: always;
 }
 
 .img_wrapper {

@@ -7,7 +7,6 @@
 	flex-direction: column;
 	scroll-snap-align: start;
 	background-color: var(--clr-pair-1);
-	scroll-snap-stop: always;
 }
 
 .logo_wrapper {
