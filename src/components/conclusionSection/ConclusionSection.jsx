@@ -1,17 +1,25 @@
 import styles from "./conclusionSection.module.css";
 
+import { useInView } from "react-intersection-observer";
+
 import one_arch from "../../assets/imgs/brand/logoArchs/bgless_arch_400.webp";
 import two_archs from "../../assets/imgs/brand/logoArchs/bgless_two_archs_400.webp";
 import three_archs from "../../assets/imgs/brand/logoArchs/bgless_three_archs_400.webp";
 import full_archs from "../../assets/imgs/brand/logoArchs/bgless_full_archs_400.webp";
 export default function ConclusionSection() {
+	const first_card = useInView();
+	const second_card = useInView();
+	const third_card = useInView();
+	const fourth_card = useInView();
+
 	return (
 		<section className={styles.section}>
 			<div className={styles.mobile_container}>
 				<div className={styles.articles_wrapper}>
-					<article className={styles.article}>
+					<article
+						id="first_card"
+						className={styles.article}>
 						<div className={styles.frame}>
-							<div className={styles.filter}></div>
 							<img
 								loading="lazy"
 								className={styles.one_arch_img}
@@ -20,7 +28,9 @@ export default function ConclusionSection() {
 								alt="logo's small arch"
 							/>
 						</div>
-						<h2 className={styles.title}>
+						<h2
+							ref={first_card.ref}
+							className={styles.title}>
 							A{" "}
 							<span
 								className={`${styles.dark_green} ${styles.strong}`}>
@@ -29,10 +39,10 @@ export default function ConclusionSection() {
 							in the production and distribution of food
 						</h2>
 					</article>
-					<article className={styles.article}>
+					<article
+						id="second_card"
+						className={styles.article}>
 						<div className={styles.frame}>
-							<div className={styles.filter}></div>
-
 							<img
 								loading="lazy"
 								className={styles.two_archs_img}
@@ -41,7 +51,9 @@ export default function ConclusionSection() {
 								alt="logo's medium arch"
 							/>
 						</div>
-						<h2 className={styles.title}>
+						<h2
+							ref={second_card.ref}
+							className={styles.title}>
 							The{" "}
 							<span
 								className={`${styles.green} ${styles.strong}`}>
@@ -50,10 +62,10 @@ export default function ConclusionSection() {
 							to address environmental issues
 						</h2>
 					</article>
-					<article className={styles.article}>
+					<article
+						id="third_card"
+						className={styles.article}>
 						<div className={styles.frame}>
-							<div className={styles.filter}></div>
-
 							<img
 								loading="lazy"
 								className={styles.three_archs_img}
@@ -62,7 +74,9 @@ export default function ConclusionSection() {
 								alt="logo's big arch arch"
 							/>
 						</div>
-						<h2 className={styles.title}>
+						<h2
+							ref={third_card.ref}
+							className={styles.title}>
 							Close to people, providing{" "}
 							<span
 								className={`${styles.light_green} ${styles.strong}`}>
@@ -81,10 +95,10 @@ export default function ConclusionSection() {
 							to consume food
 						</h2>
 					</article>
-					<article className={styles.article}>
+					<article
+						id="fourth_card"
+						className={styles.article}>
 						<div className={styles.frame}>
-							<div className={styles.filter}></div>
-
 							<img
 								loading="lazy"
 								className={styles.full_archs_img}
@@ -93,19 +107,45 @@ export default function ConclusionSection() {
 								alt="full logo with all it's archs"
 							/>
 						</div>
-						<h2 className={styles.title}>
+						<h2
+							ref={fourth_card.ref}
+							className={styles.title}>
 							Born to set a{" "}
 							<span className={styles.strong}>new standard</span>{" "}
 							in the food system
 						</h2>
 					</article>
 				</div>
-				<div className={styles.stepper}>
-					<span className={styles.step}></span>
-					<span className={styles.step}></span>
-					<span className={styles.step}></span>
-					<span className={styles.step}></span>
-				</div>
+				<nav className={styles.stepper}>
+					<a
+						href="#first_card"
+						className={`${styles.step} ${
+							first_card.inView ? styles.show : styles.hide
+						}`}>
+						1
+					</a>
+					<a
+						href="#second_card"
+						className={`${styles.step} ${
+							second_card.inView ? styles.show : styles.hide
+						}`}>
+						2
+					</a>
+					<a
+						href="#third_card"
+						className={`${styles.step} ${
+							third_card.inView ? styles.show : styles.hide
+						}`}>
+						3
+					</a>
+					<a
+						href="#fourth_card"
+						className={`${styles.step} ${
+							fourth_card.inView ? styles.show : styles.hide
+						}`}>
+						4
+					</a>
+				</nav>
 			</div>
 		</section>
 	);
