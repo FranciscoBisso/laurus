@@ -106,14 +106,26 @@
 	border-radius: 50%;
 }
 
-.show {
+.bright {
 	opacity: 1;
 	transition: all 100ms ease-out;
 }
 
-.hide {
+.opaque {
 	opacity: 0.5;
 	transition: all 100ms ease-out;
+}
+
+.hide {
+	opacity: 0;
+	filter: blur(5px);
+	transition: all 800ms ease-out;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transition: all 800ms ease-in;
 }
 
 @media screen and (orientation: landscape) {
@@ -143,5 +155,11 @@
 
 	.title {
 		font-size: var(--sz-2);
+	}
+
+	@media screen and (width >= 1024px) {
+		.title {
+			font-size: var(--sz-4);
+		}
 	}
 }

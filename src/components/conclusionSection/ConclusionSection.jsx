@@ -125,28 +125,28 @@ export default function ConclusionSection() {
 					<a
 						href="#first_card"
 						className={`${styles.step} ${
-							first_card.inView ? styles.show : styles.hide
+							first_card.inView ? styles.bright : styles.opaque
 						}`}>
 						1
 					</a>
 					<a
 						href="#second_card"
 						className={`${styles.step} ${
-							second_card.inView ? styles.show : styles.hide
+							second_card.inView ? styles.bright : styles.opaque
 						}`}>
 						2
 					</a>
 					<a
 						href="#third_card"
 						className={`${styles.step} ${
-							third_card.inView ? styles.show : styles.hide
+							third_card.inView ? styles.bright : styles.opaque
 						}`}>
 						3
 					</a>
 					<a
 						href="#fourth_card"
 						className={`${styles.step} ${
-							fourth_card.inView ? styles.show : styles.hide
+							fourth_card.inView ? styles.bright : styles.opaque
 						}`}>
 						4
 					</a>
@@ -157,7 +157,14 @@ export default function ConclusionSection() {
 					loading="lazy"
 					width="100%"
 					height="100%"
-					className={styles.bg_img}
+					className={`${styles.bg_img} ${
+						first_card.inView ||
+						second_card.inView ||
+						third_card.inView ||
+						fourth_card.inView
+							? styles.show
+							: styles.hide
+					}`}
 					src={bg_img}
 					alt="farms in the rooftop of buildings"
 				/>

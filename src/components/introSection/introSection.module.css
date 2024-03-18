@@ -1,3 +1,15 @@
+.hide {
+	opacity: 0;
+	filter: blur(5px);
+	transition: all 800ms ease-out;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transition: all 800ms ease-in;
+}
+
 .hero_section {
 	position: relative;
 	height: 100dvh;
@@ -11,6 +23,7 @@
 
 .logo_wrapper {
 	position: absolute;
+	z-index: 1;
 	bottom: 5%;
 	width: min(50%, 200px);
 	padding: var(--sz-1);

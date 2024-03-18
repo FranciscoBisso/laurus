@@ -5,17 +5,27 @@ import reel_1080 from "../../assets/videos/reels/tower_reel_1080.webm";
 import demo_poster from "../../assets/videos/demos/short_demo_first_frame.webp";
 import demo_720 from "../../assets/videos/demos/short_demo_720.webm";
 import demo_1080 from "../../assets/videos/demos/short_demo_1080.webm";
+
+import { useInView } from "react-intersection-observer";
+
 export default function VideoSection() {
+	const txt = useInView();
 	return (
 		<section className={styles.video_section}>
-			<p className={styles.txt}>
-				480,000 plants per year, in less space than a tennis court
-			</p>
+			<div className={styles.txt_wrapper}>
+				<p
+					ref={txt.ref}
+					className={styles.txt}>
+					480,000 plants per year, in less space than a tennis court
+				</p>
+			</div>
 			<video
 				loading="lazy"
 				width="100%"
 				height="100%"
-				className={styles.reel}
+				className={`${styles.reel} ${
+					txt.inView ? styles.show : styles.hide
+				}`}
 				poster={reel_poster}
 				playsInline
 				loop
@@ -35,7 +45,9 @@ export default function VideoSection() {
 				loading="lazy"
 				width="100%"
 				height="100%"
-				className={styles.demo}
+				className={`${styles.demo} ${
+					txt.inView ? styles.show : styles.hide
+				}`}
 				poster={demo_poster}
 				playsInline
 				loop
