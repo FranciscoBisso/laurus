@@ -11,7 +11,9 @@ import { useInView } from "react-intersection-observer";
 export default function VideoSection() {
 	const txt = useInView();
 	return (
-		<section className={styles.video_section}>
+		<section
+			className={styles.video_section}
+			tabIndex={0}>
 			<div className={styles.txt_wrapper}>
 				<p
 					ref={txt.ref}

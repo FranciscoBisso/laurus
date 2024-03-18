@@ -31,7 +31,9 @@ export default function IntroSection() {
 	}, []);
 
 	return (
-		<section className={styles.hero_section}>
+		<section
+			className={styles.hero_section}
+			tabIndex={0}>
 			<div className={styles.logo_wrapper}>
 				{isDarkMode && (
 					<img

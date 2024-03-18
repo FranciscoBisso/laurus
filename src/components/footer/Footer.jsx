@@ -3,7 +3,9 @@ import SocialMediaNavBar from "../socialMediaNavBar/SocialMediaNavBar";
 
 export default function Footer() {
 	return (
-		<section className={styles.footer}>
+		<section
+			className={styles.footer}
+			tabIndex={0}>
 			<div className={styles.footer_wrapper}>
 				<SocialMediaNavBar props={{ styles }} />
 				<span className={styles.txt}>

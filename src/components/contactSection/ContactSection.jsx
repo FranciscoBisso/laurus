@@ -6,7 +6,9 @@ import { useInView } from "react-intersection-observer";
 export default function ContactSection() {
 	const txt = useInView();
 	return (
-		<section className={styles.contact_section}>
+		<section
+			className={styles.contact_section}
+			tabIndex={0}>
 			<div className={styles.card_wrapper}>
 				<article className={styles.contact_card}>
 					<h1 className={styles.card_header}>

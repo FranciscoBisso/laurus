@@ -10,7 +10,9 @@ export default function PurposeSection() {
 	const third_title = useInView();
 
 	return (
-		<section className={styles.purpose_section}>
+		<section
+			className={styles.purpose_section}
+			tabIndex={0}>
 			<div className={styles.wrapper}>
 				<div className={styles.frame}>
 					<div className={styles.filter}></div>

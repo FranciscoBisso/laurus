@@ -14,7 +14,9 @@ export default function ConclusionSection() {
 	const fourth_card = useInView();
 
 	return (
-		<section className={styles.section}>
+		<section
+			className={styles.section}
+			tabIndex={0}>
 			<div className={styles.container}>
 				<div className={styles.articles_wrapper}>
 					<article
