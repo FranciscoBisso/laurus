@@ -13,6 +13,8 @@ export default function VideoSection() {
 			</p>
 			<video
 				loading="lazy"
+				width="100%"
+				height="100%"
 				className={styles.reel}
 				poster={reel_poster}
 				playsInline
@@ -31,6 +33,8 @@ export default function VideoSection() {
 			</video>
 			<video
 				loading="lazy"
+				width="100%"
+				height="100%"
 				className={styles.demo}
 				poster={demo_poster}
 				playsInline

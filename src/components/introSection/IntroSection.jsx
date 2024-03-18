@@ -31,6 +31,7 @@ export default function IntroSection() {
 			<div className={styles.logo_wrapper}>
 				{isDarkMode && (
 					<img
+						width="100%"
 						className={styles.logo}
 						src={bgless_brand_primary}
 						alt="logo"
@@ -38,6 +39,7 @@ export default function IntroSection() {
 				)}
 				{!isDarkMode && (
 					<img
+						width="100%"
 						className={styles.logo}
 						src={bgless_brand_secondary}
 						alt="logo"
@@ -46,6 +48,8 @@ export default function IntroSection() {
 			</div>
 			<div className={styles.bg_wrapper}>
 				<video
+					width="100%"
+					height="100%"
 					className={styles.bg_video}
 					poster={poster}
 					playsInline

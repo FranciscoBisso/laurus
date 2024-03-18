@@ -23,6 +23,7 @@ export default function ConclusionSection() {
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
+								width="100%"
 								className={styles.one_arch_img}
 								src={one_arch}
 								//*TODO: srcSet={`${} 768w, ${} `}
@@ -46,6 +47,7 @@ export default function ConclusionSection() {
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
+								width="100%"
 								className={styles.two_archs_img}
 								src={two_archs}
 								//*TODO: srcSet={`${} 768w, ${} `}
@@ -69,6 +71,7 @@ export default function ConclusionSection() {
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
+								width="100%"
 								className={styles.three_archs_img}
 								src={three_archs}
 								//*TODO: srcSet={`${} 768w, ${} `}
@@ -102,6 +105,7 @@ export default function ConclusionSection() {
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
+								width="100%"
 								className={styles.full_archs_img}
 								src={full_archs}
 								//*TODO: srcSet={`${} 768w, ${} `}
@@ -150,6 +154,9 @@ export default function ConclusionSection() {
 			</div>
 			<div className={styles.img_wrapper}>
 				<img
+					loading="lazy"
+					width="100%"
+					height="100%"
 					className={styles.bg_img}
 					src={bg_img}
 					alt="farms in the rooftop of buildings"

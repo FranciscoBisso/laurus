@@ -17,11 +17,12 @@
 }
 
 .contact_card {
+	width: min(100%, 800px);
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: min(100%, 800px);
 	border-radius: var(--radius);
 }
 
@@ -77,16 +78,16 @@
 	}
 
 	.card_header {
-		font-size: var(--sz-5);
+		font-size: var(--sz-4);
 	}
 
 	.card_text {
 		padding: var(--sz-1) 0 var(--sz-1);
-		font-size: var(--sz-1);
+		font-size: var(--sz-0);
 	}
 
 	.calendly_btn {
-		font-size: var(--sz-1);
+		font-size: var(--sz-0);
 	}
 
 	.img_wrapper {

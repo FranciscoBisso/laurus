@@ -16,6 +16,8 @@ export default function PurposeSection() {
 					<div className={styles.filter}></div>
 					<img
 						loading="lazy"
+						width="100%"
+						height="100%"
 						className={`${styles.img} ${
 							first_title.inView ? styles.show : styles.hide
 						}`}
@@ -25,6 +27,8 @@ export default function PurposeSection() {
 					/>
 					<img
 						loading="lazy"
+						width="100%"
+						height="100%"
 						className={`${styles.img} ${
 							second_title.inView ? styles.show : styles.hide
 						}`}
@@ -34,6 +38,8 @@ export default function PurposeSection() {
 					/>
 					<img
 						loading="lazy"
+						width="100%"
+						height="100%"
 						className={`${styles.img} ${
 							third_title.inView ? styles.show : styles.hide
 						}`}

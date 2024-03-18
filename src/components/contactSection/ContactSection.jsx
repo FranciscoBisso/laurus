@@ -26,6 +26,8 @@ export default function ContactSection() {
 			</div>
 			<div className={styles.img_wrapper}>
 				<img
+					width="100%"
+					height="100%"
 					className={styles.bg_img}
 					src={bg_img}
 					alt="a farm's seedling tray"
