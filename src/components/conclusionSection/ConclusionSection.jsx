@@ -18,7 +18,7 @@ export default function ConclusionSection() {
 			<div className={styles.container}>
 				<div className={styles.articles_wrapper}>
 					<article
-						id="first_card"
+						id="1"
 						className={styles.article}>
 						<div className={styles.frame}>
 							<img
@@ -42,7 +42,7 @@ export default function ConclusionSection() {
 						</h2>
 					</article>
 					<article
-						id="second_card"
+						id="2"
 						className={styles.article}>
 						<div className={styles.frame}>
 							<img
@@ -66,7 +66,7 @@ export default function ConclusionSection() {
 						</h2>
 					</article>
 					<article
-						id="third_card"
+						id="3"
 						className={styles.article}>
 						<div className={styles.frame}>
 							<img
@@ -100,7 +100,7 @@ export default function ConclusionSection() {
 						</h2>
 					</article>
 					<article
-						id="fourth_card"
+						id="4"
 						className={styles.article}>
 						<div className={styles.frame}>
 							<img
@@ -123,28 +123,28 @@ export default function ConclusionSection() {
 				</div>
 				<nav className={styles.stepper}>
 					<a
-						href="#first_card"
+						href="#1"
 						className={`${styles.step} ${
 							first_card.inView ? styles.bright : styles.opaque
 						}`}>
 						1
 					</a>
 					<a
-						href="#second_card"
+						href="#2"
 						className={`${styles.step} ${
 							second_card.inView ? styles.bright : styles.opaque
 						}`}>
 						2
 					</a>
 					<a
-						href="#third_card"
+						href="#3"
 						className={`${styles.step} ${
 							third_card.inView ? styles.bright : styles.opaque
 						}`}>
 						3
 					</a>
 					<a
-						href="#fourth_card"
+						href="#4"
 						className={`${styles.step} ${
 							fourth_card.inView ? styles.bright : styles.opaque
 						}`}>
