@@ -26,7 +26,11 @@ export default function ConclusionSection() {
 							<img
 								loading="lazy"
 								width="100%"
-								className={styles.one_arch_img}
+								className={`${styles.one_arch_img} ${
+									first_card.inView
+										? styles.show
+										: styles.hide
+								}`}
 								src={one_arch}
 								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="logo's small arch"
@@ -50,7 +54,11 @@ export default function ConclusionSection() {
 							<img
 								loading="lazy"
 								width="100%"
-								className={styles.two_archs_img}
+								className={`${styles.two_archs_img} ${
+									second_card.inView
+										? styles.show
+										: styles.hide
+								}`}
 								src={two_archs}
 								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="logo's medium arch"
@@ -74,7 +82,11 @@ export default function ConclusionSection() {
 							<img
 								loading="lazy"
 								width="100%"
-								className={styles.three_archs_img}
+								className={`${styles.three_archs_img} ${
+									third_card.inView
+										? styles.show
+										: styles.hide
+								}`}
 								src={three_archs}
 								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="logo's big arch arch"
@@ -108,7 +120,11 @@ export default function ConclusionSection() {
 							<img
 								loading="lazy"
 								width="100%"
-								className={styles.full_archs_img}
+								className={`${styles.full_archs_img} ${
+									fourth_card.inView
+										? styles.show
+										: styles.hide
+								}`}
 								src={full_archs}
 								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="full logo with all it's archs"
@@ -123,36 +139,36 @@ export default function ConclusionSection() {
 						</h2>
 					</article>
 				</div>
-				<nav className={styles.stepper}>
-					<a
+				<div className={styles.stepper}>
+					<span
 						href="#1"
 						className={`${styles.step} ${
 							first_card.inView ? styles.bright : styles.opaque
 						}`}>
 						1
-					</a>
-					<a
+					</span>
+					<span
 						href="#2"
 						className={`${styles.step} ${
 							second_card.inView ? styles.bright : styles.opaque
 						}`}>
 						2
-					</a>
-					<a
+					</span>
+					<span
 						href="#3"
 						className={`${styles.step} ${
 							third_card.inView ? styles.bright : styles.opaque
 						}`}>
 						3
-					</a>
-					<a
+					</span>
+					<span
 						href="#4"
 						className={`${styles.step} ${
 							fourth_card.inView ? styles.bright : styles.opaque
 						}`}>
 						4
-					</a>
-				</nav>
+					</span>
+				</div>
 			</div>
 			<div className={styles.img_wrapper}>
 				<img
