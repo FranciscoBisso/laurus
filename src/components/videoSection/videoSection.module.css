@@ -27,7 +27,7 @@
 	position: absolute;
 	z-index: 1;
 	bottom: 2.5%;
-	width: 90%;
+	width: min(90%, 600px);
 	padding: var(--radius);
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
