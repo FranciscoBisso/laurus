@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styles from "./introSection.module.css";
 import bgless_brand_primary from "../../assets/imgs/brand/logo/bgless_brand_primary.webp";
 import bgless_brand_secondary from "../../assets/imgs/brand/logo/bgless_brand_secondary.webp";
@@ -10,50 +9,23 @@ import { useInView } from "react-intersection-observer";
 export default function IntroSection() {
 	const logo = useInView();
 
-	const [isDarkMode, setIsDarkMode] = useState(
-		window.matchMedia("(prefers-color-scheme: dark)").matches
-	);
-
-	useEffect(() => {
-		const darkModeMediaQuery = window.matchMedia(
-			"(prefers-color-scheme: dark)"
-		);
-
-		const handleChange = (e) => {
-			setIsDarkMode(e.matches);
-		};
-
-		darkModeMediaQuery.addEventListener("change", handleChange);
-
-		return () => {
-			darkModeMediaQuery.removeEventListener("change", handleChange);
-		};
-	}, []);
-
 	return (
 		<section
 			className={styles.hero_section}
 			tabIndex={0}>
-			<div className={styles.logo_wrapper}>
-				{isDarkMode && (
-					<img
-						ref={logo.ref}
-						width="100%"
-						className={styles.logo}
-						src={bgless_brand_primary}
-						alt="logo"
-					/>
-				)}
-				{!isDarkMode && (
-					<img
-						ref={logo.ref}
-						width="100%"
-						className={styles.logo}
-						src={bgless_brand_secondary}
-						alt="logo"
-					/>
-				)}
-			</div>
+			<picture className={styles.logo_wrapper}>
+				<source
+					srcSet={bgless_brand_primary}
+					media="(prefers-color-scheme: dark)"
+				/>
+				<img
+					ref={logo.ref}
+					width="100%"
+					className={styles.logo}
+					src={bgless_brand_secondary}
+					alt="logo"
+				/>
+			</picture>
 			<div className={styles.bg_wrapper}>
 				<video
 					width="100%"
