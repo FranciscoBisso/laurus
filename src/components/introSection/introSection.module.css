@@ -27,6 +27,7 @@
 	z-index: 1;
 	bottom: 5%;
 	width: min(50%, 300px);
+	aspect-ratio: 47/32;
 	padding: min(5%, var(--radius));
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
