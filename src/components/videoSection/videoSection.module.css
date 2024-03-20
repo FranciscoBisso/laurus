@@ -28,7 +28,7 @@
 	z-index: 1;
 	bottom: 2.5%;
 	width: min(90%, 600px);
-	padding: var(--radius);
+	padding: min(3%, var(--radius));
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
 	box-shadow: 0 0 10px var(--warm-gray);
