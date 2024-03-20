@@ -1,13 +1,39 @@
 import styles from "./videoSection.module.css";
+import reel_poster from "../../assets/videos/reels/tower_reel_frist_frame.webp";
+import demo_poster from "../../assets/videos/demos/short_demo_first_frame.webp";
 import reel_720 from "../../assets/videos/reels/tower_reel_720.webm";
-import reel_1080 from "../../assets/videos/reels/tower_reel_1080.webm";
 import demo_720 from "../../assets/videos/demos/short_demo_720.webm";
+import reel_1080 from "../../assets/videos/reels/tower_reel_1080.webm";
 import demo_1080 from "../../assets/videos/demos/short_demo_1080.webm";
 
 import { useInView } from "react-intersection-observer";
+import { useEffect, useState } from "react";
 
 export default function VideoSection() {
 	const txt = useInView();
+
+	const [isOrientationLandscape, setIsOrientationLandscape] = useState(
+		window.matchMedia("(orientation: landscape)").matches
+	);
+
+	useEffect(() => {
+		const orientationLandscapeQuery = window.matchMedia(
+			"(orientation: landscape)"
+		);
+
+		const handleChange = (e) => {
+			setIsOrientationLandscape(e.matches);
+		};
+
+		orientationLandscapeQuery.addEventListener("change", handleChange);
+
+		return () => {
+			orientationLandscapeQuery.removeEventListener(
+				"change",
+				handleChange
+			);
+		};
+	}, []);
 
 	return (
 		<section
@@ -27,6 +53,7 @@ export default function VideoSection() {
 				className={`${styles.video} ${
 					txt.inView ? styles.show : styles.hide
 				}`}
+				poster={isOrientationLandscape ? demo_poster : reel_poster}
 				playsInline
 				loop
 				autoPlay
