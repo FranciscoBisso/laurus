@@ -44,15 +44,13 @@
 	line-height: 1;
 }
 
-.reel {
+.video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	background-size: contain;
-}
-
-.demo {
-	display: none;
+	background-image: url("../../assets/videos/demos/short_demo_first_frame.webp");
+	background-size: cover;
+	background-position: center;
 }
 
 @media screen and (orientation: landscape) {
@@ -79,16 +77,13 @@
 		line-height: 1.2;
 	}
 
-	.reel {
-		display: none;
-	}
-
-	.demo {
-		display: block;
+	.video {
 		width: 50%;
 		height: 100%;
 		object-fit: cover;
+		background-image: url("../../assets/videos/reels/tower_reel_frist_frame.webp");
 	}
+
 	@media screen and (width >= 1024px) {
 		.txt {
 			font-size: var(--sz-5);
