@@ -21,28 +21,30 @@ const ContactSection = lazy(() =>
 );
 const Footer = lazy(() => import("../../components/footer/Footer"));
 
+const Spinner = lazy(() => import("../../components/loader/spinner"));
+
 export default function Home() {
 	return (
 		<div className={styles.home_wrapper}>
 			<IntroSection />
 
-			<Suspense fallback={<h4>Loading...</h4>}>
+			<Suspense fallback={<Spinner />}>
 				<PurposeSection />
 			</Suspense>
 
-			<Suspense fallback={<h4>Loading...</h4>}>
+			<Suspense fallback={<Spinner />}>
 				<VideoSection />
 			</Suspense>
 
-			<Suspense fallback={<h4>Loading...</h4>}>
+			<Suspense fallback={<Spinner />}>
 				<ConclusionSection />
 			</Suspense>
 
-			<Suspense fallback={<h4>Loading...</h4>}>
+			<Suspense fallback={<Spinner />}>
 				<ContactSection />
 			</Suspense>
 
-			<Suspense fallback={<h4>Loading...</h4>}>
+			<Suspense fallback={<Spinner />}>
 				<Footer />
 			</Suspense>
 		</div>
