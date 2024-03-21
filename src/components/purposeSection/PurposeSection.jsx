@@ -1,13 +1,13 @@
 import styles from "./purposeSection.module.css";
-import card_img_one from "../../assets/imgs/farms/rooftop_farm_1.webp";
-import card_img_two from "../../assets/imgs/farms/farming_robot.webp";
-import card_img_three from "../../assets/imgs/products/products.webp";
+import card_img_one from "../../assets/imgs/farms/rooftop_farm_desktop.webp";
+import card_img_two from "../../assets/imgs/farmingRobots/farming_robot_mobile.webp";
+import card_img_three from "../../assets/imgs/products/products_desktop.webp";
 
 import { useInView } from "react-intersection-observer";
 export default function PurposeSection() {
-	const first_title = useInView();
-	const second_title = useInView();
-	const third_title = useInView();
+	const firstTitle = useInView();
+	const secondTitle = useInView();
+	const thirdTitle = useInView();
 
 	return (
 		<section
@@ -21,7 +21,7 @@ export default function PurposeSection() {
 						width="100%"
 						height="100%"
 						className={`${styles.img} ${
-							first_title.inView ? styles.show : styles.hide
+							firstTitle.inView ? styles.show : styles.hide
 						}`}
 						src={card_img_one}
 						//*TODO: srcSet={`${} 768w, ${} `}
@@ -32,7 +32,7 @@ export default function PurposeSection() {
 						width="100%"
 						height="100%"
 						className={`${styles.img} ${
-							second_title.inView ? styles.show : styles.hide
+							secondTitle.inView ? styles.show : styles.hide
 						}`}
 						src={card_img_two}
 						//*TODO: srcSet={`${} 768w, ${} `}
@@ -43,7 +43,7 @@ export default function PurposeSection() {
 						width="100%"
 						height="100%"
 						className={`${styles.img} ${
-							third_title.inView ? styles.show : styles.hide
+							thirdTitle.inView ? styles.show : styles.hide
 						}`}
 						src={card_img_three}
 						//*TODO: srcSet={`${} 768w, ${} `}
@@ -53,7 +53,7 @@ export default function PurposeSection() {
 				<article className={styles.card}>
 					<div className={styles.card_txt_wrapper}>
 						<h2
-							ref={first_title.ref}
+							ref={firstTitle.ref}
 							className={styles.card_title}>
 							What we do
 						</h2>
@@ -69,7 +69,7 @@ export default function PurposeSection() {
 				<article className={styles.card}>
 					<div className={styles.card_txt_wrapper}>
 						<h2
-							ref={second_title.ref}
+							ref={secondTitle.ref}
 							className={styles.card_title}>
 							How we do it
 						</h2>
@@ -84,7 +84,7 @@ export default function PurposeSection() {
 				<article className={styles.card}>
 					<div className={styles.card_txt_wrapper}>
 						<h2
-							ref={third_title.ref}
+							ref={thirdTitle.ref}
 							className={styles.card_title}>
 							What we achieve
 						</h2>

@@ -1,6 +1,6 @@
 import styles from "./introSection.module.css";
-import bgless_brand_primary from "../../assets/imgs/brand/logo/bgless_brand_primary.webp";
-import bgless_brand_secondary from "../../assets/imgs/brand/logo/bgless_brand_secondary.webp";
+import brand_primary from "../../assets/imgs/brand/logo/brand_primary_desktop.webp";
+import brand_secondary from "../../assets/imgs/brand/logo/brand_secondary_desktop.webp";
 import reel_720 from "../../assets/videos/reels/farm_reel_720.webm";
 import reel_1080 from "../../assets/videos/reels/farm_reel_1080.webm";
 import poster from "../../assets/videos/reels/reel_frist_frame.webp";
@@ -15,14 +15,14 @@ export default function IntroSection() {
 			tabIndex={0}>
 			<picture className={styles.logo_wrapper}>
 				<source
-					srcSet={bgless_brand_primary}
+					srcSet={brand_primary}
 					media="(prefers-color-scheme: dark)"
 				/>
 				<img
 					ref={logo.ref}
 					width="100%"
 					className={styles.logo}
-					src={bgless_brand_secondary}
+					src={brand_secondary}
 					alt="logo"
 				/>
 			</picture>

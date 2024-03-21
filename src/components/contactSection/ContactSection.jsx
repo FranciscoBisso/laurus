@@ -1,6 +1,6 @@
 import styles from "./contactSection.module.css";
 import { PopupButton } from "react-calendly";
-import bg_img from "../../assets/imgs/farms/seedling_tray.webp";
+import bg_img from "../../assets/imgs/farms/seedling_tray_desktop.webp";
 import { useInView } from "react-intersection-observer";
 
 export default function ContactSection() {
