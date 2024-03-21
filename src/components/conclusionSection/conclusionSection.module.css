@@ -101,7 +101,7 @@
 	font-family: var(--mark-pro-medium);
 	font-size: var(--sz-s);
 	color: var(--font-color);
-	border: solid;
+	border: solid 1px;
 	aspect-ratio: 1;
 	width: var(--sz-2);
 	display: grid;
