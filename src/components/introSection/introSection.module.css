@@ -32,12 +32,13 @@
 	border-radius: var(--radius);
 	border: solid var(--warm-gray);
 	box-shadow: 0 0 10px var(--warm-gray);
-	background-color: var(--glassy);
+	background-color: var(--clr-pair-1);
 }
 
 .logo {
 	width: 100%;
 	object-fit: cover;
+	object-position: center;
 }
 
 .bg_wrapper {
