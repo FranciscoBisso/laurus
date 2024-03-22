@@ -41,7 +41,13 @@
 }
 
 .link_icon:hover {
-	animation: var(--animation-scale-up) forwards;
+	animation: scale-up 0.5s cubic-bezier(0.25, 0, 0.3, 1) forwards;
+}
+
+@keyframes scale-up {
+	to {
+		transform: scale(1.25);
+	}
 }
 
 .txt {
