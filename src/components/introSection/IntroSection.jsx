@@ -1,10 +1,12 @@
 import styles from "./introSection.module.css";
-import logo_primary from "../../assets/imgs/brand/logo/logo_primary_desktop.webp";
-import logo_secondary from "../../assets/imgs/brand/logo/logo_secondary_desktop.webp";
+import { useInView } from "react-intersection-observer";
+import logo_primary_mobile from "../../assets/imgs/brand/logo/logo_primary_mobile.webp";
+import logo_primary_desktop from "../../assets/imgs/brand/logo/logo_primary_desktop.webp";
+import logo_secondary_mobile from "../../assets/imgs/brand/logo/logo_secondary_mobile.webp";
+import logo_secondary_desktop from "../../assets/imgs/brand/logo/logo_secondary_desktop.webp";
 import reel_720 from "../../assets/videos/reels/farm_reel_720.webm";
 import reel_1080 from "../../assets/videos/reels/farm_reel_1080.webm";
 import poster from "../../assets/videos/reels/reel_frist_frame.webp";
-import { useInView } from "react-intersection-observer";
 
 export default function IntroSection() {
 	const logo = useInView();
@@ -15,14 +17,15 @@ export default function IntroSection() {
 			tabIndex={0}>
 			<picture className={styles.logo_wrapper}>
 				<source
-					srcSet={logo_secondary}
+					srcSet={`${logo_secondary_mobile} 1000w, ${logo_secondary_desktop}`}
 					media="(prefers-color-scheme: dark)"
 				/>
 				<img
 					ref={logo.ref}
 					width="100%"
 					className={styles.logo}
-					src={logo_primary}
+					src={logo_primary_desktop}
+					srcSet={`${logo_primary_mobile} 1000w, ${logo_primary_desktop}`}
 					alt="logo"
 				/>
 			</picture>
@@ -40,7 +43,12 @@ export default function IntroSection() {
 					muted>
 					<source
 						src={reel_720}
-						media="(max-width: 1023px)"
+						media="(orientation: portrait) and (max-width: 700px)"
+						type="video/webm"
+					/>
+					<source
+						src={reel_720}
+						media="(orientation: landscape) and (max-width: 1000px)"
 						type="video/webm"
 					/>
 					<source
