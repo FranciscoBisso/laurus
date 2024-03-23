@@ -43,12 +43,12 @@ export default function IntroSection() {
 					muted>
 					<source
 						src={reel_720}
-						media="(orientation: portrait) and (max-width: 700px)"
+						media="(orientation: portrait) and (width < 700px)"
 						type="video/webm"
 					/>
 					<source
 						src={reel_720}
-						media="(orientation: landscape) and (max-width: 1000px)"
+						media="(orientation: landscape) and (width < 1000px)"
 						type="video/webm"
 					/>
 					<source
