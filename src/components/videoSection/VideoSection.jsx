@@ -3,7 +3,6 @@ import reel_poster from "../../assets/videos/reels/tower_reel_frist_frame.webp";
 import demo_poster from "../../assets/videos/demos/short_demo_first_frame.webp";
 import reel_720 from "../../assets/videos/reels/tower_reel_720.webm";
 import demo_720 from "../../assets/videos/demos/short_demo_720.webm";
-import reel_1080 from "../../assets/videos/reels/tower_reel_1080.webm";
 import demo_1080 from "../../assets/videos/demos/short_demo_1080.webm";
 
 import { useInView } from "react-intersection-observer";
@@ -12,28 +11,39 @@ import { useEffect, useState } from "react";
 export default function VideoSection() {
 	const txt = useInView();
 
-	const [isOrientationLandscape, setIsOrientationLandscape] = useState(
-		window.matchMedia("(orientation: landscape)").matches
+	const [
+		isMobileViewportOrientationPortrait,
+		setIsMobileViewportOrientationPortrait,
+	] = useState(
+		window.matchMedia("(orientation: portrait) and (width < 700px)").matches
 	);
 
 	useEffect(() => {
-		const orientationLandscapeQuery = window.matchMedia(
-			"(orientation: landscape)"
+		const mobileViewportOrientationPortraitQuery = window.matchMedia(
+			"(orientation: portrait) and (width < 700px)"
 		);
 
 		const handleChange = (e) => {
-			setIsOrientationLandscape(e.matches);
+			setIsMobileViewportOrientationPortrait(e.matches);
 		};
 
-		orientationLandscapeQuery.addEventListener("change", handleChange);
+		mobileViewportOrientationPortraitQuery.addEventListener(
+			"change",
+			handleChange
+		);
 
 		return () => {
-			orientationLandscapeQuery.removeEventListener(
+			mobileViewportOrientationPortraitQuery.removeEventListener(
 				"change",
 				handleChange
 			);
 		};
 	}, []);
+
+	console.log(
+		"isMobileViewportOrientationPortrait: ",
+		isMobileViewportOrientationPortrait
+	);
 
 	return (
 		<section
@@ -53,28 +63,27 @@ export default function VideoSection() {
 				className={`${styles.video} ${
 					txt.inView ? styles.show : styles.hide
 				}`}
-				poster={isOrientationLandscape ? demo_poster : reel_poster}
+				poster={
+					isMobileViewportOrientationPortrait
+						? reel_poster
+						: demo_poster
+				}
 				playsInline
 				loop
 				autoPlay
 				muted>
 				<source
+					src={reel_720}
+					media="(orientation: portrait) and (width < 700px)"
+					type="video/webm"
+				/>
+				<source
 					src={demo_720}
-					media="(max-width: 1023px) and (orientation: landscape)"
+					media="(orientation: landscape) and (width < 1000px)"
 					type="video/webm"
 				/>
 				<source
 					src={demo_1080}
-					media="(min-width: 1024px) and (orientation: landscape)"
-					type="video/webm"
-				/>{" "}
-				<source
-					src={reel_720}
-					media="(max-width: 1023px)"
-					type="video/webm"
-				/>
-				<source
-					src={reel_1080}
 					type="video/webm"
 				/>
 			</video>
