@@ -1,8 +1,8 @@
 import styles from "./videoSection.module.css";
 import reel_poster from "../../assets/videos/reels/tower_reel_frist_frame.webp";
 import demo_poster from "../../assets/videos/demos/short_demo_first_frame.webp";
-import reel_720 from "../../assets/videos/reels/tower_reel_720.webm";
-import demo_720 from "../../assets/videos/demos/short_demo_720.webm";
+import reel_720 from "../../assets/videos/reels/tower_reel_frist_frame.webp";
+import demo_720 from "../../assets/videos/demos/short_demo_first_frame.webp";
 import demo_1080 from "../../assets/videos/demos/short_demo_1080.webm";
 
 import { useInView } from "react-intersection-observer";
