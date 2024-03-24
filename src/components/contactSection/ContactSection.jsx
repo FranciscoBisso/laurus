@@ -1,6 +1,8 @@
 import styles from "./contactSection.module.css";
 import { PopupButton } from "react-calendly";
-import bg_img from "../../assets/imgs/farms/seedling_tray_desktop.webp";
+import bg_img_mobile from "../../assets/imgs/farms/seedling_tray_mobile.webp";
+import bg_img_tablet from "../../assets/imgs/farms/seedling_tray_tablet.webp";
+import bg_img_desktop from "../../assets/imgs/farms/seedling_tray_desktop.webp";
 import { useInView } from "react-intersection-observer";
 
 export default function ContactSection() {
@@ -37,7 +39,9 @@ export default function ContactSection() {
 					className={`${styles.bg_img} ${
 						txt.inView ? styles.show : styles.hide
 					}`}
-					src={bg_img}
+					src={bg_img_desktop}
+					sizes="50vw"
+					srcSet={`${bg_img_mobile} 768w, ${bg_img_tablet} 1024w, ${bg_img_desktop} `}
 					alt="a farm's seedling tray"
 				/>
 			</div>

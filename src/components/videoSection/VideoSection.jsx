@@ -40,11 +40,6 @@ export default function VideoSection() {
 		};
 	}, []);
 
-	console.log(
-		"isMobileViewportOrientationPortrait: ",
-		isMobileViewportOrientationPortrait
-	);
-
 	return (
 		<section
 			className={styles.video_section}
