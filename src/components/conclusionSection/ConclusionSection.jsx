@@ -6,7 +6,8 @@ import one_arch from "../../assets/imgs/brand/logoArchs/bgless_arch_400.webp";
 import two_archs from "../../assets/imgs/brand/logoArchs/bgless_two_archs_400.webp";
 import three_archs from "../../assets/imgs/brand/logoArchs/bgless_three_archs_400.webp";
 import full_archs from "../../assets/imgs/brand/logoArchs/bgless_full_archs_400.webp";
-import bg_img from "../../assets/imgs/farms/rooftop_shopping.webp";
+import bg_img_mobile from "../../assets/imgs/farms/rooftop_shopping_mobile.webp";
+import bg_img_desktop from "../../assets/imgs/farms/rooftop_shopping_desktop.webp";
 export default function ConclusionSection() {
 	const first_card = useInView();
 	const second_card = useInView();
@@ -183,8 +184,10 @@ export default function ConclusionSection() {
 							? styles.show
 							: styles.hide
 					}`}
-					src={bg_img}
-					alt="farms in the rooftop of buildings"
+					src={bg_img_desktop}
+					sizes="50vw"
+					srcSet={`${bg_img_mobile} 767w, ${bg_img_desktop} `}
+					alt="farms in a shopping's rooftop"
 				/>
 			</div>
 		</section>
