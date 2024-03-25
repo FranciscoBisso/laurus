@@ -1,4 +1,4 @@
-import styles from "./purposeSection.module.css";
+import styles from "./purposeSection2.module.css";
 import card_img_one_mobile from "../../assets/imgs/farms/rooftop_farm_mobile.webp";
 import card_img_one_tablet from "../../assets/imgs/farms/rooftop_farm_tablet.webp";
 import card_img_one_desktop from "../../assets/imgs/farms/rooftop_farm_desktop.webp";
@@ -48,9 +48,9 @@ export default function PurposeSection() {
 		<section
 			className={styles.purpose_section}
 			tabIndex={0}>
+			<div className={styles.filter}></div>
 			<div className={styles.wrapper}>
 				<div className={styles.frame}>
-					<div className={styles.filter}></div>
 					{cards?.map((card, index) => (
 						<img
 							key={index}
