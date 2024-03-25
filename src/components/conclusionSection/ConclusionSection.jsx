@@ -33,7 +33,6 @@ export default function ConclusionSection() {
 										: styles.hide
 								}`}
 								src={one_arch}
-								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="logo's small arch"
 							/>
 						</div>
@@ -61,7 +60,6 @@ export default function ConclusionSection() {
 										: styles.hide
 								}`}
 								src={two_archs}
-								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="logo's medium arch"
 							/>
 						</div>
@@ -89,7 +87,6 @@ export default function ConclusionSection() {
 										: styles.hide
 								}`}
 								src={three_archs}
-								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="logo's big arch arch"
 							/>
 						</div>
@@ -127,7 +124,6 @@ export default function ConclusionSection() {
 										: styles.hide
 								}`}
 								src={full_archs}
-								//*TODO: srcSet={`${} 768w, ${} `}
 								alt="full logo with all it's archs"
 							/>
 						</div>
