@@ -27,6 +27,10 @@
 	scroll-snap-type: y mandatory;
 }
 
+.wrapper::-webkit-scrollbar {
+	display: none;
+}
+
 .frame {
 	position: sticky;
 	top: 0;
