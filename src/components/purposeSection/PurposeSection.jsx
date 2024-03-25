@@ -11,9 +11,38 @@ import card_img_three_desktop from "../../assets/imgs/products/products_desktop.
 
 import { useInView } from "react-intersection-observer";
 export default function PurposeSection() {
-	const firstTitle = useInView();
-	const secondTitle = useInView();
-	const thirdTitle = useInView();
+	const cards = [
+		{
+			observerHook: useInView(),
+			img: {
+				mobile: card_img_one_mobile,
+				tablet: card_img_one_tablet,
+				desktop: card_img_one_desktop,
+			},
+			title: "What we do",
+			txt: "We reinvent urban agriculture by providing a sustainable and efficient way to deliver hyper-local, nutritious and affordable food to people in cities.",
+		},
+		{
+			observerHook: useInView(),
+			img: {
+				mobile: card_img_two_mobile,
+				tablet: card_img_two_tablet,
+				desktop: card_img_two_desktop,
+			},
+			title: "How we do it",
+			txt: "Our automated inflatable farms, designed to utilize idle spaces in cities, enable cultivation regardless of the season and weather.",
+		},
+		{
+			observerHook: useInView(),
+			img: {
+				mobile: card_img_three_mobile,
+				tablet: card_img_three_tablet,
+				desktop: card_img_three_desktop,
+			},
+			title: "What we achieve",
+			txt: "Our farms can provide fresh and premium food at affordable prices to anyone, regardless of where they live or how much they earn.",
+		},
+	];
 
 	return (
 		<section
@@ -22,88 +51,39 @@ export default function PurposeSection() {
 			<div className={styles.wrapper}>
 				<div className={styles.frame}>
 					<div className={styles.filter}></div>
-					<img
-						loading="lazy"
-						width="100%"
-						height="100%"
-						className={`${styles.img} ${
-							firstTitle.inView ? styles.show : styles.hide
-						}`}
-						src={card_img_one_desktop}
-						sizes="(orientation: landscape) 50vw, 100vw"
-						srcSet={`${card_img_one_mobile} 768w, ${card_img_one_tablet} 1024w, ${card_img_one_desktop} `}
-						alt="rooftop farm"
-					/>
-					<img
-						loading="lazy"
-						width="100%"
-						height="100%"
-						className={`${styles.img} ${
-							secondTitle.inView ? styles.show : styles.hide
-						}`}
-						src={card_img_two_desktop}
-						sizes="(orientation: landscape) 50vw, 100vw"
-						srcSet={`${card_img_two_mobile} 768w, ${card_img_two_tablet} 1024w, ${card_img_two_desktop} `}
-						alt="operating robot"
-					/>
-					<img
-						loading="lazy"
-						width="100%"
-						height="100%"
-						className={`${styles.img} ${
-							thirdTitle.inView ? styles.show : styles.hide
-						}`}
-						src={card_img_three_desktop}
-						sizes="(orientation: landscape) 50vw, 100vw"
-						srcSet={`${card_img_three_mobile} 768w, ${card_img_three_tablet} 1024w, ${card_img_three_desktop} `}
-						alt="products"
-					/>
+					{cards?.map((card, index) => (
+						<img
+							key={index}
+							loading="lazy"
+							width="100%"
+							height="100%"
+							className={`${styles.img} ${
+								card.observerHook.inView
+									? styles.show
+									: styles.hide
+							}`}
+							src={card.img.desktop}
+							sizes="(orientation: landscape) 50vw, 100vw"
+							srcSet={`${card.img.mobile} 768w, ${card.img.tablet} 1024w, ${card.img.desktop} `}
+							alt="rooftop farm"
+						/>
+					))}
 				</div>
-				<article className={styles.card}>
-					<div className={styles.card_txt_wrapper}>
-						<h2
-							ref={firstTitle.ref}
-							className={styles.card_title}>
-							What we do
-						</h2>
-						<p className={styles.card_txt}>
-							We reinvent urban agriculture by providing a
-							sustainable and efficient way to deliver
-							hyper-local, nutritious and affordable food to
-							people in cities.
-						</p>
-					</div>
-				</article>
 
-				<article className={styles.card}>
-					<div className={styles.card_txt_wrapper}>
-						<h2
-							ref={secondTitle.ref}
-							className={styles.card_title}>
-							How we do it
-						</h2>
-						<p className={styles.card_txt}>
-							Our automated inflatable farms, designed to utilize
-							idle spaces in cities, enable cultivation regardless
-							of the season and weather.
-						</p>
-					</div>
-				</article>
-
-				<article className={styles.card}>
-					<div className={styles.card_txt_wrapper}>
-						<h2
-							ref={thirdTitle.ref}
-							className={styles.card_title}>
-							What we achieve
-						</h2>
-						<p className={styles.card_txt}>
-							Our farms can provide fresh and premium food at
-							affordable prices to anyone, regardless of where
-							they live or how much they earn.
-						</p>
-					</div>
-				</article>
+				{cards?.map((card, index) => (
+					<article
+						className={styles.card}
+						key={index}>
+						<div className={styles.card_txt_wrapper}>
+							<h2
+								ref={card.observerHook.ref}
+								className={styles.card_title}>
+								{card.title}
+							</h2>
+							<p className={styles.card_txt}>{card.txt}</p>
+						</div>
+					</article>
+				))}
 			</div>
 		</section>
 	);
