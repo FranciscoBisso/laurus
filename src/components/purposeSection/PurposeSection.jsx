@@ -1,4 +1,4 @@
-import styles from "./purposeSection2.module.css";
+import styles from "./purposeSection.module.css";
 import card_img_one_mobile from "../../assets/imgs/farms/rooftop_farm_mobile.webp";
 import card_img_one_tablet from "../../assets/imgs/farms/rooftop_farm_tablet.webp";
 import card_img_one_desktop from "../../assets/imgs/farms/rooftop_farm_desktop.webp";
