@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import styles from "./home.module.css";
 import IntroSkeleton from "../../components/introSection/IntroSkeleton";
+import PurposeSkeleton from "../../components/purposeSection/PurposeSkeleton";
 
 const IntroSection = lazy(() =>
 	import("../../components/introSection/IntroSection")
@@ -29,7 +30,7 @@ export default function Home() {
 				<IntroSection />
 			</Suspense>
 
-			<Suspense fallback={<Spinner />}>
+			<Suspense fallback={<PurposeSkeleton />}>
 				<PurposeSection />
 			</Suspense>
 
