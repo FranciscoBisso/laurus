@@ -1,6 +1,10 @@
 import { lazy, Suspense } from "react";
 import styles from "./home.module.css";
-import IntroSection from "../../components/introSection/IntroSection";
+import IntroSkeleton from "../../components/introSection/IntroSkeleton";
+
+const IntroSection = lazy(() =>
+	import("../../components/introSection/IntroSection")
+);
 
 const PurposeSection = lazy(() =>
 	import("../../components/purposeSection/PurposeSection")
@@ -21,7 +25,9 @@ const Spinner = lazy(() => import("../../components/loader/spinner"));
 export default function Home() {
 	return (
 		<div className={styles.home_wrapper}>
-			<IntroSection />
+			<Suspense fallback={<IntroSkeleton />}>
+				<IntroSection />
+			</Suspense>
 
 			<Suspense fallback={<Spinner />}>
 				<PurposeSection />

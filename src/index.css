@@ -91,6 +91,16 @@ span {
 
 	/* RADIUS */
 	--radius: var(--sz-2);
+
+	/* SKELETON'S ANIMATIONS */
+	--skeleton-animation-fast: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	--skeleton-animation-slow: pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+	50% {
+		opacity: 0.5;
+	}
 }
 
 @media (prefers-color-scheme: light) {
@@ -100,6 +110,7 @@ span {
 		--clr-pair-3: var(--black);
 		--font-color: var(--black);
 		--glassy: var(--glassy-white);
+		--skeleton-clr: var(--warm-gray);
 	}
 }
 
@@ -110,5 +121,6 @@ span {
 		--clr-pair-3: var(--white);
 		--font-color: var(--cool-gray-1);
 		--glassy: var(--glassy-black);
+		--skeleton-clr: var(--cool-gray-2);
 	}
 }
