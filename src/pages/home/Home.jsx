@@ -21,7 +21,7 @@ const ContactSection = lazy(() =>
 );
 const Footer = lazy(() => import("../../components/footer/Footer"));
 
-const Spinner = lazy(() => import("../../components/loader/spinner"));
+const Spinner = lazy(() => import("../../components/spiner/spinner"));
 
 export default function Home() {
 	return (
