@@ -1,0 +1,121 @@
+.contact_section {
+	height: 100vh;
+	height: 100dvh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-pair-1);
+	scroll-snap-align: start;
+}
+
+.card_wrapper {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.contact_card {
+	width: min(80%, 800px);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--radius);
+}
+
+.card_header {
+	font-weight: bold;
+	font-family: var(--mark-pro-bold);
+	font-size: var(--sz-5);
+	color: var(--pantone-368);
+	color: var(--font-color);
+	line-height: 1;
+}
+
+.card_text {
+	padding: var(--sz-1) 0 var(--sz-1);
+	color: var(--font-color);
+	font-size: var(--sz-1);
+	line-height: 1.4;
+}
+
+.btn_skeleton {
+	border-radius: var(--radius);
+	background-color: var(--skeleton-clr);
+	animation: var(--skeleton-animation-fast);
+}
+
+.btn_skeleton_txt {
+	opacity: 0;
+	padding: var(--sz-0);
+	font-size: var(--sz-1);
+	font-weight: bold;
+	font-family: var(--mark-pro-medium);
+}
+
+.img_skeleton {
+	display: none;
+}
+
+@media screen and (orientation: landscape) {
+	.contact_section {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.card_wrapper {
+		width: 50%;
+	}
+
+	.contact_card {
+		width: min(80%, 800px);
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: var(--radius);
+	}
+
+	.card_header {
+		font-size: var(--sz-3);
+	}
+
+	.card_text {
+		padding: var(--sz-0) 0 var(--sz-0);
+		font-size: var(--sz-0);
+	}
+
+	.btn_skeleton_txt {
+		font-size: var(--sz-0);
+		padding: var(--sz-xs);
+	}
+
+	.img_skeleton {
+		display: block;
+		width: 50%;
+		height: 100%;
+		background-color: var(--skeleton-clr);
+		animation: var(--skeleton-animation-slow);
+	}
+
+	@media screen and (width >= 1024px) {
+		.card_header {
+			font-size: var(--sz-5);
+		}
+
+		.card_text {
+			padding: var(--sz-1) 0 var(--sz-1);
+			font-size: var(--sz-1);
+		}
+
+		.btn_skeleton_txt {
+			font-size: var(--sz-1);
+			padding: var(--sz-0);
+		}
+	}
+}

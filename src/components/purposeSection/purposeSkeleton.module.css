@@ -1,4 +1,4 @@
-.purpose_section {
+.purpose_section_skeleton {
 	position: relative;
 	height: 100vh;
 	height: 100dvh;
@@ -11,13 +11,6 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	overflow-y: scroll;
-	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
-}
-
-.wrapper::-webkit-scrollbar {
-	display: none;
 }
 
 .filter {
@@ -35,20 +28,8 @@
 }
 
 .frame {
-	position: sticky;
-	top: 0;
-	z-index: 1;
 	width: 100%;
 	height: 45%;
-	background-color: var(--clr-pair-1);
-}
-
-.img {
-	position: absolute;
-	z-index: 2;
-	inset: 0;
-	width: 100%;
-	height: 100%;
 	background-color: var(--skeleton-clr);
 	animation: var(--skeleton-animation-slow);
 }
@@ -60,8 +41,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	scroll-snap-align: end;
-	scroll-snap-stop: always;
 }
 
 .card_txt_wrapper {
@@ -91,49 +70,31 @@
 
 @media screen and (orientation: landscape) {
 	.wrapper {
-		position: relative;
 		width: 100%;
 		height: 100%;
-		overflow-y: scroll;
-		scrollbar-width: none;
 		display: flex;
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
 	}
 
 	.frame {
-		position: sticky;
-		top: 0;
-		z-index: 1;
 		width: 50%;
-		height: 0%;
+		height: 100%;
 	}
 
 	.filter {
 		display: none;
 	}
 
-	.img {
-		position: absolute;
-		z-index: 2;
-		inset: 0;
-		width: 100%;
-		height: 100vh;
-		height: 100dvh;
-		object-fit: cover;
-	}
-
 	.card {
-		width: 100%;
+		width: 50%;
 		height: 100%;
-		display: flex;
-		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
 
 	.card_txt_wrapper {
-		width: 50%;
+		width: 100%;
 		height: 100%;
 		padding: 5%;
 		display: grid;

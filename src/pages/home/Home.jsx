@@ -2,6 +2,10 @@ import { lazy, Suspense } from "react";
 import styles from "./home.module.css";
 import IntroSkeleton from "../../components/introSection/IntroSkeleton";
 import PurposeSkeleton from "../../components/purposeSection/PurposeSkeleton";
+import VideoSkeleton from "../../components/videoSection/VideoSkeleton";
+import ConclusionSkeleton from "../../components/conclusionSection/ConclusionSkeleton";
+import ContactSkeleton from "../../components/contactSection/ContactSkeleton";
+import Spinner from "../../components/spinner/spinner";
 
 const IntroSection = lazy(() =>
 	import("../../components/introSection/IntroSection")
@@ -21,8 +25,6 @@ const ContactSection = lazy(() =>
 );
 const Footer = lazy(() => import("../../components/footer/Footer"));
 
-const Spinner = lazy(() => import("../../components/spiner/spinner"));
-
 export default function Home() {
 	return (
 		<div className={styles.home_wrapper}>
@@ -34,15 +36,15 @@ export default function Home() {
 				<PurposeSection />
 			</Suspense>
 
-			<Suspense fallback={<Spinner />}>
+			<Suspense fallback={<VideoSkeleton />}>
 				<VideoSection />
 			</Suspense>
 
-			<Suspense fallback={<Spinner />}>
+			<Suspense fallback={<ConclusionSkeleton />}>
 				<ConclusionSection />
 			</Suspense>
 
-			<Suspense fallback={<Spinner />}>
+			<Suspense fallback={<ContactSkeleton />}>
 				<ContactSection />
 			</Suspense>
 

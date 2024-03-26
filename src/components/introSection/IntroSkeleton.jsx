@@ -1,7 +1,9 @@
 import styles from "./introSkeleton.module.css";
-export default function IntroSection() {
+export default function IntroSkeleton() {
 	return (
-		<section className={styles.section}>
+		<section
+			className={styles.section}
+			tabIndex={0}>
 			<div className={styles.logo_skeleton_wrapper}>
 				<div
 					width="100%"
