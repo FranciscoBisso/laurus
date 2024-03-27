@@ -25,6 +25,7 @@
 .txt {
 	width: 100%;
 	aspect-ratio: 3/1;
+	border-radius: var(--radius);
 	background-color: var(--skeleton-clr);
 	animation: var(--skeleton-animation-fast);
 }
