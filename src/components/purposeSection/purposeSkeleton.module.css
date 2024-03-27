@@ -33,8 +33,7 @@
 	background-image: url("../../assets/imgs/farms/thumbnails/rooftop_farm_thumbnail.webp");
 	background-position: center;
 	background-size: cover;
-	background-color: var(--skeleton-clr);
-	animation: var(--skeleton-animation-slow);
+	animation: var(--skeleton-animation-fast);
 }
 
 .card {
@@ -54,6 +53,7 @@
 	.frame {
 		width: 50%;
 		height: 100%;
+		animation: var(--skeleton-animation-slow);
 	}
 
 	.filter {
