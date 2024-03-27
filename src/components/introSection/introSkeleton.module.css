@@ -34,6 +34,9 @@
 	height: 100%;
 	background-color: var(--skeleton-clr);
 	animation: var(--skeleton-animation-slow);
+	background-image: url("../../assets/videos/reels/reel_frist_frame_thumbnail.webp");
+	background-size: cover;
+	background-position: center;
 }
 
 @media screen and (orientation: landscape) {
@@ -57,6 +60,7 @@
 
 	.logo_skeleton {
 		width: min(50%, 400px);
+		border-radius: unset;
 	}
 
 	.video_skeleton {
