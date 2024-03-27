@@ -57,18 +57,11 @@
 	}
 
 	.txt {
-		width: min(80%, 800px);
-		aspect-ratio: 3/2;
+		display: none;
 	}
 
 	.video_skeleton {
 		width: 50%;
 		background-image: url("../../assets/videos/demos/short_demo_first_frame_thumbnail.webp");
-	}
-
-	@media screen and (width >= 1024px) {
-		.txt {
-			aspect-ratio: 3/1;
-		}
 	}
 }
