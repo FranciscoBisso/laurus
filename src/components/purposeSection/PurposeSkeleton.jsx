@@ -9,15 +9,7 @@ export default function PurposeSkeleton() {
 				<div className={styles.frame}></div>
 
 				<article className={styles.card}>
-					<div className={styles.card_txt_wrapper}>
-						<h2 className={styles.card_title}>What we do</h2>
-						<p className={styles.card_txt}>
-							We reinvent urban agriculture by providing a
-							sustainable and efficient way to deliver
-							hyper-local, nutritious and affordable food to
-							people in cities.
-						</p>
-					</div>
+					<div className={styles.card_txt_wrapper}></div>
 				</article>
 			</div>
 		</section>

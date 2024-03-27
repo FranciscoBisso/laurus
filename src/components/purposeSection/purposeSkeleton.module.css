@@ -30,6 +30,9 @@
 .frame {
 	width: 100%;
 	height: 45%;
+	background-image: url("../../assets/imgs/farms/thumbnails/rooftop_farm_thumbnail.webp");
+	background-position: center;
+	background-size: cover;
 	background-color: var(--skeleton-clr);
 	animation: var(--skeleton-animation-slow);
 }
@@ -37,35 +40,6 @@
 .card {
 	width: 100%;
 	height: 55%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.card_txt_wrapper {
-	width: 90%;
-	height: 55%;
-	display: grid;
-	align-content: center;
-	justify-items: center;
-	gap: 2%;
-}
-
-.card_title {
-	font-weight: bold;
-	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-5);
-	line-height: 1;
-	text-align: center;
-}
-
-.card_txt {
-	font-weight: normal;
-	font-family: var(--mark-pro-regular);
-	font-size: var(--sz-2);
-	line-height: 1.4;
-	text-align: center;
 }
 
 @media screen and (orientation: landscape) {
@@ -89,37 +63,5 @@
 	.card {
 		width: 50%;
 		height: 100%;
-		justify-content: flex-start;
-		align-items: flex-start;
-	}
-
-	.card_txt_wrapper {
-		width: 100%;
-		height: 100%;
-		padding: 5%;
-		display: grid;
-		align-content: center;
-		justify-items: center;
-		gap: 2%;
-	}
-
-	.card_title {
-		width: min(100%, 800px);
-		font-size: var(--sz-3);
-	}
-
-	.card_txt {
-		width: min(100%, 800px);
-		font-size: var(--sz-0);
-	}
-
-	@media screen and (width >= 1024px) {
-		.card_title {
-			font-size: var(--sz-5);
-		}
-
-		.card_txt {
-			font-size: var(--sz-2);
-		}
 	}
 }
