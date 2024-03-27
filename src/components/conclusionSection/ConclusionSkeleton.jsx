@@ -11,10 +11,6 @@ export default function ConclusionSkeleton() {
 						<div className={styles.frame}>
 							<div className={styles.img_skeleton}></div>
 						</div>
-						<h2 className={styles.title}>
-							A new paradigm in the production and distribution of
-							food
-						</h2>
 					</article>
 				</div>
 				<div className={styles.stepper}>

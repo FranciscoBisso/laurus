@@ -33,10 +33,11 @@
 }
 
 .img_skeleton {
-	width: 100%;
+	width: 20%;
 	aspect-ratio: 2/1;
-	border-radius: var(--radius);
-	background-color: var(--skeleton-clr);
+	/* background-color: var(--skeleton-clr); */
+	background-image: url("../../assets/imgs/brand/logoArchs/thumbnails/bgless_arch_thumbnail.webp");
+	background-size: cover;
 	animation: var(--skeleton-animation-slow);
 }
 
@@ -70,8 +71,6 @@
 
 @media screen and (orientation: landscape) {
 	.section {
-		/* display: flex;
-		position: relative; */
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -96,24 +95,13 @@
 		padding-bottom: 0;
 	}
 
-	.img_skeleton {
-		width: 100%;
-	}
-
-	.title {
-		font-size: var(--sz-2);
-	}
-
 	.bg_img_wrapper {
 		display: block;
 		width: 100%;
 		background-color: var(--skeleton-clr);
 		animation: var(--skeleton-animation-slow);
-	}
-
-	@media screen and (width >= 1024px) {
-		.title {
-			font-size: var(--sz-4);
-		}
+		background-image: url("../../assets/imgs/farms/thumbnails/rooftop_shopping_thumbnail.webp");
+		background-position: center;
+		background-size: cover;
 	}
 }
