@@ -6,9 +6,7 @@ export default function VideoSkeleton() {
 			className={styles.section}
 			tabIndex={0}>
 			<div className={styles.txt_wrapper}>
-				<p className={styles.txt}>
-					480,000 plants per year, in less space than a tennis court
-				</p>
+				<div className={styles.txt}></div>
 			</div>
 			<div
 				width="100%"
