@@ -6,7 +6,7 @@ import logo_secondary_mobile from "../../assets/imgs/brand/logo/logo_secondary_m
 import logo_secondary_desktop from "../../assets/imgs/brand/logo/logo_secondary_desktop.webp";
 import reel_720 from "../../assets/videos/reels/farm_reel_720.webm";
 import reel_1080 from "../../assets/videos/reels/farm_reel_1080.webm";
-import poster from "../../assets/videos/reels/reel_frist_frame_thumbnail.webp";
+import poster from "../../assets/videos/reels/reel_first_frame_thumbnail.webp";
 
 export default function IntroSection() {
 	const logo = useInView();
