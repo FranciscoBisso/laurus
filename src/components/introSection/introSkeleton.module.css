@@ -25,18 +25,26 @@
 	width: 100%;
 	aspect-ratio: 47/32;
 	border-radius: var(--radius);
-	background-color: var(--skeleton-clr);
 	animation: var(--skeleton-animation-fast);
+	background-image: url("../../assets/imgs/brand/logo/thumbnails/logo_primary_thumbnail.webp");
+	background-size: cover;
+	filter: blur(10px);
+}
+
+@media (prefers-color-scheme: dark) {
+	.logo_skeleton {
+		background-image: url("../../assets/imgs/brand/logo/thumbnails/logo_secondary_thumbnail.webp");
+	}
 }
 
 .video_skeleton {
 	width: 100%;
 	height: 100%;
-	background-color: var(--skeleton-clr);
 	animation: var(--skeleton-animation-slow);
 	background-image: url("../../assets/videos/reels/reel_frist_frame_thumbnail.webp");
 	background-size: cover;
 	background-position: center;
+	filter: blur(10px);
 }
 
 @media screen and (orientation: landscape) {

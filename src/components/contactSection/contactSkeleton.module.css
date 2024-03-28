@@ -71,6 +71,7 @@
 		background-image: url("../../assets/imgs/farms/thumbnails/seedling_tray_thumbnail.webp");
 		background-position: center;
 		background-size: cover;
+		filter: blur(10px);
 	}
 
 	@media screen and (width >= 1024px) {

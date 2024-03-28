@@ -35,10 +35,10 @@
 .img_skeleton {
 	width: 20%;
 	aspect-ratio: 2/1;
-	/* background-color: var(--skeleton-clr); */
 	background-image: url("../../assets/imgs/brand/logoArchs/thumbnails/bgless_arch_thumbnail.webp");
 	background-size: cover;
 	animation: var(--skeleton-animation-slow);
+	filter: blur(5px);
 }
 
 .title {
@@ -103,5 +103,6 @@
 		background-image: url("../../assets/imgs/farms/thumbnails/rooftop_shopping_thumbnail.webp");
 		background-position: center;
 		background-size: cover;
+		filter: blur(10px);
 	}
 }

@@ -37,6 +37,7 @@
 	background-size: cover;
 	background-position: center;
 	animation: var(--skeleton-animation-slow);
+	filter: blur(10px);
 }
 
 @media screen and (orientation: landscape) {
