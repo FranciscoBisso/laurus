@@ -14,13 +14,13 @@
 
 @font-face {
 	font-family: "Mark Pro Bold";
-	src: url("./assets/fonts/MarkPro-Bold.ttf") format("truetype");
+	src: url("./assets/fonts/Mark-Pro-Bold.ttf") format("truetype");
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "Mark Pro Heavy";
-	src: url("./assets/fonts/MarkPro-Heavy.ttf") format("truetype");
+	src: url("./assets/fonts/Mark-Pro-Heavy.ttf") format("truetype");
 	font-display: swap;
 }
 
