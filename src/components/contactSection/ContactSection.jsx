@@ -34,6 +34,7 @@ export default function ContactSection() {
 			</div>
 			<div className={styles.img_wrapper}>
 				<img
+					loading="lazy"
 					width="100%"
 					height="100%"
 					className={`${styles.bg_img} ${

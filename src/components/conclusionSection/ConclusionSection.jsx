@@ -20,9 +20,7 @@ export default function ConclusionSection() {
 			tabIndex={0}>
 			<div className={styles.container}>
 				<div className={styles.articles_wrapper}>
-					<article
-						id="1"
-						className={styles.article}>
+					<article className={styles.article}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -47,9 +45,7 @@ export default function ConclusionSection() {
 							in the production and distribution of food
 						</h2>
 					</article>
-					<article
-						id="2"
-						className={styles.article}>
+					<article className={styles.article}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -74,9 +70,7 @@ export default function ConclusionSection() {
 							to address environmental issues
 						</h2>
 					</article>
-					<article
-						id="3"
-						className={styles.article}>
+					<article className={styles.article}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -111,9 +105,7 @@ export default function ConclusionSection() {
 							to consume food
 						</h2>
 					</article>
-					<article
-						id="4"
-						className={styles.article}>
+					<article className={styles.article}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -138,28 +130,24 @@ export default function ConclusionSection() {
 				</div>
 				<div className={styles.stepper}>
 					<span
-						href="#1"
 						className={`${styles.step} ${
 							first_card.inView ? styles.bright : styles.opaque
 						}`}>
 						1
 					</span>
 					<span
-						href="#2"
 						className={`${styles.step} ${
 							second_card.inView ? styles.bright : styles.opaque
 						}`}>
 						2
 					</span>
 					<span
-						href="#3"
 						className={`${styles.step} ${
 							third_card.inView ? styles.bright : styles.opaque
 						}`}>
 						3
 					</span>
 					<span
-						href="#4"
 						className={`${styles.step} ${
 							fourth_card.inView ? styles.bright : styles.opaque
 						}`}>

@@ -1,28 +1,40 @@
 import { lazy, Suspense } from "react";
 import styles from "./home.module.css";
-import IntroSkeleton from "../../components/introSection/IntroSkeleton";
-import PurposeSkeleton from "../../components/purposeSection/PurposeSkeleton";
-import VideoSkeleton from "../../components/videoSection/VideoSkeleton";
-import ConclusionSkeleton from "../../components/conclusionSection/ConclusionSkeleton";
-import ContactSkeleton from "../../components/contactSection/ContactSkeleton";
-import Spinner from "../../components/spinner/spinner";
 
+import IntroSkeleton from "../../components/introSection/IntroSkeleton";
 const IntroSection = lazy(() =>
 	import("../../components/introSection/IntroSection")
 );
 
+const PurposeSkeleton = lazy(() =>
+	import("../../components/purposeSection/PurposeSkeleton")
+);
 const PurposeSection = lazy(() =>
 	import("../../components/purposeSection/PurposeSection")
+);
+
+const VideoSkeleton = lazy(() =>
+	import("../../components/videoSection/VideoSkeleton")
 );
 const VideoSection = lazy(() =>
 	import("../../components/videoSection/VideoSection")
 );
+
+const ConclusionSkeleton = lazy(() =>
+	import("../../components/conclusionSection/ConclusionSkeleton")
+);
 const ConclusionSection = lazy(() =>
 	import("../../components/conclusionSection/ConclusionSection")
+);
+
+const ContactSkeleton = lazy(() =>
+	import("../../components/contactSection/ContactSkeleton")
 );
 const ContactSection = lazy(() =>
 	import("../../components/contactSection/ContactSection")
 );
+
+const Spinner = lazy(() => import("../../components/spinner/spinner"));
 const Footer = lazy(() => import("../../components/footer/Footer"));
 
 export default function Home() {
