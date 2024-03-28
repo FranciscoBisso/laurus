@@ -1,0 +1,6 @@
+.home_wrapper {
+	height: 100vh;
+	height: 100dvh;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+}
