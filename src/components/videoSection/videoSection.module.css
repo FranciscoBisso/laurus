@@ -39,15 +39,29 @@
 	color: var(--font-color);
 	font-weight: bold;
 	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-5);
+	font-size: var(--sz-4);
 	text-align: center;
 	line-height: 1;
+}
+
+.video_wrapper {
+	width: 100%;
+	height: 100%;
+	background-image: url("../../assets/videos/demos/demo_thumbnail_blurred.webp");
+	background-size: cover;
+}
+
+@media screen and (orientation: portrait) and (width < 700px) {
+	.video_wrapper {
+		background-image: url("../../assets/videos/reels/tower_reel_thumbnail_blurred.webp");
+	}
 }
 
 .video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	animation: var(--poster-animation);
 }
 
 @media screen and (orientation: landscape) {
@@ -74,7 +88,7 @@
 		line-height: 1.2;
 	}
 
-	.video {
+	.video_wrapper {
 		width: 50%;
 	}
 
