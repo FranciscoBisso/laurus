@@ -51,7 +51,7 @@
 	font-family: var(--mark-pro-medium);
 	background-color: rgb(128, 195, 66, 0.25);
 	color: var(--clr-pair-3);
-	padding: var(--sz-0);
+	padding: var(--sz-s);
 	border: solid var(--pantone-368);
 	border-radius: var(--radius);
 }
@@ -140,7 +140,7 @@
 
 		.calendly_btn {
 			font-size: var(--sz-1);
-			padding: var(--sz-0);
+			padding: var(--sz-s);
 		}
 	}
 }

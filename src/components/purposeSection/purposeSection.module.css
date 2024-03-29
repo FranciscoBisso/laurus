@@ -87,7 +87,7 @@
 .card_title {
 	font-weight: bold;
 	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-5);
+	font-size: var(--sz-4);
 	line-height: 1;
 	text-align: center;
 }
@@ -95,7 +95,7 @@
 .card_txt {
 	font-weight: normal;
 	font-family: var(--mark-pro-regular);
-	font-size: var(--sz-2);
+	font-size: var(--sz-1);
 	line-height: 1.4;
 	text-align: center;
 }
@@ -165,11 +165,11 @@
 
 	@media screen and (width >= 1024px) {
 		.card_title {
-			font-size: var(--sz-5);
+			font-size: var(--sz-4);
 		}
 
 		.card_txt {
-			font-size: var(--sz-2);
+			font-size: var(--sz-1);
 		}
 	}
 }
