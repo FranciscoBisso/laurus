@@ -1,0 +1,24 @@
+.loader_wrapper {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	scroll-snap-align: start;
+	background-color: var(--clr-pair-1);
+}
+
+.logo_wrapper {
+	width: min(50%, 240px);
+}
+
+.logo {
+	object-fit: cover;
+	animation: var(--skeleton-animation-fast);
+}
+
+@media screen and (orientation: landscape) {
+	.logo {
+		object-fit: cover;
+		animation: var(--skeleton-animation-slow);
+	}
+}
