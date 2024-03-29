@@ -41,7 +41,7 @@
 	width: 100%;
 	height: 100%;
 	animation: var(--skeleton-animation-slow);
-	background-image: url("../../assets/videos/reels/reel_first_frame_thumbnail.webp");
+	background-image: url("../../assets/videos/reels/farm_reel_thumbnail_blurred.webp");
 	background-size: cover;
 	background-position: center;
 	filter: blur(10px);
