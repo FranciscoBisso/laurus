@@ -92,14 +92,21 @@ span {
 	/* RADIUS */
 	--radius: var(--sz-2);
 
-	/* SKELETON'S ANIMATIONS */
+	/* ANIMATIONS */
 	--skeleton-animation-fast: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 	--skeleton-animation-slow: pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	--poster-animation: bg-pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes pulse {
 	50% {
 		opacity: 0.5;
+	}
+}
+
+@keyframes bg-pulse {
+	50% {
+		backdrop-filter: brightness(0.5);
 	}
 }
 

@@ -44,12 +44,15 @@
 .bg_wrapper {
 	width: 100%;
 	height: 100%;
+	background-image: url("../../assets/videos/reels/reel_first_frame_thumbnail.webp");
+	background-size: cover;
 }
 
 .bg_video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	animation: var(--poster-animation);
 }
 
 @media screen and (orientation: landscape) {
