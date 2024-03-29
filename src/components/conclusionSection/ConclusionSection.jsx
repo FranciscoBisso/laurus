@@ -20,16 +20,15 @@ export default function ConclusionSection() {
 			tabIndex={0}>
 			<div className={styles.container}>
 				<div className={styles.articles_wrapper}>
-					<article className={styles.article}>
+					<article
+						className={`${styles.article} ${
+							first_card.inView ? styles.show : styles.hide
+						}`}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
 								width="100%"
-								className={`${styles.one_arch_img} ${
-									first_card.inView
-										? styles.show
-										: styles.hide
-								}`}
+								className={styles.one_arch_img}
 								src={one_arch}
 								alt="logo's small arch"
 							/>
@@ -45,16 +44,15 @@ export default function ConclusionSection() {
 							in the production and distribution of food
 						</h2>
 					</article>
-					<article className={styles.article}>
+					<article
+						className={`${styles.article} ${
+							second_card.inView ? styles.show : styles.hide
+						}`}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
 								width="100%"
-								className={`${styles.two_archs_img} ${
-									second_card.inView
-										? styles.show
-										: styles.hide
-								}`}
+								className={styles.two_archs_img}
 								src={two_archs}
 								alt="logo's medium arch"
 							/>
@@ -70,16 +68,15 @@ export default function ConclusionSection() {
 							to address environmental issues
 						</h2>
 					</article>
-					<article className={styles.article}>
+					<article
+						className={`${styles.article} ${
+							third_card.inView ? styles.show : styles.hide
+						}`}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
 								width="100%"
-								className={`${styles.three_archs_img} ${
-									third_card.inView
-										? styles.show
-										: styles.hide
-								}`}
+								className={styles.three_archs_img}
 								src={three_archs}
 								alt="logo's big arch arch"
 							/>
@@ -105,16 +102,15 @@ export default function ConclusionSection() {
 							to consume food
 						</h2>
 					</article>
-					<article className={styles.article}>
+					<article
+						className={`${styles.article} ${
+							fourth_card.inView ? styles.show : styles.hide
+						}`}>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
 								width="100%"
-								className={`${styles.full_archs_img} ${
-									fourth_card.inView
-										? styles.show
-										: styles.hide
-								}`}
+								className={styles.full_archs_img}
 								src={full_archs}
 								alt="full logo with all it's archs"
 							/>
