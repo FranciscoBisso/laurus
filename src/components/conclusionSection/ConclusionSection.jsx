@@ -128,27 +128,19 @@ export default function ConclusionSection() {
 					<span
 						className={`${styles.step} ${
 							first_card.inView ? styles.bright : styles.opaque
-						}`}>
-						1
-					</span>
+						}`}></span>
 					<span
 						className={`${styles.step} ${
 							second_card.inView ? styles.bright : styles.opaque
-						}`}>
-						2
-					</span>
+						}`}></span>
 					<span
 						className={`${styles.step} ${
 							third_card.inView ? styles.bright : styles.opaque
-						}`}>
-						3
-					</span>
+						}`}></span>
 					<span
 						className={`${styles.step} ${
 							fourth_card.inView ? styles.bright : styles.opaque
-						}`}>
-						4
-					</span>
+						}`}></span>
 				</div>
 			</div>
 			<div className={styles.img_wrapper}>
