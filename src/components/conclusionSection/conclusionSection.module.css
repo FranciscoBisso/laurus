@@ -194,4 +194,9 @@
 			font-size: var(--sz-3);
 		}
 	}
+	@media screen and (width >= 1920px) {
+		.title {
+			font-size: var(--sz-5);
+		}
+	}
 }

@@ -137,10 +137,21 @@
 			padding: var(--sz-1) 0 var(--sz-1);
 			font-size: var(--sz-1);
 		}
+	}
+
+	@media screen and (width >= 1920px) {
+		.card_header {
+			font-size: var(--sz-7);
+		}
+
+		.card_text {
+			padding: var(--sz-3) 0 var(--sz-3);
+			font-size: var(--sz-3);
+		}
 
 		.calendly_btn {
-			font-size: var(--sz-1);
-			padding: var(--sz-s);
+			font-size: var(--sz-0);
+			padding: var(--sz-xs);
 		}
 	}
 }
