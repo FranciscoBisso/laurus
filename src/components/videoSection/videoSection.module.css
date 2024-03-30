@@ -95,7 +95,8 @@
 
 	@media screen and (width >= 1024px) {
 		.txt {
-			font-size: var(--sz-4);
+			font-size: var(--sz-7);
+			line-height: 1;
 		}
 	}
 }

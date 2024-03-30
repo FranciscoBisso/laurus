@@ -46,12 +46,12 @@
 
 .calendly_btn {
 	cursor: pointer;
-	font-size: var(--sz-1);
+	font-size: var(--sz-0);
 	font-weight: bold;
 	font-family: var(--mark-pro-medium);
 	background-color: rgb(128, 195, 66, 0.25);
 	color: var(--clr-pair-3);
-	padding: var(--sz-s);
+	padding: var(--sz-xs);
 	border: solid var(--pantone-368);
 	border-radius: var(--radius);
 }
@@ -111,8 +111,8 @@
 	}
 
 	.calendly_btn {
-		font-size: var(--sz-0);
-		padding: var(--sz-xs);
+		font-size: var(--sz-s);
+		padding: calc(var(--sz-xs) / 1.25);
 	}
 
 	.img_wrapper {
