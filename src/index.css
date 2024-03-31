@@ -69,7 +69,6 @@ span {
 	--sz-8: clamp(4.2998rem, 3.2039rem + 5.4796vi, 7.4506rem);
 
 	/* FONT FAMILIES */
-
 	--mark-pro-regular: "Mark Pro Regular", sans-serif;
 	--mark-pro-medium: "Mark Pro Medium", sans-serif;
 	--mark-pro-bold: "Mark Pro Bold", sans-serif;
@@ -93,9 +92,10 @@ span {
 	--radius: var(--sz-2);
 
 	/* ANIMATIONS */
-	--skeleton-animation-fast: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-	--skeleton-animation-slow: pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-	--poster-animation: bg-pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	--pulse-fast: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	--pulse-slow: pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	--bg-pulse-fast: bg-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	--bg-pulse-slow: bg-pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes pulse {

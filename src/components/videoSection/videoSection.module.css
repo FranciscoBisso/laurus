@@ -52,17 +52,17 @@
 	background-size: cover;
 }
 
-@media screen and (orientation: portrait) and (width < 700px) {
-	.video_wrapper {
-		background-image: url("../../assets/videos/reels/tower_reel_thumbnail_blurred.webp");
-	}
-}
-
 .video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	animation: var(--poster-animation);
+	animation: var(--bg-pulse-slow);
+}
+
+@media screen and (orientation: portrait) and (width < 700px) {
+	.video_wrapper {
+		background-image: url("../../assets/videos/reels/tower_reel_thumbnail_blurred.webp");
+	}
 }
 
 @media screen and (orientation: landscape) {
