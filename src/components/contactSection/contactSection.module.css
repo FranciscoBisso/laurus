@@ -51,7 +51,7 @@
 	background-color: rgb(128, 195, 66, 0.25);
 	color: var(--clr-pair-3);
 	padding: var(--sz-xs);
-	border: solid var(--pantone-368);
+	border: 1.5px solid var(--pantone-368);
 	border-radius: var(--radius);
 }
 
@@ -70,7 +70,7 @@
 
 .hide {
 	opacity: 0;
-	filter: blur(5px);
+	filter: blur(20px);
 	transition: all 800ms ease-out;
 }
 
