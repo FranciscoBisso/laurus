@@ -13,12 +13,12 @@
 
 .logo {
 	object-fit: cover;
-	animation: var(--skeleton-animation-fast);
+	animation: var(--pulse-fast);
 }
 
 @media screen and (orientation: landscape) {
 	.logo {
 		object-fit: cover;
-		animation: var(--skeleton-animation-slow);
+		animation: var(--pulse-slow);
 	}
 }

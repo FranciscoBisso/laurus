@@ -21,8 +21,8 @@ const Footer = lazy(() => import("../../components/footer/Footer"));
 export default function Home() {
 	return (
 		<div className={styles.home_wrapper}>
-			<IntroSection />
 			<Suspense fallback={<Loader />}>
+				<IntroSection />
 				<PurposeSection />
 				<VideoSection />
 				<ConclusionSection />
