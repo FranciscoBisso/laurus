@@ -34,8 +34,6 @@ export default function IntroSection() {
 					logo.inView ? styles.show : styles.hide
 				}`}>
 				<video
-					width="100%"
-					height="100%"
 					className={`${styles.bg_video}`}
 					poster={poster}
 					playsInline
