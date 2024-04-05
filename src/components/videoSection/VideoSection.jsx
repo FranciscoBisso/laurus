@@ -2,6 +2,7 @@ import styles from "./videoSection.module.css";
 import reel_720 from "../../assets/videos/reels/tower_reel_720.webm";
 import demo_720 from "../../assets/videos/demos/short_demo_720.webm";
 import demo_1080 from "../../assets/videos/demos/short_demo_1080.webm";
+import poster from "../../assets/videos/demos/short_demo_first_frame.webp";
 
 import { useInView } from "react-intersection-observer";
 
@@ -29,6 +30,7 @@ export default function VideoSection() {
 					className={`${styles.video} ${
 						txt.inView ? styles.show : styles.hide
 					}`}
+					poster={poster}
 					playsInline
 					loop
 					autoPlay
