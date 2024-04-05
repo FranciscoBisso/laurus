@@ -39,7 +39,7 @@
 	color: var(--font-color);
 	font-weight: bold;
 	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-6);
+	font-size: var(--sz-5);
 	text-align: center;
 	line-height: 1;
 }
