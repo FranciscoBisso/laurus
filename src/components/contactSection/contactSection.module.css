@@ -30,16 +30,16 @@
 .card_header {
 	font-weight: bold;
 	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-5);
+	font-size: var(--sz-6);
 	color: var(--pantone-368);
 	color: var(--font-color);
 	line-height: 1;
 }
 
 .card_text {
-	padding: var(--sz-1) 0 var(--sz-1);
+	padding: var(--sz-2) 0 var(--sz-2);
 	color: var(--font-color);
-	font-size: var(--sz-1);
+	font-size: var(--sz-2);
 	line-height: 1.4;
 }
 

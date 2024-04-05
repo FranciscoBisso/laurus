@@ -94,7 +94,7 @@
 .card_title {
 	font-weight: bold;
 	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-4);
+	font-size: var(--sz-5);
 	line-height: 1;
 	text-align: center;
 }
@@ -102,7 +102,7 @@
 .card_txt {
 	font-weight: normal;
 	font-family: var(--mark-pro-regular);
-	font-size: var(--sz-1);
+	font-size: var(--sz-2);
 	line-height: 1.4;
 	text-align: center;
 }

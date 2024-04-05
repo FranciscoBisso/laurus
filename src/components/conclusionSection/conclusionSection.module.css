@@ -41,7 +41,7 @@
 
 .frame {
 	width: min(80%, 600px);
-	height: 45%;
+	height: 40%;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -71,7 +71,7 @@
 	padding-top: 2.5%;
 	margin: auto;
 	color: var(--font-color);
-	font-size: var(--sz-3);
+	font-size: var(--sz-4);
 	text-align: center;
 }
 
@@ -102,7 +102,7 @@
 .step {
 	background-color: var(--font-color);
 	aspect-ratio: 1;
-	width: var(--sz-xs);
+	width: calc(var(--sz-xs) / 1.5);
 	display: grid;
 	place-content: center;
 	border-radius: 50%;
