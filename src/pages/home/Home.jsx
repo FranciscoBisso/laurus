@@ -1,8 +1,11 @@
 import { lazy, Suspense } from "react";
 import styles from "./home.module.css";
 
-import IntroSection from "../../components/introSection/IntroSection";
 import Loader from "../../components/loader/Loader";
+
+const IntroSection = lazy(() =>
+	import("../../components/introSection/IntroSection")
+);
 
 const PurposeSection = lazy(() =>
 	import("../../components/purposeSection/PurposeSection")
