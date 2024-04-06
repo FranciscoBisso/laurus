@@ -1,11 +1,15 @@
+import { lazy, Suspense } from "react";
 import styles from "./app.module.css";
-import Home from "./pages/home/Home";
+import Loader from "./components/loader/Loader";
+const Home = lazy(() => import("./pages/home/Home"));
 
 function App() {
 	return (
 		<>
 			<main className={styles.main}>
-				<Home />
+				<Suspense fallback={<Loader />}>
+					<Home />
+				</Suspense>
 			</main>
 		</>
 	);
