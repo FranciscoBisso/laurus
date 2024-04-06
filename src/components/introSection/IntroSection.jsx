@@ -23,6 +23,7 @@ export default function IntroSection() {
 				<img
 					ref={logo.ref}
 					width="100%"
+					height="100%"
 					className={styles.logo}
 					src={logo_primary_desktop}
 					srcSet={`${logo_primary_mobile} 1000w, ${logo_primary_desktop}`}
