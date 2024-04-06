@@ -5,35 +5,36 @@ import Loader from "../../components/loader/Loader";
 const IntroSkeleton = lazy(() =>
 	import("../../components/introSection/skeleton/IntroSkeleton")
 );
-const IntroSection = lazy(() =>
-	import("../../components/introSection/IntroSection")
-);
 const PurposeSkeleton = lazy(() =>
 	import("../../components/purposeSection/skeleton/PurposeSkeleton")
-);
-const PurposeSection = lazy(() =>
-	import("../../components/purposeSection/PurposeSection")
 );
 const VideoSkeleton = lazy(() =>
 	import("../../components/videoSection/skeleton/VideoSkeleton")
 );
-const VideoSection = lazy(() =>
-	import("../../components/videoSection/VideoSection")
-);
 const ConclusionSkeleton = lazy(() =>
 	import("../../components/conclusionSection/skeleton/ConclusionSkeleton")
 );
-const ConclusionSection = lazy(() =>
-	import("../../components/conclusionSection/ConclusionSection")
-);
 const ContactSkeleton = lazy(() =>
 	import("../../components/contactSection/skeleton/ContactSkeleton")
+);
+const Spinner = lazy(() => import("../../components/spinner/Spinner"));
+
+const IntroSection = lazy(() =>
+	import("../../components/introSection/IntroSection")
+);
+const PurposeSection = lazy(() =>
+	import("../../components/purposeSection/PurposeSection")
+);
+const VideoSection = lazy(() =>
+	import("../../components/videoSection/VideoSection")
+);
+const ConclusionSection = lazy(() =>
+	import("../../components/conclusionSection/ConclusionSection")
 );
 const ContactSection = lazy(() =>
 	import("../../components/contactSection/ContactSection")
 );
 const Footer = lazy(() => import("../../components/footer/Footer"));
-const Spinner = lazy(() => import("../../components/spinner/Spinner"));
 
 export default function Home() {
 	return (

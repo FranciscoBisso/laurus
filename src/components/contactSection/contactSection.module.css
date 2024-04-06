@@ -120,6 +120,7 @@
 		display: block;
 		width: 50%;
 		height: 100%;
+		background-color: var(--skeleton-clr);
 	}
 
 	.bg_img {
@@ -127,6 +128,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		animation: var(--bg-pulse-slow);
 	}
 
 	@media screen and (width >= 1024px) {
