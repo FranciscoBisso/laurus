@@ -83,16 +83,24 @@ export default function PurposeSection() {
 									? styles.show
 									: styles.hide
 							}`}>
-							<h2
-								// ref={card.observerHook.ref}
-								className={styles.card_title}>
-								{card.title}
-							</h2>
+							<h2 className={styles.card_title}>{card.title}</h2>
 							<p className={styles.card_txt}>{card.txt}</p>
 						</div>
 					</article>
 				))}
 			</div>
+			<div className={styles.stepper}>
+				{cards?.map((card, index) => (
+					<span
+						key={index}
+						className={`${styles.step} ${
+							card.observerHook.inView
+								? styles.bright
+								: styles.opaque
+						}`}></span>
+				))}
+			</div>
+			;
 		</section>
 	);
 }

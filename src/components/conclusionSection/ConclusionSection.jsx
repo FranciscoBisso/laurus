@@ -24,6 +24,9 @@ export default function ConclusionSection() {
 						className={`${styles.article} ${
 							first_card.inView ? styles.show : styles.hide
 						}`}>
+						<div
+							ref={first_card.ref}
+							className={styles.invisible_ref}></div>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -33,9 +36,7 @@ export default function ConclusionSection() {
 								alt="logo's small arch"
 							/>
 						</div>
-						<h2
-							ref={first_card.ref}
-							className={styles.title}>
+						<h2 className={styles.title}>
 							A{" "}
 							<span
 								className={`${styles.dark_green} ${styles.strong}`}>
@@ -48,6 +49,9 @@ export default function ConclusionSection() {
 						className={`${styles.article} ${
 							second_card.inView ? styles.show : styles.hide
 						}`}>
+						<div
+							ref={second_card.ref}
+							className={styles.invisible_ref}></div>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -57,9 +61,7 @@ export default function ConclusionSection() {
 								alt="logo's medium arch"
 							/>
 						</div>
-						<h2
-							ref={second_card.ref}
-							className={styles.title}>
+						<h2 className={styles.title}>
 							The{" "}
 							<span
 								className={`${styles.green} ${styles.strong}`}>
@@ -72,6 +74,9 @@ export default function ConclusionSection() {
 						className={`${styles.article} ${
 							third_card.inView ? styles.show : styles.hide
 						}`}>
+						<div
+							ref={third_card.ref}
+							className={styles.invisible_ref}></div>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -81,9 +86,7 @@ export default function ConclusionSection() {
 								alt="logo's big arch arch"
 							/>
 						</div>
-						<h2
-							ref={third_card.ref}
-							className={styles.title}>
+						<h2 className={styles.title}>
 							Close to people, providing{" "}
 							<span
 								className={`${styles.light_green} ${styles.strong}`}>
@@ -106,6 +109,9 @@ export default function ConclusionSection() {
 						className={`${styles.article} ${
 							fourth_card.inView ? styles.show : styles.hide
 						}`}>
+						<div
+							ref={fourth_card.ref}
+							className={styles.invisible_ref}></div>
 						<div className={styles.frame}>
 							<img
 								loading="lazy"
@@ -115,9 +121,7 @@ export default function ConclusionSection() {
 								alt="full logo with all it's archs"
 							/>
 						</div>
-						<h2
-							ref={fourth_card.ref}
-							className={styles.title}>
+						<h2 className={styles.title}>
 							Born to set a{" "}
 							<span className={styles.strong}>new standard</span>{" "}
 							in the food system
