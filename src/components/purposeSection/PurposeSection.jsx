@@ -49,27 +49,24 @@ export default function PurposeSection() {
 			className={styles.purpose_section}
 			tabIndex={0}>
 			<div className={styles.filter}></div>
+			<div className={styles.frame}>
+				{cards?.map((card, index) => (
+					<img
+						key={index}
+						loading="lazy"
+						width="100%"
+						height="100%"
+						className={`${styles.img} ${
+							card.observerHook.inView ? styles.show : styles.hide
+						}`}
+						src={card.img.desktop}
+						sizes="(orientation: landscape) 50vw, 100vw"
+						srcSet={`${card.img.mobile} 768w, ${card.img.tablet} 1024w, ${card.img.desktop} `}
+						alt="rooftop farm"
+					/>
+				))}
+			</div>
 			<div className={styles.wrapper}>
-				<div className={styles.frame}>
-					{cards?.map((card, index) => (
-						<img
-							key={index}
-							loading="lazy"
-							width="100%"
-							height="100%"
-							className={`${styles.img} ${
-								card.observerHook.inView
-									? styles.show
-									: styles.hide
-							}`}
-							src={card.img.desktop}
-							sizes="(orientation: landscape) 50vw, 100vw"
-							srcSet={`${card.img.mobile} 768w, ${card.img.tablet} 1024w, ${card.img.desktop} `}
-							alt="rooftop farm"
-						/>
-					))}
-				</div>
-
 				{cards?.map((card, index) => (
 					<article
 						className={styles.card}
@@ -100,7 +97,6 @@ export default function PurposeSection() {
 						}`}></span>
 				))}
 			</div>
-			;
 		</section>
 	);
 }
