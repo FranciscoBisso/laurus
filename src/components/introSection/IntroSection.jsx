@@ -22,9 +22,9 @@ export default function IntroSection() {
 				/>
 				<img
 					ref={logo.ref}
+					loading="lazy"
 					width="100%"
 					height="100%"
-					loading="lazy"
 					className={styles.logo}
 					src={logo_primary_desktop}
 					srcSet={`${logo_primary_mobile} 1000w, ${logo_primary_desktop}`}
