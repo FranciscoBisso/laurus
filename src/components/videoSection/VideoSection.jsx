@@ -2,7 +2,7 @@ import styles from "./videoSection.module.css";
 import reel_720 from "../../assets/videos/reels/tower_reel_720.webm";
 import demo_720 from "../../assets/videos/demos/short_demo_720.webm";
 import demo_1080 from "../../assets/videos/demos/short_demo_1080.webm";
-import poster from "../../assets/videos/demos/short_demo_first_frame.webp";
+import poster from "../../assets/imgs/farms/tower_closeup_poster.webp";
 
 import { useInView } from "react-intersection-observer";
 
