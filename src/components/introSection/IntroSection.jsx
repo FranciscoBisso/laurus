@@ -24,6 +24,7 @@ export default function IntroSection() {
 					ref={logo.ref}
 					width="100%"
 					height="100%"
+					loading="lazy"
 					className={styles.logo}
 					src={logo_primary_desktop}
 					srcSet={`${logo_primary_mobile} 1000w, ${logo_primary_desktop}`}
@@ -35,6 +36,7 @@ export default function IntroSection() {
 					logo.inView ? styles.show : styles.hide
 				}`}>
 				<video
+					loading="lazy"
 					className={`${styles.bg_video}`}
 					poster={poster}
 					playsInline
