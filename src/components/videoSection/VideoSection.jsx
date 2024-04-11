@@ -27,9 +27,7 @@ export default function VideoSection() {
 				}`}>
 				<video
 					loading="lazy"
-					className={`${styles.video} ${
-						txt.inView ? styles.show : styles.hide
-					}`}
+					className={styles.video}
 					poster={poster}
 					playsInline
 					loop

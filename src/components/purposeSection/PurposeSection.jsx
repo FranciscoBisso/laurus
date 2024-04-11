@@ -74,12 +74,7 @@ export default function PurposeSection() {
 						<div
 							ref={card.observerHook.ref}
 							className={styles.invisible_ref}></div>
-						<div
-							className={`${styles.card_txt_wrapper} ${
-								card.observerHook.inView
-									? styles.show
-									: styles.hide
-							}`}>
+						<div className={styles.card_txt_wrapper}>
 							<h2 className={styles.card_title}>{card.title}</h2>
 							<p className={styles.card_txt}>{card.txt}</p>
 						</div>
