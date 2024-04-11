@@ -26,6 +26,8 @@
 	position: absolute;
 	z-index: 1;
 	bottom: 5%;
+	display: grid;
+	place-items: center;
 	width: min(50%, 300px);
 	padding: min(5%, var(--radius));
 	border-radius: var(--radius);
@@ -35,9 +37,8 @@
 }
 
 .logo {
-	width: 100%;
 	object-fit: cover;
-	object-position: center;
+	aspect-ratio: 22/15;
 }
 
 .bg_wrapper {
@@ -64,10 +65,6 @@
 		padding: unset;
 		border: none;
 		border-radius: unset;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		box-shadow: none;
 		background-color: var(--clr-pair-1);
 	}

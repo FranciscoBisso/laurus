@@ -1,9 +1,9 @@
 import styles from "./introSection.module.css";
 import { useInView } from "react-intersection-observer";
 import logo_primary_mobile from "../../assets/imgs/brand/logo/bgless_logo_primary_mobile.webp";
-import logo_primary_desktop from "../../assets/imgs/brand/logo/logo_primary_desktop.webp";
+import logo_primary_desktop from "../../assets/imgs/brand/logo/bgless_logo_primary_desktop.webp";
 import logo_secondary_mobile from "../../assets/imgs/brand/logo/bgless_logo_secondary_mobile.webp";
-import logo_secondary_desktop from "../../assets/imgs/brand/logo/logo_secondary_desktop.webp";
+import logo_secondary_desktop from "../../assets/imgs/brand/logo/bgless_logo_secondary_desktop.webp";
 import reel_720 from "../../assets/videos/reels/farm_reel_720.webm";
 import reel_1080 from "../../assets/videos/reels/farm_reel_1080.webm";
 import poster from "../../assets/imgs/farms/towers_poster.webp";
