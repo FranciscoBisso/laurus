@@ -15,13 +15,12 @@ export default function Home() {
 
 	return (
 		<div className={styles.home_wrapper}>
-			<div className={styles.txt_wrapper}>
-				<p
-					className={styles.txt}
-					onClick={handleLang}>
-					{lang ? "ES" : "EN"}
-				</p>
-			</div>
+			<button
+				className={styles.txt_wrapper}
+				tabIndex={0}
+				onClick={handleLang}>
+				<p className={styles.txt}>{lang ? "ES" : "EN"}</p>
+			</button>
 			<IntroSection />
 			<PurposeSection lang={lang} />
 			<VideoSection lang={lang} />
