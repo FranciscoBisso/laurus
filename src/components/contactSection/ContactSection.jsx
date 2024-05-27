@@ -5,32 +5,58 @@ import bg_img_tablet from "../../assets/imgs/farms/seedling_tray_tablet.webp";
 import bg_img_desktop from "../../assets/imgs/farms/seedling_tray_desktop.webp";
 import { useInView } from "react-intersection-observer";
 
-export default function ContactSection() {
+export default function ContactSection(props) {
 	const txt = useInView();
 	return (
 		<section
 			className={styles.contact_section}
 			tabIndex={0}>
 			<div className={styles.card_wrapper}>
-				<article className={styles.contact_card}>
-					<h1 className={styles.card_header}>
-						{"Let's pioneer the future of agriculture, together"}
-					</h1>
-					<p
-						ref={txt.ref}
-						className={styles.card_text}>
-						Join us today and create a future where fresh food is
-						accessible to all, regardless of where they live or how
-						much they make.
-					</p>
+				{props?.lang ? (
+					<article className={styles.contact_card}>
+						<h1 className={styles.card_header}>
+							{
+								"Let's pioneer the future of agriculture, together"
+							}
+						</h1>
+						<p
+							ref={txt.ref}
+							className={styles.card_text}>
+							Join us today and create a future where fresh food
+							is accessible to all, regardless of where they live
+							or how much they make.
+						</p>
 
-					<PopupButton
-						className={styles.calendly_btn}
-						url="https://calendly.com/nicobisso/intro-call"
-						rootElement={document.getElementById("root")}
-						text="Schedule a call!"
-					/>
-				</article>
+						<PopupButton
+							className={styles.calendly_btn}
+							url="https://calendly.com/nicobisso/intro-call"
+							rootElement={document.getElementById("root")}
+							text="Schedule a call!"
+						/>
+					</article>
+				) : (
+					<article className={styles.contact_card}>
+						<h1 className={styles.card_header}>
+							{
+								"Juntos, seamos pioneros en el futuro de la agricultura"
+							}
+						</h1>
+						<p
+							ref={txt.ref}
+							className={styles.card_text}>
+							Sumate y crea un futuro donde los alimentos frescos
+							sean accesibles para todos, sin importar dónde vivan
+							o cuánto ganen.
+						</p>
+
+						<PopupButton
+							className={styles.calendly_btn}
+							url="https://calendly.com/nicobisso/intro-call"
+							rootElement={document.getElementById("root")}
+							text="¡Agendar entrevista!"
+						/>
+					</article>
+				)}
 			</div>
 			<div className={styles.img_wrapper}>
 				<img

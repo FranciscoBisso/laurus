@@ -10,7 +10,7 @@ import card_img_three_tablet from "../../assets/imgs/products/products_tablet.we
 import card_img_three_desktop from "../../assets/imgs/products/products_desktop.webp";
 
 import { useInView } from "react-intersection-observer";
-export default function PurposeSection() {
+export default function PurposeSection(props) {
 	const cards = [
 		{
 			observerHook: useInView(),
@@ -20,7 +20,9 @@ export default function PurposeSection() {
 				desktop: card_img_one_desktop,
 			},
 			title: "What we do",
-			txt: "We reinvent urban agriculture by providing a sustainable and efficient way to deliver hyper-local, nutritious and affordable food to people in cities.",
+			titulo: "¿Qué hacemos?",
+			txtEn: "We reinvent urban agriculture by providing a sustainable and efficient way to deliver hyper-local, nutritious and affordable food to people in cities.",
+			txtEs: "Reinventamos la agricultura urbana ofreciendo una forma sostenible y eficiente de llevar alimentos hiperlocales, nutritivos y asequibles a las personas en las ciudades.",
 		},
 		{
 			observerHook: useInView(),
@@ -30,7 +32,9 @@ export default function PurposeSection() {
 				desktop: card_img_two_desktop,
 			},
 			title: "How we do it",
-			txt: "Our automated inflatable farms, designed to utilize idle spaces in cities, enable cultivation regardless of the season and weather.",
+			titulo: "¿Cómo lo hacemos?",
+			txtEn: "Our automated inflatable farms, designed to utilize idle spaces in cities, enable cultivation regardless of the season and weather.",
+			txtEs: "Nuestras granjas inflables automatizadas, diseñadas para aprovechar espacios inactivos en las ciudades, permiten el cultivo independientemente de la temporada y el clima.",
 		},
 		{
 			observerHook: useInView(),
@@ -40,7 +44,9 @@ export default function PurposeSection() {
 				desktop: card_img_three_desktop,
 			},
 			title: "What we achieve",
-			txt: "Our farms can provide fresh and premium food at affordable prices to anyone, regardless of where they live or how much they earn.",
+			titulo: "¿Qué logramos?",
+			txtEn: "Our farms can provide fresh and premium food at affordable prices to anyone, regardless of where they live or how much they earn.",
+			txtEs: "Nuestras granjas pueden proporcionar alimentos frescos y de primera calidad a precios asequibles para cualquier persona, sin importar dónde viva o cuánto gane.",
 		},
 	];
 
@@ -75,8 +81,12 @@ export default function PurposeSection() {
 							ref={card.observerHook.ref}
 							className={styles.invisible_ref}></div>
 						<div className={styles.card_txt_wrapper}>
-							<h2 className={styles.card_title}>{card.title}</h2>
-							<p className={styles.card_txt}>{card.txt}</p>
+							<h2 className={styles.card_title}>
+								{props?.lang ? card.title : card.titulo}
+							</h2>
+							<p className={styles.card_txt}>
+								{props?.lang ? card.txtEn : card.txtEs}
+							</p>
 						</div>
 					</article>
 				))}

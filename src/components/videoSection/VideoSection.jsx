@@ -6,7 +6,7 @@ import poster from "../../assets/imgs/farms/tower_closeup_poster.webp";
 
 import { useInView } from "react-intersection-observer";
 
-export default function VideoSection() {
+export default function VideoSection(props) {
 	const txt = useInView();
 
 	return (
@@ -17,7 +17,9 @@ export default function VideoSection() {
 				<p
 					ref={txt.ref}
 					className={styles.txt}>
-					480,000 plants per year, in less space than a tennis court
+					{props?.lang
+						? "480,000 plants per year, in less space than a tennis court"
+						: "480.000 plantas por año, en menos espacio que una cancha de tenis"}
 				</p>
 			</div>
 
