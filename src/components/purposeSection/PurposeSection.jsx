@@ -19,10 +19,10 @@ export default function PurposeSection(props) {
 				tablet: card_img_one_tablet,
 				desktop: card_img_one_desktop,
 			},
-			title: "What we do",
-			titulo: "¿Qué hacemos?",
+			titleEn: "What we do",
+			titleEs: "¿Qué hacemos?",
 			txtEn: "We reinvent urban agriculture by providing a sustainable and efficient way to deliver hyper-local, nutritious and affordable food to people in cities.",
-			txtEs: "Reinventamos la agricultura urbana ofreciendo una forma sostenible y eficiente de llevar alimentos hiperlocales, nutritivos y asequibles a las personas en las ciudades.",
+			txtEs: "Reinventamos la agricultura urbana ofreciendo una forma sostenible y eficiente de llevar alimentos hiperlocales, nutritivos y asequibles a las personas de las ciudades.",
 		},
 		{
 			observerHook: useInView(),
@@ -31,10 +31,10 @@ export default function PurposeSection(props) {
 				tablet: card_img_two_tablet,
 				desktop: card_img_two_desktop,
 			},
-			title: "How we do it",
-			titulo: "¿Cómo lo hacemos?",
+			titleEn: "How we do it",
+			titleEs: "¿Cómo lo hacemos?",
 			txtEn: "Our automated inflatable farms, designed to utilize idle spaces in cities, enable cultivation regardless of the season and weather.",
-			txtEs: "Nuestras granjas inflables automatizadas, diseñadas para aprovechar espacios inactivos en las ciudades, permiten el cultivo independientemente de la temporada y el clima.",
+			txtEs: "Nuestros invernaderos inflables automatizados, diseñados para aprovechar los espacios ociosos de las ciudades, permiten cultivar independientemente de la estación y los factores climáticos.",
 		},
 		{
 			observerHook: useInView(),
@@ -43,10 +43,10 @@ export default function PurposeSection(props) {
 				tablet: card_img_three_tablet,
 				desktop: card_img_three_desktop,
 			},
-			title: "What we achieve",
-			titulo: "¿Qué logramos?",
+			titleEn: "What we achieve",
+			titleEs: "¿Qué logramos?",
 			txtEn: "Our farms can provide fresh and premium food at affordable prices to anyone, regardless of where they live or how much they earn.",
-			txtEs: "Nuestras granjas pueden proporcionar alimentos frescos y de primera calidad a precios asequibles para cualquier persona, sin importar dónde viva o cuánto gane.",
+			txtEs: "Nuestros invernaderos proveen alimentos frescos y de primera calidad a precios asequibles para todos, sin importar dónde vivan o cuánto ganen.",
 		},
 	];
 
@@ -82,7 +82,7 @@ export default function PurposeSection(props) {
 							className={styles.invisible_ref}></div>
 						<div className={styles.card_txt_wrapper}>
 							<h2 className={styles.card_title}>
-								{props?.lang ? card.title : card.titulo}
+								{props?.lang ? card.titleEn : card.titleEs}
 							</h2>
 							<p className={styles.card_txt}>
 								{props?.lang ? card.txtEn : card.txtEs}

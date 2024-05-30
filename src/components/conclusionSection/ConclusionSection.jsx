@@ -39,21 +39,23 @@ export default function ConclusionSection(props) {
 						</div>
 						{props?.lang ? (
 							<h2 className={styles.title}>
-								A{" "}
+								{"A "}
 								<span
 									className={`${styles.dark_green} ${styles.strong}`}>
-									new paradigm
-								</span>{" "}
-								in the production and distribution of food
+									{"new paradigm"}
+								</span>
+								{" in the production and distribution of food"}
 							</h2>
 						) : (
 							<h2 className={styles.title}>
-								Un{" "}
+								{"Un "}
 								<span
 									className={`${styles.dark_green} ${styles.strong}`}>
-									nuevo paradigma
-								</span>{" "}
-								en la producción y distribución de alimentos
+									{"nuevo paradigma"}
+								</span>
+								{
+									" en la producción y distribución de alimentos"
+								}
 							</h2>
 						)}
 					</article>
@@ -76,21 +78,23 @@ export default function ConclusionSection(props) {
 						</div>
 						{props?.lang ? (
 							<h2 className={styles.title}>
-								The{" "}
+								{"The "}
 								<span
 									className={`${styles.green} ${styles.strong}`}>
-									necessary innovation
-								</span>{" "}
-								to address environmental issues
+									{"necessary innovation"}
+								</span>
+								{" to address environmental issues"}
 							</h2>
 						) : (
 							<h2 className={styles.title}>
-								La{" "}
+								{"La "}
 								<span
 									className={`${styles.green} ${styles.strong}`}>
-									innovación necesaria
-								</span>{" "}
-								para hacer frente a la problemática ambiental
+									{"innovación necesaria"}
+								</span>
+								{
+									" para hacer frente a las problemáticas ambientales"
+								}
 							</h2>
 						)}
 					</article>
@@ -113,31 +117,41 @@ export default function ConclusionSection(props) {
 						</div>
 						{props?.lang ? (
 							<h2 className={styles.title}>
-								Close to people, providing{" "}
+								{"Close to people, providing "}
 								<span
 									className={`${styles.light_green} ${styles.strong}`}>
-									accessible
+									{"accessible"}
 								</span>
-								,{" "}
+								{", "}
 								<span
 									className={`${styles.light_green} ${styles.strong}`}>
-									fresh
-								</span>{" "}
-								and{" "}
+									{"fresh "}
+								</span>
+								{"and "}
 								<span
 									className={`${styles.light_green} ${styles.strong}`}>
-									ready
-								</span>{" "}
-								to consume food
+									{"ready to consume "}
+								</span>
+								{"food"}
 							</h2>
 						) : (
 							<h2 className={styles.title}>
-								Estamos cerca de las personas, con{" "}
+								{"Cerca de las personas, con alimentos "}
 								<span
 									className={`${styles.light_green} ${styles.strong}`}>
-									alimentos accesibles
+									{"accesibles"}
 								</span>
-								, frescos y listos para consumir
+								{", "}
+								<span
+									className={`${styles.light_green} ${styles.strong}`}>
+									{"frescos"}
+								</span>
+								{" y "}
+								<span
+									className={`${styles.light_green} ${styles.strong}`}>
+									{"listos"}
+								</span>
+								{" para consumir"}
 							</h2>
 						)}
 					</article>
@@ -160,19 +174,19 @@ export default function ConclusionSection(props) {
 						</div>
 						{props?.lang ? (
 							<h2 className={styles.title}>
-								Born to set a{" "}
+								{"Born to set a "}
 								<span className={styles.strong}>
-									new standard
-								</span>{" "}
-								in the food system
+									{"new standard"}
+								</span>
+								{" in the food system"}
 							</h2>
 						) : (
 							<h2 className={styles.title}>
-								Nacemos para generar un{" "}
+								{"Nacemos para generar un "}
 								<span className={styles.strong}>
-									nuevo estándar
-								</span>{" "}
-								en el sistema alimentario
+									{"nuevo estándar"}
+								</span>
+								{" en el sistema alimentario"}
 							</h2>
 						)}
 					</article>

@@ -12,51 +12,27 @@ export default function ContactSection(props) {
 			className={styles.contact_section}
 			tabIndex={0}>
 			<div className={styles.card_wrapper}>
-				{props?.lang ? (
-					<article className={styles.contact_card}>
-						<h1 className={styles.card_header}>
-							{
-								"Let's pioneer the future of agriculture, together"
-							}
-						</h1>
-						<p
-							ref={txt.ref}
-							className={styles.card_text}>
-							Join us today and create a future where fresh food
-							is accessible to all, regardless of where they live
-							or how much they make.
-						</p>
+				<article className={styles.contact_card}>
+					<h1 className={styles.card_header}>
+						{props?.lang
+							? "Together, let's pioneer the future of agriculture"
+							: "Juntos, seamos pioneros en el futuro de la agricultura"}
+					</h1>
+					<p
+						ref={txt.ref}
+						className={styles.card_text}>
+						{props?.lang
+							? "Join us today and create a future where healthy eating is accessible to everyone."
+							: "Sumate y creá un futuro donde la alimentación saludable sea una realidad de todos."}
+					</p>
 
-						<PopupButton
-							className={styles.calendly_btn}
-							url="https://calendly.com/nicobisso/intro-call"
-							rootElement={document.getElementById("root")}
-							text="Schedule a call!"
-						/>
-					</article>
-				) : (
-					<article className={styles.contact_card}>
-						<h1 className={styles.card_header}>
-							{
-								"Juntos, seamos pioneros en el futuro de la agricultura"
-							}
-						</h1>
-						<p
-							ref={txt.ref}
-							className={styles.card_text}>
-							Sumate y crea un futuro donde los alimentos frescos
-							sean accesibles para todos, sin importar dónde vivan
-							o cuánto ganen.
-						</p>
-
-						<PopupButton
-							className={styles.calendly_btn}
-							url="https://calendly.com/nicobisso/intro-call"
-							rootElement={document.getElementById("root")}
-							text="¡Agendar entrevista!"
-						/>
-					</article>
-				)}
+					<PopupButton
+						className={styles.calendly_btn}
+						url="https://calendly.com/nicobisso/intro-call"
+						rootElement={document.getElementById("root")}
+						text={props?.lang ? "Schedule a call" : "Agendar call"}
+					/>
+				</article>
 			</div>
 			<div className={styles.img_wrapper}>
 				<img

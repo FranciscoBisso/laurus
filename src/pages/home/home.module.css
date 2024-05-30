@@ -6,31 +6,3 @@
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 }
-
-.txt_wrapper {
-	position: fixed;
-	z-index: 100;
-	top: 2.5%;
-	right: 2.5%;
-	width: fit-content;
-	padding: min(3%, var(--radius));
-	border-radius: calc(var(--radius) / 2);
-	border: 1px solid var(--warm-gray);
-	box-shadow: 0 0 10px var(--warm-gray);
-	background-color: var(--glassy);
-}
-
-.txt {
-	color: var(--font-color);
-	font-weight: bold;
-	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-0);
-	text-align: center;
-	line-height: 1;
-}
-
-@media screen and (orientation: landscape) {
-	.txt_wrapper {
-		padding: min(1%, var(--radius));
-	}
-}
