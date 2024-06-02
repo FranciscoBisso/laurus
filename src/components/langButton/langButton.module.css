@@ -26,7 +26,7 @@
 	color: var(--font-color);
 	font-weight: bold;
 	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-s);
+	font-size: var(--sz-xs);
 	text-align: center;
 	line-height: 1;
 }
