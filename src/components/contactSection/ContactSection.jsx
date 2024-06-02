@@ -30,7 +30,9 @@ export default function ContactSection(props) {
 						className={styles.calendly_btn}
 						url="https://calendly.com/nicobisso/intro-call"
 						rootElement={document.getElementById("root")}
-						text={props?.lang ? "Schedule a call" : "Agendar call"}
+						text={
+							props?.lang ? "Schedule a call!" : "¡Contactanos!"
+						}
 					/>
 				</article>
 			</div>

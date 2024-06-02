@@ -6,36 +6,3 @@
 	color: var(--font-color);
 	background-color: var(--clr-pair-1);
 }
-
-.lang_btn {
-	position: fixed;
-	z-index: 100;
-	top: 2.5%;
-	right: 2.5%;
-	width: fit-content;
-	padding: min(1.5%, calc(var(--sz-0) / 2));
-	border-radius: calc(var(--radius) / 2);
-	border: 1px solid var(--warm-gray);
-	box-shadow: 0 0 10px var(--warm-gray);
-	background-color: var(--glassy);
-}
-
-.lang {
-	color: var(--font-color);
-	font-weight: bold;
-	font-family: var(--mark-pro-bold);
-	font-size: var(--sz-0);
-	text-align: center;
-	line-height: 1;
-}
-
-@media screen and (orientation: landscape) {
-	.lang_btn {
-		top: 1.5%;
-		right: 1%;
-		padding: min(1%, calc(var(--sz-0) / 2));
-	}
-	.lang {
-		font-size: var(--sz-s);
-	}
-}
